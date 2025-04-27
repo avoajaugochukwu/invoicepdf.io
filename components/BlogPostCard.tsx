@@ -13,6 +13,7 @@ type BlogPostCardProps = {
     excerpt: string;
     formattedDate: string;
     featuredImageUrl: string;
+    author: string;
   };
 };
 
@@ -40,7 +41,10 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
           </div>
           <CardHeader className="pt-4 px-6">
             <CardTitle className="line-clamp-2">{post.title}</CardTitle>
-            <CardDescription>{post.formattedDate}</CardDescription>
+            <CardDescription>
+              {post.formattedDate} · by{' '}
+              <span className="font-medium text-foreground">{post.author}</span>
+            </CardDescription>
           </CardHeader>
           <CardContent className="flex-grow pb-4 px-6">
             <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>

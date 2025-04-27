@@ -49,19 +49,27 @@ export default async function BlogIndex() {
       }
     }
 
+    // Extract author names from multi-select
+    const authorMultiSelect = page.properties.Author?.multi_select;
+    let authorNames = 'InvoicePDF Team'; // Default author
+    if (authorMultiSelect && authorMultiSelect.length > 0) {
+      // Map over the array and get the name of each selected author
+      authorNames = authorMultiSelect.map((author: any) => author.name).join(', ');
+    }
+
     return {
       id: page.id,
-      slug: page.properties.Slug?.rich_text[0]?.plain_text || page.id, // Fallback slug
+      slug: page.properties.Slug?.rich_text[0]?.plain_text || page.id,
       title: page.properties.Title?.title[0]?.plain_text || 'Untitled Post',
       excerpt: page.properties.Excerpt?.rich_text[0]?.plain_text || 'No excerpt available.',
       date: dateStr,
-      formattedDate: format(new Date(dateStr), 'MMMM d, yyyy'), // Format the date
+      formattedDate: format(new Date(dateStr), 'MMMM d, yyyy'),
       readingTime: `${page.properties.ReadingTime?.number || 5} min read`,
       tags: page.properties.Tags?.multi_select?.map((tag: any) => tag.name) || [],
-      author: page.properties.Author?.select?.name || 'Ugo Charles',
+      author: authorNames,
       featuredImageUrl: featuredImageUrl,
     };
-  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Sort by date descending
+  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
   return (
     <div className="container mx-auto px-4 py-12">

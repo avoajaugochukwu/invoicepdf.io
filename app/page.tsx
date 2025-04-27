@@ -28,13 +28,22 @@ export default async function Home() {
       }
     }
 
+    // Extract author names from multi-select
+    const authorMultiSelect = page.properties.Author?.multi_select;
+    let authorNames = 'InvoicePDF Team'; // Default author
+    if (authorMultiSelect && authorMultiSelect.length > 0) {
+      // Map over the array and get the name of each selected author
+      authorNames = authorMultiSelect.map((author: any) => author.name).join(', ');
+    }
+
     return {
       id: page.id,
-      title: page.properties.Name?.title[0]?.plain_text || 'Untitled Post',
+      title: page.properties.Title?.title[0]?.plain_text || 'Untitled Post',
       slug: page.properties.Slug?.rich_text[0]?.plain_text || page.id,
       excerpt: page.properties.Excerpt?.rich_text[0]?.plain_text || 'No excerpt available.',
       formattedDate: format(new Date(dateStr), 'MMM d, yyyy'),
       featuredImageUrl: featuredImageUrl,
+      author: authorNames, // Assign the joined author names string
     };
   }).sort((a, b) => new Date(b.formattedDate).getTime() - new Date(a.formattedDate).getTime());
 

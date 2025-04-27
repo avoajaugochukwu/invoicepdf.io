@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,15 +29,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-screen bg-background font-sans antialiased flex flex-col",
           geistSans.variable,
           geistMono.variable
         )}
       >
         <Header />
-        <div className="relative flex min-h-screen flex-col">
+        <div className="relative flex flex-col flex-grow">
           <main className="flex-grow pt-14">{children}</main>
         </div>
+        <Footer />
       </body>
     </html>
   );
