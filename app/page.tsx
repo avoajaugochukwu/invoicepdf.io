@@ -3,7 +3,6 @@ import { fetchPages } from "@/lib/notion";
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { BlogPostCard } from "@/components/BlogPostCard";
-import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   const pages = await fetchPages();

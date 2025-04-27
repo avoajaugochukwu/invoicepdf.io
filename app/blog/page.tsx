@@ -1,8 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Link from 'next/link';
 import { fetchPages } from '@/lib/notion';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; // Assuming Card is available
-import { Badge } from "@/components/ui/badge"; // Assuming Badge is available
 import { format } from 'date-fns'; // For formatting dates
 import { BlogPostCard } from "@/components/BlogPostCard"; // Import the card component
 
