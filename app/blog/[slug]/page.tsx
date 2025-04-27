@@ -1,14 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { notFound } from 'next/navigation';
-import { fetchBySlug, fetchPageBlocks, notion } from '@/lib/notion';
+import { fetchBySlug, fetchPageBlocks, fetchPages } from '@/lib/notion';
 import { NotionRenderer } from '@/components/NotionRenderer'; // We'll create this basic renderer
 import { Badge } from "@/components/ui/badge";
 import { format } from 'date-fns';
-import type { PageObjectResponse } from '@notionhq/client/build/src/api-endpoints';
+import { baseUrl } from '@/app/metadata';
+import { Metadata } from 'next';
 
 type BlogPageProps = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 };
 
 // Optional: Generate static paths at build time
@@ -19,8 +19,49 @@ type BlogPageProps = {
 //   }));
 // }
 
+export async function generateStaticParams() {
+  const pages = await fetchPages();
+  return pages.map((page: any) => ({
+    slug: page.properties.Slug.rich_text[0].plain_text,
+  }));
+}
+
+/**
+ * Generate metadata for the blog post
+ * @param params - The parameters of the blog post
+ * @returns The metadata for the blog post
+ */
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const slug = (await params).slug;
+  const page = await fetchBySlug(slug);
+
+  const post = page as any;
+
+  return {
+    title: post?.properties?.Title?.title?.[0]?.plain_text,
+    description: post?.properties?.["Meta Description"]?.rich_text?.[0]?.plain_text,
+    openGraph: {
+      title: post?.properties?.Title?.title?.[0]?.plain_text,
+      description: post?.properties?.["Meta Description"]?.rich_text?.[0]?.plain_text,
+      type: 'article',
+      // you can add more OpenGraph metadata here
+    },
+    robots: {
+      index: true, // Allow indexing
+      follow: true, // Allow following links
+    },
+    alternates: {
+      canonical: `${baseUrl}/blog/${slug}`,
+      languages: {
+        'en-US': `${baseUrl}/blog/${slug}`,
+        'x-default': `${baseUrl}/blog/${slug}`
+      },
+    },
+  }
+}
+
 export default async function BlogPage({ params }: BlogPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
   const page = await fetchBySlug(slug);
 
   if (!page) {

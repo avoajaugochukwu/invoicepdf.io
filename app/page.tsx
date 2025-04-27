@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { fetchPages } from "@/lib/notion";
 import Link from 'next/link';
 import { format } from 'date-fns';

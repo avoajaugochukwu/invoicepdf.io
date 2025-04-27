@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Button } from '@/components/ui/button'; // Optional: if you want buttons in the header
 
 export function Header() {
   return (
