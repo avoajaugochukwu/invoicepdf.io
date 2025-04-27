@@ -3,6 +3,7 @@ import { fetchPages } from "@/lib/notion";
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { BlogPostCard } from "@/components/BlogPostCard";
+import { Button } from "@/components/ui/button";
 
 export default async function Home() {
   const pages = await fetchPages();
@@ -30,42 +31,48 @@ export default async function Home() {
 
     return {
       id: page.id,
+      title: page.properties.Name?.title[0]?.plain_text || 'Untitled Post',
       slug: page.properties.Slug?.rich_text[0]?.plain_text || page.id,
-      title: page.properties.Title?.title[0]?.plain_text || 'Untitled Post',
-      excerpt: page.properties.Excerpt?.rich_text[0]?.plain_text || 'Read more...',
-      date: dateStr,
+      excerpt: page.properties.Excerpt?.rich_text[0]?.plain_text || 'No excerpt available.',
       formattedDate: format(new Date(dateStr), 'MMM d, yyyy'),
       featuredImageUrl: featuredImageUrl,
     };
-  }).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  }).sort((a, b) => new Date(b.formattedDate).getTime() - new Date(a.formattedDate).getTime());
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <main className="flex flex-col gap-12 items-center">
-        <h1 className="text-4xl font-bold text-center">Welcome!</h1>
-        <p className="text-lg text-muted-foreground text-center">Check out our latest articles.</p>
-
-        <div className="w-full">
-          <h2 className="text-3xl font-semibold mb-8 text-center">Latest Blog Posts</h2>
-          {posts && posts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post) => (
-                <BlogPostCard key={post.id} post={post} />
-              ))}
-            </div>
-          ) : (
-            <p className="text-center text-muted-foreground">No blog posts found.</p>
-          )}
-          <div className="text-center mt-12">
-            <Link href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline">
-              View all posts &rarr;
-            </Link>
-          </div>
+    <div className="container mx-auto px-4 py-16 md:py-20 lg:py-24">
+      <section className="text-center mb-20 md:mb-24 lg:mb-28">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl mb-6">
+            <span className="bg-gradient-to-r from-primary via-pink-500 to-secondary bg-clip-text text-transparent">
+              Effortless Invoicing for Freelancers & Small Businesses
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8">
+            Stop chasing payments and wasting time. Create professional invoices in minutes, track expenses, and get paid faster. Focus on what you do best.
+          </p>
         </div>
-      </main>
-      <footer className="mt-16 pt-8 border-t text-center">
-        <p className="text-sm text-muted-foreground">My Footer</p>
-      </footer>
+      </section>
+
+      <section>
+        <h2 className="text-3xl font-bold text-center mb-10 md:mb-12">
+          Latest Insights & Tips
+        </h2>
+        {posts.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {posts.map((post) => (
+              <BlogPostCard key={post.id} post={post} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center text-muted-foreground mb-12">No recent posts found.</div>
+        )}
+        <div className="text-center">
+          <Link href="/blog" className="text-primary hover:underline font-medium">
+            View all posts &rarr;
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
