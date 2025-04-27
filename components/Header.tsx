@@ -1,26 +1,15 @@
 import Link from 'next/link';
+import { Paperclip } from 'lucide-react'; // Assuming you might use an icon
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+      <div className="w-10/12 mx-auto flex h-14 max-w-screen-2xl items-center px-4 lg:px-6">
         {/* Site Title/Logo */}
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            {/* You can replace this with an SVG logo or an Image component */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="h-6 w-6" // Simple placeholder icon
-            >
-              <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-            </svg>
-            <span className="font-bold inline-block">My Site</span>
+            <Paperclip className="h-6 w-6" />
+            <span className="font-bold inline-block">InvoicePDF</span>
           </Link>
         </div>
 
