@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
+import { LANDINGS } from '@/lib/invoice/landings'
 import { baseUrl } from './metadata';
 
 // Only indexable routes belong in the sitemap. /privacy-policy and /terms-of-service
@@ -7,6 +8,12 @@ import { baseUrl } from './metadata';
 const staticRoutes = [
   '/',
   '/blog',
+];
+
+// Tool + template landing pages — high-intent, high-priority for crawling.
+const toolRoutes = [
+  '/invoice-generator',
+  ...LANDINGS.map((l) => `/${l.slug}`),
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -35,6 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: path === '/' ? 1.0 : 0.8, // Give homepage highest priority
   }));
 
+  // Tool/template landing pages
+  const toolUrls = toolRoutes.map((path) => ({
+    url: `${baseUrl}${path}`,
+    lastModified: formattedDate,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }));
+
   // Combine static and dynamic URLs
-  return [...routeUrls, ...blogUrls];
+  return [...routeUrls, ...toolUrls, ...blogUrls];
 }

@@ -1,6 +1,8 @@
 import { getAllPosts } from "@/lib/blog";
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { ArrowRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 import { BlogPostCard } from "@/components/BlogPostCard";
 
 export const metadata: Metadata = {
@@ -20,8 +22,18 @@ export default function Home() {
             </span>
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-8">
-            Stop chasing payments and wasting time. Create professional invoices in minutes, track expenses, and get paid faster. Focus on what you do best.
+            Stop chasing payments and wasting time. Create professional invoices in minutes and download a print-ready PDF — free, no signup. Focus on what you do best.
           </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Button asChild size="lg">
+              <Link href="/invoice-generator">
+                Create an invoice <ArrowRight className="h-4 w-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link href="/invoice-template-google-docs">Browse templates</Link>
+            </Button>
+          </div>
         </div>
       </section>
 

@@ -2,6 +2,28 @@ import React from 'react';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 
+// Competitor / affiliate domains whose outbound links should carry rel="nofollow"
+// (don't pass ranking equity or imply endorsement). Neutral authorities and source
+// citations are intentionally NOT listed — those stay followed as a trust signal.
+// See .claude/blog-standards.md §5.
+const NOFOLLOW_DOMAINS = [
+  'freshbooks.com', 'quickbooks.intuit.com', 'intuit.com', 'waveapps.com', 'zoho.com',
+  'xero.com', 'bill.com', 'squareup.com', 'stripe.com', 'hellobonsai.com', 'invoicehome.com',
+  'honeybook.com', 'sage.com', 'sumup.com', 'billdu.com', 'canva.com', 'paypal.com', 'venmo.com',
+];
+
+function relFor(href?: string): string | undefined {
+  if (!href?.startsWith('http')) return undefined;
+  let nofollow = false;
+  try {
+    const host = new URL(href).hostname.replace(/^www\./, '');
+    nofollow = NOFOLLOW_DOMAINS.some((d) => host === d || host.endsWith(`.${d}`));
+  } catch {
+    // malformed URL — treat as plain external link
+  }
+  return nofollow ? 'noopener noreferrer nofollow' : 'noopener noreferrer';
+}
+
 // Custom element styling for rendered MDX blog content.
 const components = {
   // The post title is the page's single <h1>; render in-body "#" headings as <h2>
@@ -27,7 +49,7 @@ const components = {
     <a
       className="text-blue-600 dark:text-blue-400 hover:underline"
       target={props.href?.startsWith('http') ? '_blank' : undefined}
-      rel={props.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+      rel={relFor(props.href)}
       {...props}
     />
   ),
