@@ -13,6 +13,7 @@ import {
   AlignmentType,
   BorderStyle,
   VerticalAlign,
+  ImageRun,
 } from 'docx';
 import {
   InvoiceData,
@@ -38,6 +39,24 @@ const NONE_ALL = { top: NO_BORDER, bottom: NO_BORDER, left: NO_BORDER, right: NO
 
 function hex(accentHex: string): string {
   return accentHex.replace('#', '').toUpperCase();
+}
+
+/** Decode a data: URL to bytes (browser via atob; logo is only ever set client-side). */
+function dataUrlToBytes(dataUrl: string): Uint8Array | null {
+  const comma = dataUrl.indexOf(',');
+  if (comma < 0) return null;
+  const b64 = dataUrl.slice(comma + 1);
+  try {
+    if (typeof atob === 'function') {
+      const bin = atob(b64);
+      const out = new Uint8Array(bin.length);
+      for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+      return out;
+    }
+    return new Uint8Array(Buffer.from(b64, 'base64'));
+  } catch {
+    return null;
+  }
 }
 
 function run(text: string, opts: { bold?: boolean; size?: number; color?: string } = {}): TextRun {
@@ -71,6 +90,24 @@ export function buildInvoiceDocx(data: InvoiceData, style: TemplateStyle): Docum
   ];
   if (data.docType !== 'receipt') metaRows.push(['Due', fmtDate(data.dueDate)]);
 
+  // Optional logo paragraph (browser-only; logoDataUrl is unset for static templates).
+  const logoParagraphs: Paragraph[] = [];
+  if (data.logoDataUrl) {
+    const bytes = dataUrlToBytes(data.logoDataUrl);
+    if (bytes) {
+      const h = 56;
+      const aspect = data.logoAspect && data.logoAspect > 0 ? data.logoAspect : 1;
+      const w = Math.min(180, Math.round(h * aspect));
+      const type = data.logoDataUrl.includes('image/png') ? 'png' : 'jpg';
+      logoParagraphs.push(
+        new Paragraph({
+          spacing: { after: 80 },
+          children: [new ImageRun({ data: bytes, transformation: { width: w, height: h }, type: type as 'png' | 'jpg' })],
+        }),
+      );
+    }
+  }
+
   const header = new Table({
     width: { size: 100, type: WidthType.PERCENTAGE },
     borders: NONE_ALL,
@@ -78,6 +115,7 @@ export function buildInvoiceDocx(data: InvoiceData, style: TemplateStyle): Docum
       new TableRow({
         children: [
           plainCell([
+            ...logoParagraphs,
             new Paragraph({ children: [run(data.businessName || 'Your Business', { bold: true, size: 30, color: accent })] }),
             ...businessLines.map((l) => new Paragraph({ spacing: { after: 20 }, children: [run(l, { size: 17, color: GRAY })] })),
           ], 55),

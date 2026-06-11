@@ -26,6 +26,9 @@ export interface InvoiceData {
   taxRate: number; // percent, e.g. 8.5
   notes: string;
   items: LineItem[];
+  /** Optional uploaded logo (browser only) as a data URL, plus its width/height ratio. */
+  logoDataUrl?: string;
+  logoAspect?: number; // width / height
 }
 
 export type TemplateId =
@@ -33,6 +36,7 @@ export type TemplateId =
   | 'word'
   | 'canva'
   | 'microsoft'
+  | 'excel'
   | 'receipt'
   | 'blank';
 
@@ -51,6 +55,7 @@ export const TEMPLATE_STYLES: Record<TemplateId, TemplateStyle> = {
   word:          { id: 'word',        name: 'Classic', accent: [43, 87, 154], accentHex: '#2B579A', docType: 'invoice' },
   canva:         { id: 'canva',       name: 'Modern',  accent: [125, 42, 232], accentHex: '#7D2AE8', docType: 'invoice' },
   microsoft:     { id: 'microsoft',   name: 'Professional', accent: [0, 120, 212], accentHex: '#0078D4', docType: 'invoice' },
+  excel:         { id: 'excel',       name: 'Spreadsheet', accent: [33, 115, 70], accentHex: '#217346', docType: 'invoice' },
   receipt:       { id: 'receipt',     name: 'Receipt', accent: [51, 51, 51], accentHex: '#333333', docType: 'receipt' },
   blank:         { id: 'blank',       name: 'Minimal', accent: [17, 24, 39], accentHex: '#111827', docType: 'invoice' },
 };

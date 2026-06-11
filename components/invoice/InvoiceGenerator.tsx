@@ -1,11 +1,12 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Download, FileText, Plus, Trash2 } from 'lucide-react';
+import { Download, FileText, FileSpreadsheet, Plus, Trash2, ImagePlus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InvoicePreview } from './InvoicePreview';
 import { downloadInvoicePdf } from '@/lib/invoice/pdf';
 import { downloadInvoiceDocx } from '@/lib/invoice/docx';
+import { downloadInvoiceXlsx } from '@/lib/invoice/xlsx';
 import {
   InvoiceData,
   LineItem,
@@ -36,6 +37,7 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
   }));
 
   const [docxBusy, setDocxBusy] = useState(false);
+  const [xlsxBusy, setXlsxBusy] = useState(false);
   const style = useMemo(() => getTemplateStyle(styleId), [styleId]);
 
   async function handleDocx() {
@@ -45,6 +47,26 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
     } finally {
       setDocxBusy(false);
     }
+  }
+  async function handleXlsx() {
+    setXlsxBusy(true);
+    try {
+      await downloadInvoiceXlsx(data, style);
+    } finally {
+      setXlsxBusy(false);
+    }
+  }
+  function handleLogo(file: File | undefined) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const dataUrl = String(reader.result);
+      const img = new window.Image();
+      img.onload = () =>
+        setData((d) => ({ ...d, logoDataUrl: dataUrl, logoAspect: img.naturalWidth / img.naturalHeight || 1 }));
+      img.src = dataUrl;
+    };
+    reader.readAsDataURL(file);
   }
 
   function set<K extends keyof InvoiceData>(key: K, value: InvoiceData[K]) {
@@ -97,6 +119,25 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
 
         <fieldset className="space-y-3">
           <legend className="text-sm font-semibold">Your business</legend>
+          <div>
+            <span className={labelClass}>Logo (optional)</span>
+            <div className="flex items-center gap-3">
+              {data.logoDataUrl ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={data.logoDataUrl} alt="Logo preview" className="h-12 w-auto max-w-[120px] object-contain rounded border border-border" />
+              ) : null}
+              <label className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border px-3 py-1.5 text-xs hover:bg-accent">
+                <ImagePlus className="h-4 w-4" />
+                {data.logoDataUrl ? 'Replace logo' : 'Upload logo'}
+                <input type="file" accept="image/png,image/jpeg" className="hidden" onChange={(e) => handleLogo(e.target.files?.[0])} />
+              </label>
+              {data.logoDataUrl && (
+                <button type="button" className="text-xs text-muted-foreground hover:text-destructive" onClick={() => setData((d) => ({ ...d, logoDataUrl: undefined, logoAspect: undefined }))}>
+                  Remove
+                </button>
+              )}
+            </div>
+          </div>
           <Field label="Business name">
             <input className={inputClass} value={data.businessName} onChange={(e) => set('businessName', e.target.value)} />
           </Field>
@@ -185,12 +226,15 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
       <div className="lg:sticky lg:top-20 lg:self-start">
         <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <span className="text-sm font-semibold">Live preview</span>
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
+            <Button type="button" variant="outline" onClick={handleXlsx} disabled={xlsxBusy}>
+              <FileSpreadsheet className="h-4 w-4" /> {xlsxBusy ? 'Preparing…' : 'Excel'}
+            </Button>
             <Button type="button" variant="outline" onClick={handleDocx} disabled={docxBusy}>
-              <FileText className="h-4 w-4" /> {docxBusy ? 'Preparing…' : 'Download Word'}
+              <FileText className="h-4 w-4" /> {docxBusy ? 'Preparing…' : 'Word'}
             </Button>
             <Button type="button" onClick={() => downloadInvoicePdf(data, style)}>
-              <Download className="h-4 w-4" /> Download PDF
+              <Download className="h-4 w-4" /> PDF
             </Button>
           </div>
         </div>

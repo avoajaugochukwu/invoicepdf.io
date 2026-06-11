@@ -6,21 +6,25 @@
 //   /templates/receipt-template.pdf
 import { buildInvoicePdf } from '@/lib/invoice/pdf';
 import { invoiceDocxBuffer } from '@/lib/invoice/docx';
+import { invoiceXlsxBuffer } from '@/lib/invoice/xlsx';
 import { TEMPLATE_STYLES, blankInvoice, TemplateId, TemplateStyle } from '@/lib/invoice/types';
 
 export const runtime = 'nodejs';
 
 const DOCX_TYPE = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+const XLSX_TYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
 
-function parseFile(file: string): { style: TemplateStyle; ext: 'pdf' | 'docx' } | null {
-  const m = /^(.+)\.(pdf|docx)$/.exec(file);
+type Ext = 'pdf' | 'docx' | 'xlsx';
+
+function parseFile(file: string): { style: TemplateStyle; ext: Ext } | null {
+  const m = /^(.+)\.(pdf|docx|xlsx)$/.exec(file);
   if (!m) return null;
   const [, base, ext] = m;
   let id: string | null = null;
   if (base === 'receipt-template') id = 'receipt';
   else if (base.startsWith('invoice-template-')) id = base.slice('invoice-template-'.length);
   if (!id || !(id in TEMPLATE_STYLES)) return null;
-  return { style: TEMPLATE_STYLES[id as TemplateId], ext: ext as 'pdf' | 'docx' };
+  return { style: TEMPLATE_STYLES[id as TemplateId], ext: ext as Ext };
 }
 
 export async function GET(_req: Request, { params }: { params: Promise<{ file: string }> }) {
@@ -36,6 +40,9 @@ export async function GET(_req: Request, { params }: { params: Promise<{ file: s
     const doc = buildInvoicePdf(data, parsed.style);
     body = new Uint8Array(doc.output('arraybuffer'));
     type = 'application/pdf';
+  } else if (parsed.ext === 'xlsx') {
+    body = new Uint8Array(await invoiceXlsxBuffer(data, parsed.style));
+    type = XLSX_TYPE;
   } else {
     body = new Uint8Array(await invoiceDocxBuffer(data, parsed.style));
     type = DOCX_TYPE;

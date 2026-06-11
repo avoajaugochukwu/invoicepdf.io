@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Download, FileText, Check, ArrowRight } from 'lucide-react';
+import { Download, FileText, FileSpreadsheet, Check, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InvoicePreview } from './InvoicePreview';
 import { baseUrl } from '@/app/metadata';
@@ -50,6 +50,13 @@ export function TemplateLanding({ landing }: { landing: Landing }) {
                 Customize online <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
+            {landing.xlsxFile && (
+              <Button asChild variant="outline" size="lg">
+                <a href={landing.xlsxFile} download>
+                  <FileSpreadsheet className="h-4 w-4" /> Download blank Excel
+                </a>
+              </Button>
+            )}
             {landing.docxFile && (
               <Button asChild variant="outline" size="lg">
                 <a href={landing.docxFile} download>

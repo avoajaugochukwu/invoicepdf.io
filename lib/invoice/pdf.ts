@@ -30,6 +30,21 @@ export function buildInvoicePdf(data: InvoiceData, style: TemplateStyle): jsPDF 
 
   // ---- Header: business (left) + big title (right) ----
   let y = 22;
+
+  // Optional logo, top-left; pushes the business name down.
+  if (data.logoDataUrl) {
+    try {
+      const logoH = 16;
+      const aspect = data.logoAspect && data.logoAspect > 0 ? data.logoAspect : 1;
+      const logoW = Math.min(50, logoH * aspect);
+      const fmt = data.logoDataUrl.includes('image/png') ? 'PNG' : 'JPEG';
+      doc.addImage(data.logoDataUrl, fmt, MARGIN, 14, logoW, logoH);
+      y = 14 + logoH + 8;
+    } catch {
+      // bad image data — skip the logo, keep the layout
+    }
+  }
+
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(18);
   doc.setTextColor(ar, ag, ab);

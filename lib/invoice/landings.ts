@@ -18,6 +18,7 @@ export interface Landing {
   downloadFile: string; // path under /public (PDF)
   downloadLabel: string;
   docxFile?: string; // editable Word (.docx), opens in Word + Google Docs
+  xlsxFile?: string; // editable Excel (.xlsx), opens in Excel + Google Sheets
   intro: string[];
   included: string[];
   steps: { title: string; body: string }[];
@@ -60,7 +61,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: 'Is this invoice template really free?', a: 'Yes. You can download the PDF template and use the online invoice generator for free, with no signup and no watermark.' },
       { q: 'Can I edit the invoice in Google Docs?', a: 'Yes. Download the editable Word (.docx) version and open it in Google Docs via File → Open → Upload — it converts to a fully editable Google Doc. You can also customize every field in our online generator and export a finished PDF or Word file.' },
-      { q: 'How do I add my logo?', a: 'The fastest path is to customize the invoice in the generator and add your business name and details; a logo upload option is on the roadmap.' },
+      { q: 'How do I add my logo?', a: 'Open the free generator and click "Upload logo" — your logo appears on the invoice preview and in the downloaded PDF and Word file.' },
       { q: 'What should an invoice include?', a: 'A professional invoice includes your business and contact details, the client’s details, a unique invoice number, issue and due dates, an itemized list of work, subtotal, tax, and the total due.' },
     ],
     related: ['how-to-write-an-invoice-for-beginners', 'what-is-an-invoice-number'],
@@ -133,6 +134,7 @@ export const LANDINGS: Landing[] = [
       'A free, professional Microsoft-style invoice template. Download the print-ready PDF or customize it online and export in seconds. No signup, no watermark.',
     downloadFile: '/templates/invoice-template-microsoft.pdf',
     docxFile: '/templates/invoice-template-microsoft.docx',
+    xlsxFile: '/templates/invoice-template-microsoft.xlsx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A professional, Office-style invoice template for anyone who bills with Microsoft tools. It has the familiar, trustworthy structure of a business invoice and prints perfectly to a single page.',
@@ -151,6 +153,78 @@ export const LANDINGS: Landing[] = [
       { q: 'What’s the difference between an invoice and a receipt?', a: 'An invoice requests payment before it’s made; a receipt confirms payment was received. You can create both here.' },
     ],
     related: ['how-to-write-an-invoice-for-beginners', 'what-does-invoice-mean'],
+  },
+  {
+    slug: 'invoice-template-excel',
+    styleId: 'excel',
+    keyword: 'Invoice Template for Excel',
+    platform: 'Microsoft Excel',
+    metaTitle: 'Free Invoice Template for Excel (.xlsx) — Download or Edit Online',
+    metaDescription:
+      'A free invoice template for Excel with built-in formulas that total automatically. Download the .xlsx, or customize it online and export — no signup, no watermark.',
+    downloadFile: '/templates/invoice-template-excel.pdf',
+    downloadLabel: 'Download PDF',
+    docxFile: '/templates/invoice-template-excel.docx',
+    xlsxFile: '/templates/invoice-template-excel.xlsx',
+    intro: [
+      'A clean, professional invoice template for Microsoft Excel. The spreadsheet has built-in formulas, so line totals, subtotal, tax, and the grand total calculate themselves as you type — no math, no broken cells.',
+      'Download the editable .xlsx to fill in offline, or use the free online generator below to enter your details and export a finished invoice in Excel, Word, or PDF.',
+    ],
+    included: [
+      'Built-in formulas that total quantity × rate, subtotal, tax, and grand total automatically',
+      'Business and client details, invoice number, and dates',
+      'A notes section for payment terms or a thank-you',
+      'Clean, print-ready formatting that fits a single page',
+      'Free editable Excel (.xlsx), Word, and PDF downloads — no watermark',
+    ],
+    steps: [
+      { title: 'Open the generator', body: 'Select the Spreadsheet style and enter your business, client, and line items. The preview updates as you type.' },
+      { title: 'Let the formulas total it', body: 'In the .xlsx, quantities and rates multiply and sum automatically — just edit the numbers.' },
+      { title: 'Download your file', body: 'Export the editable Excel file (or PDF/Word) — free, no signup, no watermark.' },
+    ],
+    faqs: [
+      { q: 'Does the Excel invoice template calculate totals automatically?', a: 'Yes. The .xlsx includes formulas that multiply quantity by rate for each line, then total the subtotal, tax, and grand total for you.' },
+      { q: 'Is this Excel invoice template free?', a: 'Yes — download the .xlsx and use the online generator for free, with no signup and no watermark.' },
+      { q: 'Can I open it in Google Sheets or Numbers?', a: 'Yes. The .xlsx opens in Microsoft Excel, Google Sheets, and Apple Numbers, with the formulas intact.' },
+      { q: 'How do I add tax?', a: 'Set your tax rate in the generator (or edit the tax cell in the spreadsheet) and the total updates automatically.' },
+    ],
+    related: ['how-to-write-an-invoice-for-beginners', 'what-is-an-invoice-number'],
+  },
+  {
+    slug: 'invoice-template-google-sheets',
+    styleId: 'excel',
+    keyword: 'Invoice Template for Google Sheets',
+    platform: 'Google Sheets',
+    metaTitle: 'Free Google Sheets Invoice Template — Download & Customize',
+    metaDescription:
+      'A free invoice template for Google Sheets with automatic totals. Open the .xlsx in Sheets, or customize online and export — no signup, no watermark.',
+    downloadFile: '/templates/invoice-template-excel.pdf',
+    downloadLabel: 'Download PDF',
+    docxFile: '/templates/invoice-template-excel.docx',
+    xlsxFile: '/templates/invoice-template-excel.xlsx',
+    intro: [
+      'A simple, professional invoice template you can use in Google Sheets. It has built-in formulas, so your line totals, subtotal, tax, and total update automatically as you edit — perfect for billing from your browser.',
+      'Download the spreadsheet file and open it in Google Sheets (File → Import, or just open it from Drive), or use the free online generator below to fill it in and export instantly.',
+    ],
+    included: [
+      'Automatic totals via built-in spreadsheet formulas',
+      'Business and client details, invoice number, and dates',
+      'A notes section for payment terms',
+      'Opens in Google Sheets, Excel, and Numbers',
+      'Free — no signup, no watermark',
+    ],
+    steps: [
+      { title: 'Get the template', body: 'Download the spreadsheet file below, or build one in the online generator with the Spreadsheet style.' },
+      { title: 'Open it in Google Sheets', body: 'Upload the file to Google Drive and open it — the formulas keep working in Sheets.' },
+      { title: 'Customize and share', body: 'Fill in your details and download or share. Free, no watermark.' },
+    ],
+    faqs: [
+      { q: 'How do I open this template in Google Sheets?', a: 'Download the spreadsheet file, then in Google Drive choose New → File upload (or File → Import in Sheets) and open it. The totals formulas carry over.' },
+      { q: 'Does it calculate totals automatically in Google Sheets?', a: 'Yes. The built-in formulas multiply quantity by rate and sum the subtotal, tax, and total — they work the same in Google Sheets and Excel.' },
+      { q: 'Is the Google Sheets invoice template free?', a: 'Yes — free to download and customize, with no signup and no watermark.' },
+      { q: 'Can I also get a PDF?', a: 'Yes. Use the online generator to export a print-ready PDF, or download the PDF version directly.' },
+    ],
+    related: ['how-to-write-an-invoice-for-beginners', 'how-to-send-an-invoice'],
   },
   {
     slug: 'receipt-template',

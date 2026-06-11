@@ -35,7 +35,7 @@ export function BlogPostCard({ post }: BlogPostCardProps) {
               className="transition-transform duration-300 group-hover:scale-105"
               // onError is now allowed because this is a Client Component
               onError={(e) => {
-                  e.currentTarget.src = '/placeholder-image.jpg'; // Ensure this placeholder exists
+                  e.currentTarget.src = '/placeholder-image.webp'; // Ensure this placeholder exists
               }}
             />
           </div>

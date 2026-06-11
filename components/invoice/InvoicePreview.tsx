@@ -24,6 +24,10 @@ export function InvoicePreview({ data, style }: { data: InvoiceData; style: Temp
       {/* Header */}
       <div className="flex items-start justify-between gap-6">
         <div>
+          {data.logoDataUrl && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={data.logoDataUrl} alt="Business logo" className="mb-2 max-h-16 w-auto object-contain" />
+          )}
           <div className="text-xl font-bold" style={{ color: accent }}>
             {data.businessName || 'Your Business'}
           </div>
