@@ -14,6 +14,13 @@ const BLOG_REDIRECTS: [string, string][] = [
 ];
 
 const nextConfig: NextConfig = {
+  images: {
+    minimumCacheTTL: 2678400, // 31 days — let legit optimized images cache hard
+    qualities: [75], // reject ?q= probing; only q=75 is allowed
+    localPatterns: [{ pathname: "/**" }], // only same-origin local paths are optimizable
+    remotePatterns: [], // no remote image optimization
+    formats: ["image/webp"],
+  },
   async redirects() {
     return BLOG_REDIRECTS.map(([source, destination]) => ({
       source,
