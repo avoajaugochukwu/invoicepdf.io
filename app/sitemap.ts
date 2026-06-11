@@ -2,25 +2,30 @@ import { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/blog'
 import { baseUrl } from './metadata';
 
-// Define static routes directly
+// Only indexable routes belong in the sitemap. /privacy-policy and /terms-of-service
+// are intentionally noindex placeholders, so they are excluded.
 const staticRoutes = [
   '/',
   '/blog',
-  '/privacy-policy', // Added based on Footer
-  '/terms-of-service', // Added based on Footer
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const formattedDate = new Date().toISOString();
 
-  // Get all blog posts
-  const posts = getAllPosts()
-  const blogUrls = posts.map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
+  // Get all blog posts, de-duplicated by slug to avoid duplicate sitemap entries.
+  const seen = new Set<string>();
+  const blogUrls = getAllPosts()
+    .filter((post) => {
+      if (seen.has(post.slug)) return false;
+      seen.add(post.slug);
+      return true;
+    })
+    .map((post) => ({
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    }));
 
   // Generate URLs for static routes
   const routeUrls = staticRoutes.map((path) => ({

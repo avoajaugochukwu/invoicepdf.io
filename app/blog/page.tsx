@@ -1,9 +1,12 @@
 import { getAllPosts } from '@/lib/blog';
 import { BlogPostCard } from '@/components/BlogPostCard';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: 'Blog | My Site',
-  description: 'Read the latest articles on our blog.',
+export const metadata: Metadata = {
+  title: 'Invoicing Guides & Tips for Freelancers and Small Businesses',
+  description:
+    'Practical, beginner-friendly guides on how to create, send, and get paid on invoices—plus templates, examples, and tips to streamline your billing.',
+  alternates: { canonical: '/blog' },
 };
 
 export default function BlogIndex() {

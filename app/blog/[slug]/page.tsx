@@ -55,8 +55,32 @@ export default async function BlogPage({ params }: BlogPageProps) {
     notFound();
   }
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    image: post.featuredImageUrl ? `${baseUrl}${post.featuredImageUrl}` : undefined,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { '@type': 'Person', name: post.author },
+    publisher: {
+      '@type': 'Organization',
+      name: 'InvoicePDF.io',
+      logo: { '@type': 'ImageObject', url: `${baseUrl}/logo`, width: 512, height: 512 },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${baseUrl}/blog/${slug}`,
+    },
+  };
+
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
       <header className="mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">{post.title}</h1>
         <div className="text-muted-foreground text-sm mb-4">

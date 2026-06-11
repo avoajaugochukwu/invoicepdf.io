@@ -9,25 +9,14 @@ export const metadata: Metadata = {
     default: 'InvoicePDF.io - Create and Share Invoices Instantly',
   },
   description: 'Create, customize, and share professional invoices in seconds. Perfect for businesses, freelancers, and professionals looking to streamline their invoice process.',
-  alternates: {
-    canonical: baseUrl,
-    languages: {
-      'en-US': baseUrl,
-      'x-default': baseUrl
-    },
-  },
+  // Per-page canonicals are set on each route (see app/page.tsx, app/blog/page.tsx,
+  // app/blog/[slug]/page.tsx). A site-wide canonical here would force every page to
+  // canonicalize to the homepage and get them dropped from the index.
   openGraph: {
     title: "InvoicePDF.io - Generate Professional Invoices Instantly",
     description: "Streamline your invoice process with our easy-to-use tool. Create, customize, and share professional invoices in seconds—perfect for businesses, freelancers, and professionals.",
-    url: "https://invoicepdf.io",
+    url: baseUrl,
     siteName: "InvoicePDF.io",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -35,24 +24,16 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "InvoicePDF.io - Generate Professional Invoices Instantly",
     description: "Streamline your invoice process with our easy-to-use tool. Create, customize, and share professional invoices in seconds—perfect for businesses, freelancers, and professionals.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true, // Allow indexing
     follow: true, // Allow following links
   },
   verification: {
-    google: "google-site-verification: 63EE4WX9NK",
+    google: "63EE4WX9NK",
   },
-  icons: {
-    icon: "favicon_io/favicon.ico",
-    apple: "favicon_io/apple-touch-icon.png",
-    other: {
-      rel: "icon",
-      url: "favicon_io/favicon.ico",
-    },
-    shortcut: "favicon_io/favicon.ico",
-  }
+  // The OG/Twitter image is generated dynamically by app/opengraph-image.tsx.
+  // The favicon is served automatically by Next.js from app/favicon.ico.
 };
 
 export const jsonLd = {
@@ -74,7 +55,9 @@ export const jsonLd = {
     name: 'InvoicePDF.io',
     logo: {
       '@type': 'ImageObject',
-      url: `${baseUrl}/logo.png`
+      url: `${baseUrl}/logo`,
+      width: 512,
+      height: 512
     }
   }
 };

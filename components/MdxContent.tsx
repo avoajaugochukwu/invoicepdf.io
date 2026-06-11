@@ -2,10 +2,12 @@ import React from 'react';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import remarkGfm from 'remark-gfm';
 
-// Custom element styling so MDX content matches the old NotionRenderer look.
+// Custom element styling for rendered MDX blog content.
 const components = {
-  h1: (props: React.ComponentProps<'h1'>) => (
-    <h1 className="text-3xl font-bold mt-8 mb-4" {...props} />
+  // The post title is the page's single <h1>; render in-body "#" headings as <h2>
+  // so each article keeps exactly one <h1>.
+  h1: (props: React.ComponentProps<'h2'>) => (
+    <h2 className="text-3xl font-bold mt-8 mb-4" {...props} />
   ),
   h2: (props: React.ComponentProps<'h2'>) => (
     <h2 className="text-2xl font-semibold mt-6 mb-3" {...props} />
