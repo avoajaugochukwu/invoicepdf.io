@@ -18,6 +18,7 @@ export type PostFrontmatter = {
   featuredImage: string;
   readingTime?: number;
   tags: string[];
+  faqs?: { q: string; a: string }[];
 };
 
 export type PostMeta = {
@@ -31,6 +32,7 @@ export type PostMeta = {
   tags: string[];
   author: string;
   featuredImageUrl: string;
+  faqs: { q: string; a: string }[];
 };
 
 export type Post = PostMeta & {
@@ -57,6 +59,7 @@ function parseFile(fileName: string): Post {
     tags: fm.tags || [],
     author: fm.author || 'InvoicePDF Team',
     featuredImageUrl: fm.featuredImage || '/placeholder-image.jpg',
+    faqs: Array.isArray(fm.faqs) ? fm.faqs : [],
     content,
   };
 }

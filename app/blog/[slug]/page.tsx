@@ -75,12 +75,30 @@ export default async function BlogPage({ params }: BlogPageProps) {
     },
   };
 
+  const faqJsonLd = post.faqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <article className="container mx-auto px-4 py-12 max-w-3xl">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <header className="mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">{post.title}</h1>
         <div className="text-muted-foreground text-sm mb-4">

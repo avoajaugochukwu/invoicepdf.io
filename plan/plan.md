@@ -176,7 +176,15 @@ links updated (grep `content/blog` + components for the dead slugs and repoint t
 
 ---
 
-## Phase 4 — Optimize existing pages for winnable terms 🟠 P1
+## Phase 4 — Optimize existing pages for winnable terms 🟠 P1 ✅ DONE (6 posts)
+
+> ✅ Optimized via the b-review standard: net-30 (pos 28), what-is-an-invoice-beginner-guide,
+> what-does-invoice-mean, what-is-a-proforma-invoice, what-is-an-invoice-number, how-to-get-invoice-from-amazon.
+> Each: fluff cut, deepened to range, real markdown tables, 2–6 verified authority links (IRS/SBA/CBP/
+> trade.gov/ICC + Investopedia/Merriam-Webster canonical), internal links leading with /invoice-generator +
+> template pages, and a visible FAQ. Added reusable FAQ support: `faqs:` frontmatter → FAQPage JSON-LD
+> (`lib/blog.ts` + `app/blog/[slug]/page.tsx`) — verified rendering on all six. `invoice-financing-made-simple`
+> (pos 2) left untouched to protect it; refresh/interlink it in Phase 5.
 
 > Several existing posts target terms they *can* win once cannibalization is fixed. Sharpen on-page SEO.
 
@@ -196,7 +204,16 @@ links updated (grep `content/blog` + components for the dead slugs and repoint t
 
 ---
 
-## Phase 5 — Content map & ongoing expansion 🟡 P2
+## Phase 5 — Content map & ongoing expansion 🟡 P2 ✅ DONE (map + interlink + 3 new posts)
+
+> ✅ Topic map built: `plan/topic-map.md` (every URL → one primary keyword → vol/KD → cluster, with
+> interlinking rules). Interlinked/optimized the previously-untouched posts (keeper how-to-write-an-invoice
+> full b-review; invoice-financing pos-2 lightly refreshed to protect it; how-to-send-an-invoice,
+> what-does-an-invoice-look-like, how-to-pay all deepened + tool links). Published 3 NEW winnable posts:
+> invoice-vs-receipt (KD 3), what-is-a-commercial-invoice (KD 7), invoice-vs-bill (KD 3) — each with FAQ
+> JSON-LD, on-brand generated cover (`scripts/make-covers.mjs`), authority + internal links. Blog now 16
+> posts, all building static. **Still untouched (low priority):** how-to-send-an-invoice-on-paypal and
+> how-to-find-the-invoice-price-of-a-car (cluster E, off-core). Open keyword gaps listed in topic-map.md.
 
 - **Build a topic map** (one row per surviving + planned page → primary keyword → vol/KD → status). Source
   candidates from `scripts/keyword-research/OPPORTUNITIES.csv`. Maintain it so no two pages share a primary
