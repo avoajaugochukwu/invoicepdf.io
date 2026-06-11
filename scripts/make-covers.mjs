@@ -64,15 +64,15 @@ async function writeCover(slug) {
   const title = titleOf(slug);
   const dir = path.join(ROOT, 'public', 'blog', slug);
   fs.mkdirSync(dir, { recursive: true });
-  const out = path.join(dir, 'featured.png');
-  await sharp(Buffer.from(svgFor(title))).png().toFile(out);
-  console.log(`  wrote public/blog/${slug}/featured.png  ("${title}")`);
+  const out = path.join(dir, 'featured.webp');
+  await sharp(Buffer.from(svgFor(title))).webp({ quality: 82 }).toFile(out);
+  console.log(`  wrote public/blog/${slug}/featured.webp  ("${title}")`);
 }
 
 async function writePlaceholder() {
   const svg = svgFor('InvoicePDF.io — Free Invoices');
-  await sharp(Buffer.from(svg)).jpeg({ quality: 82 }).toFile(path.join(ROOT, 'public', 'placeholder-image.jpg'));
-  console.log('  wrote public/placeholder-image.jpg');
+  await sharp(Buffer.from(svg)).webp({ quality: 82 }).toFile(path.join(ROOT, 'public', 'placeholder-image.webp'));
+  console.log('  wrote public/placeholder-image.webp');
 }
 
 const args = process.argv.slice(2);
