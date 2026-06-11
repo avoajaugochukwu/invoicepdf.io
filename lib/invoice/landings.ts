@@ -15,8 +15,9 @@ export interface Landing {
   platform: string;
   metaTitle: string;
   metaDescription: string;
-  downloadFile: string; // path under /public
+  downloadFile: string; // path under /public (PDF)
   downloadLabel: string;
+  docxFile?: string; // editable Word (.docx), opens in Word + Google Docs
   intro: string[];
   included: string[];
   steps: { title: string; body: string }[];
@@ -31,6 +32,7 @@ const COMMON_INCLUDED = [
   'Automatic subtotal, tax, and grand total',
   'A notes section for payment terms or a thank-you',
   'Clean, print-ready formatting that fits a single page',
+  'Free editable Word (.docx) and PDF downloads — no watermark',
 ];
 
 export const LANDINGS: Landing[] = [
@@ -43,10 +45,11 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'Grab a free, professional invoice template for Google Docs. Download the PDF, or customize it online and export a print-ready invoice in seconds — no signup.',
     downloadFile: '/templates/invoice-template-google-docs.pdf',
+    docxFile: '/templates/invoice-template-google-docs.docx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A clean, simple invoice template you can use with Google Docs to bill clients and get paid faster. It includes everything a professional invoice needs — your details, the client’s details, an itemized list, and automatic totals — in a layout that prints perfectly to one page.',
-      'Want it filled out instantly? Use the free online generator below: type your details, watch the live preview update, and download a polished PDF. No Google account or signup required.',
+      'Prefer to edit it yourself? Download the editable Word (.docx) file and open it directly in Google Docs (File → Open → Upload) or in Microsoft Word. Or use the free online generator below — type your details, watch the live preview update, and export a polished PDF or Word file. No Google account or signup required.',
     ],
     included: COMMON_INCLUDED,
     steps: [
@@ -56,7 +59,7 @@ export const LANDINGS: Landing[] = [
     ],
     faqs: [
       { q: 'Is this invoice template really free?', a: 'Yes. You can download the PDF template and use the online invoice generator for free, with no signup and no watermark.' },
-      { q: 'Can I edit the invoice in Google Docs?', a: 'You can download the PDF and import it into Google Drive, or use our online generator to customize every field and export a finished PDF — usually faster than formatting a doc by hand.' },
+      { q: 'Can I edit the invoice in Google Docs?', a: 'Yes. Download the editable Word (.docx) version and open it in Google Docs via File → Open → Upload — it converts to a fully editable Google Doc. You can also customize every field in our online generator and export a finished PDF or Word file.' },
       { q: 'How do I add my logo?', a: 'The fastest path is to customize the invoice in the generator and add your business name and details; a logo upload option is on the roadmap.' },
       { q: 'What should an invoice include?', a: 'A professional invoice includes your business and contact details, the client’s details, a unique invoice number, issue and due dates, an itemized list of work, subtotal, tax, and the total due.' },
     ],
@@ -71,10 +74,11 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'A free, professional invoice template for Microsoft Word. Download the print-ready PDF, or fill it in online and export your invoice instantly. No signup, no watermark.',
     downloadFile: '/templates/invoice-template-word.pdf',
+    docxFile: '/templates/invoice-template-word.docx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A classic, professional invoice template designed for Word users who want a no-fuss way to bill clients. It’s structured exactly like a standard business invoice, so it looks credible and gets you paid on time.',
-      'Skip the manual formatting: enter your details in the free generator below and download a finished, print-ready PDF in seconds.',
+      'Prefer Word itself? Download the editable .docx template and fill it in. Or skip the formatting entirely — enter your details in the free generator below and export a finished PDF or Word file in seconds.',
     ],
     included: COMMON_INCLUDED,
     steps: [
@@ -83,7 +87,7 @@ export const LANDINGS: Landing[] = [
       { title: 'Export to PDF', body: 'Download a clean PDF that opens anywhere — no Word version conflicts or broken layouts.' },
     ],
     faqs: [
-      { q: 'Can I open this template in Microsoft Word?', a: 'The template downloads as a print-ready PDF. To edit fields, use the free online generator and export a finished invoice — it avoids the formatting headaches of Word tables.' },
+      { q: 'Can I open this template in Microsoft Word?', a: 'Yes. Download the editable Word (.docx) version and open it directly in Microsoft Word to fill in your details. You can also use the free online generator and export a Word or PDF file.' },
       { q: 'Is it free with no watermark?', a: 'Yes. Both the downloadable template and the online generator are free, with no signup and no watermark on your invoice.' },
       { q: 'Will the invoice print on one page?', a: 'Yes. The layout is designed to fit a standard page so it prints and emails cleanly.' },
       { q: 'How do I number my invoices?', a: 'Use a simple sequential format like INV-0001, INV-0002. See our guide on invoice numbers for best practices.' },
@@ -99,6 +103,7 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'A modern, designer-style invoice template for Canva fans. Customize it online for free and download a print-ready PDF in seconds — no signup, no watermark.',
     downloadFile: '/templates/invoice-template-canva.pdf',
+    docxFile: '/templates/invoice-template-canva.docx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A modern, design-forward invoice template for freelancers and creatives who like the polished look of Canva. It keeps the styling clean and professional while still covering every detail a client expects.',
@@ -127,10 +132,11 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'A free, professional Microsoft-style invoice template. Download the print-ready PDF or customize it online and export in seconds. No signup, no watermark.',
     downloadFile: '/templates/invoice-template-microsoft.pdf',
+    docxFile: '/templates/invoice-template-microsoft.docx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A professional, Office-style invoice template for anyone who bills with Microsoft tools. It has the familiar, trustworthy structure of a business invoice and prints perfectly to a single page.',
-      'Prefer not to fight with templates and tables? Use the free generator below to fill everything in and download a finished PDF instantly.',
+      'Download the editable Word (.docx) template to fill in with Microsoft Word, or use the free generator below to fill everything in and export a finished PDF or Word file instantly.',
     ],
     included: COMMON_INCLUDED,
     steps: [
@@ -139,7 +145,7 @@ export const LANDINGS: Landing[] = [
       { title: 'Download the PDF', body: 'Export a clean, professional invoice ready to email or print.' },
     ],
     faqs: [
-      { q: 'Does this work with Excel or Word?', a: 'The template is a print-ready PDF. To edit the contents, use the free online generator — it’s faster than reformatting an Excel or Word template and exports a polished PDF.' },
+      { q: 'Does this work with Excel or Word?', a: 'Yes — download the editable Word (.docx) version and open it in Microsoft Word. You can also customize it in the online generator and export a Word or PDF file. (A native Excel/Sheets version isn’t available yet.)' },
       { q: 'Is it free?', a: 'Yes, completely free with no signup and no watermark.' },
       { q: 'Can I use it for my small business?', a: 'Yes. It’s designed for freelancers, contractors, and small businesses that need professional invoices quickly.' },
       { q: 'What’s the difference between an invoice and a receipt?', a: 'An invoice requests payment before it’s made; a receipt confirms payment was received. You can create both here.' },
@@ -155,10 +161,11 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'Create a free receipt online and download it as a PDF. Simple, professional receipt template for payments received — no signup, no watermark.',
     downloadFile: '/templates/receipt-template.pdf',
+    docxFile: '/templates/receipt-template.docx',
     downloadLabel: 'Download PDF template',
     intro: [
       'A simple, professional receipt template to confirm payments you’ve received. Give customers a clear record with your details, what they paid for, and the total — all on a clean, single-page layout.',
-      'Fill it in online for free and download a print-ready PDF in seconds. No signup, no watermark.',
+      'Fill it in online for free and download a print-ready PDF or an editable Word (.docx) file in seconds. No signup, no watermark.',
     ],
     included: [
       'Your business details and the customer’s name',
@@ -189,10 +196,11 @@ export const LANDINGS: Landing[] = [
     metaDescription:
       'Download a free blank invoice template or fill one in online and export a PDF. Simple, professional, and print-ready — no signup, no watermark.',
     downloadFile: '/templates/invoice-template-blank.pdf',
+    docxFile: '/templates/invoice-template-blank.docx',
     downloadLabel: 'Download blank PDF',
     intro: [
       'A clean, minimal blank invoice template you can fill in for any client or project. It has all the standard fields — your details, the client’s, an itemized table, and automatic totals — with nothing you don’t need.',
-      'Download the blank PDF to print and fill by hand, or use the free generator below to complete it online and export a finished invoice instantly.',
+      'Download the blank PDF to print and fill by hand, grab the editable Word (.docx) version to type into Word or Google Docs, or use the free generator below to complete it online and export a finished invoice instantly.',
     ],
     included: COMMON_INCLUDED,
     steps: [
@@ -203,7 +211,7 @@ export const LANDINGS: Landing[] = [
     faqs: [
       { q: 'Can I print the blank invoice and fill it by hand?', a: 'Yes. Download the blank PDF and print it, or fill it in online first and then print a completed copy.' },
       { q: 'Is it really free?', a: 'Yes — the blank template and the online generator are free, with no signup and no watermark.' },
-      { q: 'What format is the download?', a: 'It’s a print-ready PDF that opens on any device.' },
+      { q: 'What format is the download?', a: 'You can download a print-ready PDF or an editable Word (.docx) file that opens in Microsoft Word and Google Docs.' },
       { q: 'How do I make an invoice from scratch?', a: 'Use the generator to enter your details step by step, or read our beginner’s guide to writing an invoice.' },
     ],
     related: ['how-to-write-an-invoice-for-beginners', 'what-is-an-invoice-beginner-guide'],

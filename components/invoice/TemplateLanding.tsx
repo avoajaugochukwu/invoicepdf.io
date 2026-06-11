@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Download, Check, ArrowRight } from 'lucide-react';
+import { Download, FileText, Check, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InvoicePreview } from './InvoicePreview';
 import { baseUrl } from '@/app/metadata';
@@ -50,13 +50,20 @@ export function TemplateLanding({ landing }: { landing: Landing }) {
                 Customize online <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
+            {landing.docxFile && (
+              <Button asChild variant="outline" size="lg">
+                <a href={landing.docxFile} download>
+                  <FileText className="h-4 w-4" /> Download blank Word
+                </a>
+              </Button>
+            )}
             <Button asChild variant="outline" size="lg">
               <a href={landing.downloadFile} download>
-                <Download className="h-4 w-4" /> {landing.downloadLabel}
+                <Download className="h-4 w-4" /> Download blank PDF
               </a>
             </Button>
           </div>
-          <p className="mt-3 text-xs text-muted-foreground">Free · No signup · No watermark</p>
+          <p className="mt-3 text-xs text-muted-foreground">Customize online, or grab a blank template · Editable Word &amp; PDF · No signup · No watermark</p>
         </div>
 
         <div className="rounded-xl bg-muted/40 p-4 md:p-6">

@@ -118,11 +118,14 @@ links updated (grep `content/blog` + components for the dead slugs and repoint t
 
 ## Phase 2 — Close the product gap (biggest business unlock) 🔴 P0 ✅ DONE (Level 1 + Level 2)
 
-> ✅ Shipped: a client-side invoice generator at `/invoice-generator` (jsPDF, live preview, real PDF
-> download, no backend) AND downloadable PDF templates in `/public/templates/` for all 6 styles. Homepage
-> hero now links to the generator + templates. Shared layout: `lib/invoice/pdf.ts` (used by both the
-> browser download and `scripts/build-templates.ts`). Note: Level 1 ships PDF (not .docx) downloads —
-> native Word/Sheets files remain a future enhancement.
+> ✅ Shipped: a client-side invoice generator at `/invoice-generator` (live preview, real per-user
+> PDF + Word download built in-browser from form data, no backend). Landing pages also offer a generic
+> blank template in both formats, generated **on the fly** by the route handler `app/templates/[file]/route.ts`
+> (e.g. `/templates/invoice-template-word.docx`) — no binary files committed to the repo, always in sync
+> with the layout, hard-cached at the edge. Shared layouts: `lib/invoice/pdf.ts` (jsPDF) and
+> `lib/invoice/docx.ts` (`docx` lib), each runs in browser + Node. The .docx opens natively in Microsoft
+> Word and imports as a fully editable Google Doc (File → Open → Upload). Homepage hero links to the
+> generator + templates. Still future: hosted Google Docs "make a copy" links, native Canva designs, .xlsx/Sheets.
 
 > Transactional template/generator keywords are the prize (Phase 3), but they need something to *land on*.
 > Pick ONE level based on effort budget; even Level 1 unblocks Phase 3.

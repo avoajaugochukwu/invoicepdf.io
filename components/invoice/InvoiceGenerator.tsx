@@ -1,10 +1,11 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Download, Plus, Trash2 } from 'lucide-react';
+import { Download, FileText, Plus, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { InvoicePreview } from './InvoicePreview';
 import { downloadInvoicePdf } from '@/lib/invoice/pdf';
+import { downloadInvoiceDocx } from '@/lib/invoice/docx';
 import {
   InvoiceData,
   LineItem,
@@ -34,7 +35,17 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
     ...sampleInvoice(initialStyle.docType),
   }));
 
+  const [docxBusy, setDocxBusy] = useState(false);
   const style = useMemo(() => getTemplateStyle(styleId), [styleId]);
+
+  async function handleDocx() {
+    setDocxBusy(true);
+    try {
+      await downloadInvoiceDocx(data, style);
+    } finally {
+      setDocxBusy(false);
+    }
+  }
 
   function set<K extends keyof InvoiceData>(key: K, value: InvoiceData[K]) {
     setData((d) => ({ ...d, [key]: value }));
@@ -172,11 +183,16 @@ export function InvoiceGenerator({ initialStyleId }: { initialStyleId?: string }
 
       {/* ---- Preview + download ---- */}
       <div className="lg:sticky lg:top-20 lg:self-start">
-        <div className="mb-3 flex items-center justify-between">
+        <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
           <span className="text-sm font-semibold">Live preview</span>
-          <Button type="button" onClick={() => downloadInvoicePdf(data, style)}>
-            <Download className="h-4 w-4" /> Download PDF
-          </Button>
+          <div className="flex gap-2">
+            <Button type="button" variant="outline" onClick={handleDocx} disabled={docxBusy}>
+              <FileText className="h-4 w-4" /> {docxBusy ? 'Preparing…' : 'Download Word'}
+            </Button>
+            <Button type="button" onClick={() => downloadInvoicePdf(data, style)}>
+              <Download className="h-4 w-4" /> Download PDF
+            </Button>
+          </div>
         </div>
         <div className="overflow-auto rounded-lg bg-muted/40 p-4">
           <InvoicePreview data={data} style={style} />

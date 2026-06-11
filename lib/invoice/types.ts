@@ -79,6 +79,28 @@ export function formatMoney(amount: number, currency: string): string {
   }
 }
 
+/** Empty fill-in-yourself template — used for the on-the-fly blank downloads. */
+export function blankInvoice(docType: DocType = 'invoice'): InvoiceData {
+  return {
+    ...sampleInvoice(docType),
+    businessName: 'Your Business Name',
+    businessEmail: 'you@business.com',
+    businessAddress: 'Street address\nCity, State ZIP',
+    businessPhone: '(000) 000-0000',
+    clientName: 'Client name',
+    clientEmail: 'client@email.com',
+    clientAddress: 'Client street address\nCity, State ZIP',
+    invoiceNumber: docType === 'receipt' ? 'REC-0001' : 'INV-0001',
+    taxRate: 0,
+    notes: 'Payment due within 30 days. Thank you for your business.',
+    items: [
+      { description: 'Description of item or service', quantity: 1, rate: 0 },
+      { description: 'Description of item or service', quantity: 1, rate: 0 },
+      { description: 'Description of item or service', quantity: 1, rate: 0 },
+    ],
+  };
+}
+
 export function sampleInvoice(docType: DocType = 'invoice'): InvoiceData {
   return {
     docType,
