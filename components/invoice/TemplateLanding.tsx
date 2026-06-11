@@ -29,9 +29,19 @@ export function TemplateLanding({ landing }: { landing: Landing }) {
     })),
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+      { '@type': 'ListItem', position: 2, name: landing.keyword, item: `${baseUrl}/${landing.slug}` },
+    ],
+  };
+
   return (
     <div className="container mx-auto px-4 py-12 max-w-6xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Hero */}
       <div className="grid gap-10 lg:grid-cols-2 lg:items-center">

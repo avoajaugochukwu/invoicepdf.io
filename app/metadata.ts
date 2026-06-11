@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { LANDINGS } from "@/lib/invoice/landings";
 
 export const baseUrl = 'https://invoicepdf.io';
 
@@ -60,4 +61,24 @@ export const jsonLd = {
       height: 512
     }
   }
+};
+
+// Primary navigation surfaced as structured data so search engines can discover the
+// tool + template pages (mirrors the header/footer links).
+const navItems: { name: string; path: string }[] = [
+  { name: 'Invoice Generator', path: '/invoice-generator' },
+  { name: 'Blog', path: '/blog' },
+  ...LANDINGS.map((l) => ({ name: l.keyword, path: `/${l.slug}` })),
+];
+
+export const siteNavigationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'InvoicePDF.io — tools & templates',
+  itemListElement: navItems.map((item, i) => ({
+    '@type': 'SiteNavigationElement',
+    position: i + 1,
+    name: item.name,
+    url: `${baseUrl}${item.path}`,
+  })),
 };

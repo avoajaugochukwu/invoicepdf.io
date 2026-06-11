@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { metadata, jsonLd } from "./metadata";
+import { metadata, jsonLd, siteNavigationJsonLd } from "./metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +40,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationJsonLd) }}
         />
         <GoogleAnalytics gaId="G-JP8B4NF8W2" />
       </body>
