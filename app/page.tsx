@@ -28,13 +28,11 @@ export default function Home() {
     <div>
       {/* Hero */}
       <section className="border-b border-border">
-        <div className="container mx-auto px-4 py-16 md:py-20 lg:py-24">
-          <div className="grid items-center gap-12 lg:grid-cols-2">
+        <div className="container mx-auto px-4 pt-8 pb-16 md:pt-10 md:pb-20 lg:pt-12 lg:pb-24">
+          <div className="grid items-start gap-12 lg:grid-cols-2">
             <div>
-              <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6">
-                <span className="bg-gradient-to-r from-primary via-pink-500 to-secondary bg-clip-text text-transparent">
-                  Create professional invoices in minutes — free
-                </span>
+              <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl mb-6 text-[#36454F] dark:text-foreground">
+                Create professional invoices in minutes — free
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
                 Fill in your details, see a live preview, and download a print-ready invoice as
