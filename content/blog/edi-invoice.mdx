@@ -38,7 +38,7 @@ EDI isn't a single file format you can open in a text editor and understand at a
 
 When two companies exchange an invoice over EDI, they use a specific transaction set. In the ANSI X12 world used across the US and Canada, the invoice is the **EDI 810**.
 
-The "810" is just the standard number for the invoice document, the same way other numbers identify other documents — for example, an 850 is a purchase order and an 856 is an advance ship notice. So when a US retailer says "send us an 810," they mean "send us your invoice as EDI data, formatted to our spec."
+The "810" is just the standard number for the invoice document, the same way other numbers identify other documents — for example, an 850 is a purchase order and an 856 is an advance ship notice. These numbers are defined by [X12, the standards body that maintains the ANSI ASC X12 transaction sets](https://x12.org/products/transaction-sets). So when a US retailer says "send us an 810," they mean "send us your invoice as EDI data, formatted to our spec."
 
 Outside North America, the equivalent message is the **EDIFACT INVOIC**. It carries the same kind of information — buyer, seller, line items, quantities, prices, totals, tax — but uses the EDIFACT syntax rather than X12. The [ANSI ASC X12 standard](https://en.wikipedia.org/wiki/ASC_X12) and EDIFACT are the two dominant frameworks, and which one you use depends mostly on geography and who your trading partners are.
 
@@ -60,7 +60,7 @@ Sending an EDI invoice involves a few moving parts that a normal email invoice n
 
 **Mapping.** Your business data — sitting in your accounting or ERP system — rarely matches the partner's spec out of the box. *Mapping* is the work of translating your invoice fields into the exact EDI structure the partner expects. Get a field wrong and the document gets rejected.
 
-**Transmission (VANs and AS2).** The EDI document has to travel from your system to theirs securely. Historically this went through a **VAN** (Value-Added Network) — essentially a private, managed mailbox service for EDI. Today many partners use **AS2**, a secure internet-based protocol that sends EDI documents directly and confirms receipt. Either way, the goal is a reliable, trackable handoff.
+**Transmission (VANs and AS2).** The EDI document has to travel from your system to theirs securely. Historically this went through a **VAN** (Value-Added Network) — essentially a private, managed mailbox service for EDI. Today many partners use **[AS2](https://en.wikipedia.org/wiki/AS2)**, a secure internet-based protocol that sends EDI documents directly and confirms receipt. Either way, the goal is a reliable, trackable handoff.
 
 **Automatic processing.** Once the EDI 810 lands, the buyer's system validates it against the spec and, if everything checks out, posts it into accounts payable without anyone keying it in. That straight-through processing is the entire reason large companies invest in EDI.
 
