@@ -228,6 +228,59 @@ links updated (grep `content/blog` + components for the dead slugs and repoint t
 
 ---
 
+## Phase 6 — Scale to 50 pages (template/receipt expansion + new posts) 🟢 ✅ DONE (2026-06-11)
+
+> Site reached 30 indexable pages after Phases 0–5 — sitemap was complete but the catalog was the
+> ceiling. Phase 6 mined `scripts/keyword-research/OPPORTUNITIES.csv` for unclaimed, low-KD (mostly KD 0–8)
+> keywords and shipped **20 new pages → 50 total indexable URLs**. All reuse existing infrastructure
+> (`components/invoice/TemplateLanding.tsx` + `lib/invoice/landings.ts`; MDX in `content/blog/`), so each
+> auto-enters the sitemap, footer, and nav via the `LANDINGS` array. Build passes (60 routes), covers
+> generated via `scripts/make-covers.mjs`. Downloads reuse the existing on-the-fly route handler styles
+> (no new binary files).
+
+**15 new landing pages** (added to `lib/invoice/landings.ts` + one `app/<slug>/page.tsx` each):
+
+| Cluster | Slug | Primary keyword | US Vol | KD | styleId |
+|---|---|---|---|---|---|
+| Industry | `/contractor-invoice-template` | contractor invoice template | 2,400 | 0 | word |
+| Industry | `/independent-contractor-invoice-template` | independent contractor invoice template | 720 | 0 | microsoft |
+| Industry | `/photography-invoice-template` | photography invoice template | 720 | 1 | canva |
+| Industry | `/mechanic-invoice-template` | mechanic invoice template | 720 | 0 | word |
+| Industry | `/cleaning-invoice-template` | cleaning invoice template | 720 | 0 | google-docs |
+| Industry | `/handyman-invoice-template` | handyman invoice template | 590 | 0 | word |
+| Receipt | `/rent-receipt-template` | rent receipt template | 6,600 | 0 | receipt |
+| Receipt | `/payment-receipt-template` | payment receipt template | 2,400 | 1 | receipt |
+| Receipt | `/cash-receipt-template` | cash receipt template | 2,400 | 6 | receipt |
+| Receipt | `/donation-receipt-template` | nonprofit donation receipt template | 590 | 0 | receipt |
+| Receipt | `/receipt-book-template` | receipt book template | 590 | 0 | receipt |
+| Tool-alt | `/freshbooks-invoice-template` | freshbooks invoice template | 9,900 | 0 | google-docs |
+| Tool-alt | `/wise-invoice-generator` | wise invoice generator | 3,600 | 0 | microsoft |
+| Tool-alt | `/quickbooks-invoice-template` | quickbooks invoice template | 2,400 | 2 | microsoft |
+| Tool-alt | `/zoho-invoice-template` | zoho invoice template | 2,400 | 2 | google-docs |
+
+**5 new blog posts** (`content/blog/*.mdx`, FAQ JSON-LD via frontmatter, authority + internal links):
+
+| Slug | Primary keyword | US Vol | KD |
+|---|---|---|---|
+| `outstanding-invoice` | outstanding invoice | 720 | 0 |
+| `what-is-an-invoice-payment` | what is an invoice payment | 590 | 7 |
+| `edi-invoice` | edi invoice | 720 | 0 |
+| `quote-vs-invoice` | quote vs invoice | 880 | 0 |
+| `itemized-invoice` | itemized invoice | 880 | 0 |
+
+**Deliberately excluded (cannibalization):** "canva invoice generator" (→ `/invoice-template-canva`),
+"difference between invoice and receipt" (→ `/blog/invoice-vs-receipt`).
+
+**Follow-ups (the "fix at end" pass):**
+- The tool-alt pages (FreshBooks/Wise/QuickBooks/Zoho) use trademarked brand names in H1 + offer our free
+  template as an alternative — copy is framed honestly as "free alternative / no account needed," but review
+  tone/legal comfort before relying on them long-term.
+- New blog posts were drafted fast (not full Perplexity-grounded b-write) — run `/b-review` on each to verify
+  US accuracy, external link validity, and depth before counting them as final.
+- `TemplateLanding` hardcodes "…invoice template" in the "What's included" heading, so receipt pages read
+  "this rent receipt invoice template" — minor copy nit to fix in the component if desired.
+- Footer/nav now lists all 23 landings via `LANDINGS.map` — may need grouping/trimming for UX.
+
 ## Guardrails for the executing agent
 
 - **One primary keyword per URL.** Before creating/editing a page, check the content map (Phase 5) — if the

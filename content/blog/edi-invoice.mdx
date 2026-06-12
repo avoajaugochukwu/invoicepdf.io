@@ -1,0 +1,154 @@
+---
+title: "What Is an EDI Invoice? A Plain-English Guide"
+slug: "edi-invoice"
+date: "2026-06-11T00:00:00.000Z"
+excerpt: "An EDI invoice is a structured, machine-readable invoice that one computer sends straight to another — no PDF, no email, no human typing. Here's how it works and whether your business actually needs one."
+description: "EDI invoice explained: a structured, machine-readable invoice (EDI 810) exchanged computer-to-computer between trading partners. How it works and who needs it."
+author: "Charles Ugo"
+featuredImage: "/blog/edi-invoice/featured.webp"
+tags: ["invoice"]
+faqs:
+  - q: "What is an EDI invoice?"
+    a: "An EDI invoice is an invoice formatted as structured, machine-readable data and sent directly from one company's computer system to another's, with no PDF, email, or manual data entry in between. In the US it is usually the EDI 810 transaction set under the ANSI X12 standard."
+  - q: "What does EDI 810 mean?"
+    a: "EDI 810 is the standard code for the invoice transaction set in the ANSI ASC X12 standard used across North America. When a supplier sends an EDI invoice to a US retailer, it is almost always an 810. The international equivalent is the EDIFACT INVOIC message."
+  - q: "How is an EDI invoice different from a PDF invoice?"
+    a: "A PDF invoice is designed for a human to read; an EDI invoice is designed for a computer to read. The buyer's system imports an EDI invoice automatically into accounts payable, while a PDF usually has to be opened, reviewed, and keyed in by a person."
+  - q: "Who needs to send EDI invoices?"
+    a: "Mostly suppliers that sell to large retailers and corporations — Walmart, Amazon, Target, and similar buyers often require EDI as a condition of doing business. Most freelancers and small businesses never need it and can invoice perfectly well with a PDF."
+  - q: "Is EDI expensive to set up?"
+    a: "It can be. Costs include EDI software or a service provider, mapping your data to the partner's exact specification, testing, and sometimes per-document or monthly fees. For a small business with a handful of clients, the cost rarely makes sense."
+  - q: "What is the simpler alternative to EDI for small businesses?"
+    a: "A normal PDF invoice. It is professional, universally accepted, and free to create. Unless a large customer specifically requires EDI, a clean PDF invoice with your line items, totals, and payment terms is all most businesses need."
+---
+
+An **EDI invoice** is an invoice that one computer sends directly to another computer — no PDF attached to an email, no human typing numbers into a screen. The data is structured so the receiving system can read it, validate it, and post it to accounts payable automatically.
+
+If that sounds like overkill for sending a bill, that's because for most small businesses it is. But if you sell to a large retailer, you may have no choice. This guide explains what EDI is, what an EDI invoice actually looks like under the hood, how the exchange works, and — most importantly — whether you need one at all.
+
+## What Is EDI?
+
+EDI stands for **Electronic Data Interchange**. It's a decades-old method for businesses to swap standard documents — purchase orders, shipping notices, invoices — as structured electronic data instead of paper or PDFs. The whole point is to let one company's software talk to another company's software without a person in the middle.
+
+As [Wikipedia's overview of Electronic Data Interchange](https://en.wikipedia.org/wiki/Electronic_data_interchange) explains, EDI replaces documents that would otherwise be mailed, faxed, or emailed with a machine-readable format that both trading partners agree on in advance. That agreement — the exact layout of every field — is what makes the automation possible.
+
+EDI isn't a single file format you can open in a text editor and understand at a glance. It's a tightly defined structure of segments and data elements, governed by a standard. In North America, that standard is **ANSI ASC X12**. Internationally, it's **UN/EDIFACT**.
+
+## What Is an EDI Invoice (the EDI 810)?
+
+When two companies exchange an invoice over EDI, they use a specific transaction set. In the ANSI X12 world used across the US and Canada, the invoice is the **EDI 810**.
+
+The "810" is just the standard number for the invoice document, the same way other numbers identify other documents — for example, an 850 is a purchase order and an 856 is an advance ship notice. So when a US retailer says "send us an 810," they mean "send us your invoice as EDI data, formatted to our spec."
+
+Outside North America, the equivalent message is the **EDIFACT INVOIC**. It carries the same kind of information — buyer, seller, line items, quantities, prices, totals, tax — but uses the EDIFACT syntax rather than X12. The [ANSI ASC X12 standard](https://en.wikipedia.org/wiki/ASC_X12) and EDIFACT are the two dominant frameworks, and which one you use depends mostly on geography and who your trading partners are.
+
+Either way, the data inside an EDI invoice maps to the same concepts you'd find on any [regular invoice](/blog/what-does-invoice-mean): an invoice number, a date, the parties involved, line items, and an amount due. The difference is purely in the packaging — it's coded for a computer, not laid out for a human.
+
+| | **EDI 810 (ANSI X12)** | **EDIFACT INVOIC** |
+|---|---|---|
+| **Standard body** | ANSI ASC X12 | UN/EDIFACT |
+| **Primary region** | US, Canada | Europe, Asia, global |
+| **Document name** | 810 (invoice transaction set) | INVOIC message |
+| **Typical users** | US retailers and their suppliers | International and cross-border trade |
+| **Data carried** | Invoice number, dates, parties, line items, totals, tax | Same core invoice data, different syntax |
+
+## How an EDI Invoice Actually Works
+
+Sending an EDI invoice involves a few moving parts that a normal email invoice never touches.
+
+**Trading partners.** Before any data flows, the buyer and supplier agree to become *trading partners*. The buyer publishes an EDI specification — an exact map of which fields go where, what codes to use, and how the document must be structured. The supplier has to match it precisely.
+
+**Mapping.** Your business data — sitting in your accounting or ERP system — rarely matches the partner's spec out of the box. *Mapping* is the work of translating your invoice fields into the exact EDI structure the partner expects. Get a field wrong and the document gets rejected.
+
+**Transmission (VANs and AS2).** The EDI document has to travel from your system to theirs securely. Historically this went through a **VAN** (Value-Added Network) — essentially a private, managed mailbox service for EDI. Today many partners use **AS2**, a secure internet-based protocol that sends EDI documents directly and confirms receipt. Either way, the goal is a reliable, trackable handoff.
+
+**Automatic processing.** Once the EDI 810 lands, the buyer's system validates it against the spec and, if everything checks out, posts it into accounts payable without anyone keying it in. That straight-through processing is the entire reason large companies invest in EDI.
+
+## The Benefits of EDI Invoicing
+
+For high-volume relationships, EDI earns its keep:
+
+- **Speed.** Documents move and post in minutes instead of days. No printing, mailing, or manual data entry.
+- **Fewer errors.** Because nobody re-types the invoice, you eliminate the typos and transposed numbers that creep in with manual entry.
+- **Scale.** Processing thousands of invoices a month by hand isn't realistic. EDI handles volume without adding headcount.
+- **It's often required.** This is the big one. Large retailers such as **Walmart, Amazon, and Target** frequently require their suppliers to send EDI invoices as a condition of doing business. If you want to be on their shelves, you play by their EDI rules.
+
+## The Drawbacks and Cost
+
+EDI is powerful, but it is not free and it is not simple.
+
+- **Setup cost.** You typically need EDI software or a managed service provider, plus the engineering time to map your data to each partner's exact specification.
+- **Per-partner effort.** Each trading partner can have its own spec. Onboarding a new retailer often means a fresh round of mapping and testing.
+- **Ongoing fees.** VANs, AS2 providers, and EDI platforms often charge monthly or per-document fees.
+- **Maintenance.** When a partner updates its spec, you have to update your maps. It's a relationship you maintain, not a one-time install.
+
+For a business sending hundreds or thousands of invoices to demanding partners, those costs are worth it. For a freelancer sending a dozen invoices a month, they're a non-starter.
+
+## Who Needs EDI — and Who Doesn't
+
+Here's the honest answer most EDI vendors won't lead with: **most small businesses don't need EDI at all.**
+
+You probably **do** need EDI if:
+
+- You sell to large retailers or corporations that mandate it
+- You exchange a high volume of documents with the same partners every month
+- Your buyers' procurement systems simply won't accept anything else
+
+You almost certainly **don't** need EDI if:
+
+- You're a freelancer, consultant, or small service business
+- You invoice a handful of clients who are happy to receive a PDF
+- No customer has ever asked you for an "810" or an EDI feed
+
+If you're billing other businesses for the first time, the documents to understand are far more basic than EDI — start with [what an invoice number is](/blog/what-is-an-invoice-number) and the fundamentals in [how to write an invoice for beginners](/blog/how-to-write-an-invoice-for-beginners). EDI is a specialized layer on top of ordinary invoicing, not a replacement for understanding the basics.
+
+## EDI Invoice vs PDF Invoice
+
+| | **EDI Invoice (810)** | **PDF Invoice** |
+|---|---|---|
+| **Read by** | Computer | Human |
+| **How it's sent** | VAN or AS2, system-to-system | Email, download, or print |
+| **Setup cost** | Software, mapping, possible fees | Free |
+| **Processing** | Automatic into accounts payable | Manually reviewed and entered |
+| **Best for** | High-volume supply chains, big retailers | Freelancers, small businesses, most B2B |
+| **Required by** | Walmart, Amazon, and similar large buyers | Accepted by virtually everyone |
+
+The PDF column is where the vast majority of businesses live. A PDF invoice is professional, universally accepted, and costs nothing to produce. It carries the same essential information an EDI invoice does — it's just readable by a person and doesn't require either side to build an integration.
+
+For international sales specifically, note that an EDI invoice is also different from a [commercial invoice](/blog/what-is-a-commercial-invoice), which is a customs document for shipping goods across borders. The terms get tangled, but they solve different problems.
+
+## The Simpler Alternative for Small Businesses
+
+If no customer has demanded EDI, don't go looking for it. A clean PDF invoice does everything you need: it states who owes what, lists your line items, shows the total and payment terms, and gives you a record for your books.
+
+You can create one in a couple of minutes — no software contract, no mapping, no provider — with the free [invoice generator](/invoice-generator). Fill in your details, add your line items, and download a polished PDF you can email to any client on earth. The day a big retailer actually requires an 810 from you is the day to revisit EDI. Until then, keep it simple.
+
+## Frequently Asked Questions
+
+**What is an EDI invoice?**
+
+An EDI invoice is an invoice formatted as structured, machine-readable data and sent directly from one company's computer system to another's, with no PDF, email, or manual data entry in between. In the US it is usually the EDI 810 transaction set under the ANSI X12 standard.
+
+**What does EDI 810 mean?**
+
+EDI 810 is the standard code for the invoice transaction set in the ANSI ASC X12 standard used across North America. When a supplier sends an EDI invoice to a US retailer, it is almost always an 810. The international equivalent is the EDIFACT INVOIC message.
+
+**How is an EDI invoice different from a PDF invoice?**
+
+A PDF invoice is designed for a human to read; an EDI invoice is designed for a computer to read. The buyer's system imports an EDI invoice automatically into accounts payable, while a PDF usually has to be opened, reviewed, and keyed in by a person.
+
+**Who needs to send EDI invoices?**
+
+Mostly suppliers that sell to large retailers and corporations — Walmart, Amazon, Target, and similar buyers often require EDI as a condition of doing business. Most freelancers and small businesses never need it and can invoice perfectly well with a PDF.
+
+**Is EDI expensive to set up?**
+
+It can be. Costs include EDI software or a service provider, mapping your data to the partner's exact specification, testing, and sometimes per-document or monthly fees. For a small business with a handful of clients, the cost rarely makes sense.
+
+**What is the simpler alternative to EDI for small businesses?**
+
+A normal PDF invoice. It is professional, universally accepted, and free to create. Unless a large customer specifically requires EDI, a clean PDF invoice with your line items, totals, and payment terms is all most businesses need.
+
+---
+
+For nearly every freelancer and small business, EDI is a problem you don't have. Skip the integrations and create a professional invoice in minutes with the free [invoice generator](/invoice-generator) — add your line items, download a clean PDF, and send it to any client. If a large retailer ever hands you an EDI spec, you'll know exactly what an 810 is. Until then, a great PDF invoice is all you need.

@@ -16,6 +16,33 @@ page, check here** — if a keyword already has an owner, sharpen/redirect, don'
 | `/receipt-template` | receipt template | 14,800 | 6 | live |
 | `/blank-invoice-template` | blank invoice template | — | low | live |
 
+## Cluster A2 — Industry-specific invoice templates (Phase 6, 2026-06-11)
+| URL | Primary keyword | Vol | KD | Status |
+|---|---|---|---|---|
+| `/contractor-invoice-template` | contractor invoice template | 2,400 | 0 | live ✅ |
+| `/independent-contractor-invoice-template` | independent contractor invoice template | 720 | 0 | live ✅ |
+| `/photography-invoice-template` | photography invoice template | 720 | 1 | live ✅ |
+| `/mechanic-invoice-template` | mechanic invoice template | 720 | 0 | live ✅ |
+| `/cleaning-invoice-template` | cleaning invoice template | 720 | 0 | live ✅ |
+| `/handyman-invoice-template` | handyman invoice template | 590 | 0 | live ✅ |
+
+## Cluster A3 — Receipt sub-types (Phase 6)
+| URL | Primary keyword | Vol | KD | Status |
+|---|---|---|---|---|
+| `/rent-receipt-template` | rent receipt template | 6,600 | 0 | live ✅ |
+| `/payment-receipt-template` | payment receipt template | 2,400 | 1 | live ✅ |
+| `/cash-receipt-template` | cash receipt template | 2,400 | 6 | live ✅ |
+| `/donation-receipt-template` | nonprofit donation receipt template | 590 | 0 | live ✅ |
+| `/receipt-book-template` | receipt book template | 590 | 0 | live ✅ |
+
+## Cluster A4 — Free alternatives to invoicing tools (Phase 6)
+| URL | Primary keyword | Vol | KD | Status |
+|---|---|---|---|---|
+| `/freshbooks-invoice-template` | freshbooks invoice template | 9,900 | 0 | live ✅ |
+| `/wise-invoice-generator` | wise invoice generator | 3,600 | 0 | live ✅ |
+| `/quickbooks-invoice-template` | quickbooks invoice template | 2,400 | 2 | live ✅ |
+| `/zoho-invoice-template` | zoho invoice template | 2,400 | 2 | live ✅ |
+
 ## Cluster B — Invoice basics (informational)
 | URL | Primary keyword | Vol | KD | Status |
 |---|---|---|---|---|
@@ -29,12 +56,17 @@ page, check here** — if a keyword already has an owner, sharpen/redirect, don'
 | `/blog/how-to-pay-an-invoice-beginners-guide` | how to pay an invoice | — | low | interlink P5 |
 | `/blog/invoice-vs-receipt` | invoice vs receipt | 2,400 | 3 | live ✅ P5 |
 | `/blog/invoice-vs-bill` | invoice vs bill | 880 | 3 | live ✅ P5 |
+| `/blog/quote-vs-invoice` | quote vs invoice | 880 | 0 | live ✅ P6 |
+| `/blog/itemized-invoice` | itemized invoice | 880 | 0 | live ✅ P6 |
+| `/blog/what-is-an-invoice-payment` | what is an invoice payment | 590 | 7 | live ✅ P6 |
+| `/blog/edi-invoice` | edi invoice | 720 | 0 | live ✅ P6 |
 
 ## Cluster C — Getting paid / payment terms
 | URL | Primary keyword | Vol | KD | Status |
 |---|---|---|---|---|
 | `/blog/what-does-net-30-mean-on-an-invoice` | net 30 | — | low | optimized P4 (was pos 28) |
 | `/blog/invoice-financing-made-simple` | invoice financing | 7 imp | — | pos 2 — protect/interlink P5 |
+| `/blog/outstanding-invoice` | outstanding invoice | 720 | 0 | live ✅ P6 |
 
 ## Cluster D — International / customs
 | URL | Primary keyword | Vol | KD | Status |
