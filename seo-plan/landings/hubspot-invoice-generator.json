@@ -1,0 +1,60 @@
+{
+  "slug": "hubspot-invoice-generator",
+  "styleId": "google-docs",
+  "keyword": "HubSpot Invoice Generator",
+  "platform": "professional",
+  "metaTitle": "Free HubSpot Invoice Generator — No Signup, No Watermark",
+  "metaDescription": "A free HubSpot invoice generator alternative for professionals. No signup, no watermark. Make an invoice online or download an editable Word and PDF template.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a clean, professional invoice template you can use without a HubSpot account. It is built for consultants, agencies, and service pros who want a HubSpot-style invoice for a client but do not want to set up Commerce Hub or connect a CRM just to send one bill.",
+    "It is free, with no signup and no watermark. Download the editable Word and PDF files and fill them in yourself, or use the generator below to create your invoice in the browser and download a finished PDF in a couple of minutes."
+  ],
+  "included": [
+    "A tidy header for your business name, logo, and contact details, plus a client (bill-to) block that reads well when you send it to a professional buyer",
+    "An invoice number field and clear issue and due dates so the payment terms are never in question",
+    "An itemized table for services or products, with description, quantity, rate, and line totals",
+    "Automatic subtotal, tax, and grand total, so the math is done for you",
+    "A notes and payment-terms area for bank details, Net 30 terms, or a thank-you line",
+    "Print-ready on one page, and free to edit in Word or PDF with no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Add your business and client details",
+      "body": "Enter your business name, logo, and contact info, then the client's name and billing address. This mirrors the bill-to layout you would set up in HubSpot, minus the account setup."
+    },
+    {
+      "title": "List your services and set the terms",
+      "body": "Add each service or product line with a description, quantity, and rate. Set the invoice number, issue date, due date, and any tax; the subtotal and total update on their own."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a clean PDF and email it to your client, or save the Word file to reuse for the next job. No HubSpot login and no payment-processing fee to create the invoice."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a HubSpot account to use this?",
+      "a": "No. HubSpot's invoicing lives inside its CRM (Commerce Hub) and needs a HubSpot account to set up. This template and generator are separate and free, so you can make and download a professional invoice without signing up for anything."
+    },
+    {
+      "q": "How is this different from HubSpot's built-in invoices?",
+      "a": "HubSpot's invoices are useful if you already run your sales and payments in HubSpot, and they charge a payment-processing fee (about 2.9% + $0.30 per card transaction) when a client pays online. Here you just create the invoice document and send it however you like; there is no processing fee to make or download it."
+    },
+    {
+      "q": "Can I add my logo and keep it looking professional?",
+      "a": "Yes. Drop your logo into the header and fill in your business details. The layout is designed to look clean and professional for consultants, agencies, and other service providers."
+    },
+    {
+      "q": "Should I charge sales tax on the invoice?",
+      "a": "It depends on your state and what you sell; many professional services are not taxed, while goods often are. Add a tax line only if it applies to you, and check your state's rules or a tax professional if you are unsure. This is general information, not tax advice."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-is-an-invoice-number",
+    "how-to-ask-for-payment"
+  ]
+}

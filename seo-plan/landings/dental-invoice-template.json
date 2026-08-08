@@ -1,0 +1,60 @@
+{
+  "slug": "dental-invoice-template",
+  "styleId": "microsoft",
+  "keyword": "Dental Invoice Template",
+  "platform": "dental",
+  "metaTitle": "Free Dental Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free dental invoice template for practices and hygienists — bill patients for cleanings, exams, and procedures. Editable Word and PDF, no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-microsoft.pdf",
+  "docxFile": "/templates/invoice-template-microsoft.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free dental invoice template for dentists, orthodontists, and hygienists who need to bill a patient for the balance they owe. It gives each cleaning, exam, filling, or procedure its own line — with room for the tooth number and the CDT procedure code — so a patient sees exactly what the visit covered and what is left to pay after any insurance.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files to fill in on your own computer, or use the generator below to build the invoice in your browser and download a print-ready PDF to hand the patient at the front desk or email after the appointment."
+  ],
+  "included": [
+    "A line for each service — cleaning, exam, X-ray, filling, crown, or ortho adjustment — with space for the tooth number and CDT procedure code",
+    "A field to show the insurance estimate or amount already paid, so the patient's remaining balance is clear",
+    "A header for your practice name, logo, address, phone, and provider or NPI details, with a section for the patient being billed",
+    "A unique invoice number with issue and due dates so every visit is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for due-on-receipt, payment plans, or Net 30",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your practice and patient details",
+      "body": "Enter your practice name, logo, address, and provider info, then add the patient being billed. Give the invoice a unique number and set the issue and due dates so the visit is easy to look up later."
+    },
+    {
+      "title": "List each procedure and the patient balance",
+      "body": "Add a line for every service — cleaning, exam, filling, crown, or ortho work — with the tooth number, CDT code, and fee. Show what insurance covered or paid, and the template totals the line items, subtotal, tax, and the balance the patient owes."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and give it to the patient at checkout or email it after the visit. Include your payment terms — due on receipt, a payment plan, or Net 30 — and how the patient can pay."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I show the patient's balance after insurance on a dental invoice?",
+      "a": "Bill the patient for the portion they owe, not the full fee schedule. List each procedure at your charge, then add a line showing the insurance estimate or the amount already paid, and let the template subtract it so the remaining balance is clear. A patient invoice is separate from the insurance claim you submit — the claim goes to the payer, the invoice goes to the patient for their share."
+    },
+    {
+      "q": "Should I include tooth numbers and CDT codes on the invoice?",
+      "a": "It helps. Adding the tooth number and the CDT procedure code (the American Dental Association's Code on Dental Procedures) next to each line makes the invoice match the patient's chart and any insurance claim, which cuts down on questions and disputes. The template leaves room in each line item for both."
+    },
+    {
+      "q": "Do I charge sales tax on dental services?",
+      "a": "In most states, dental and medical services are not subject to sales tax, though a few states tax certain sold goods like an electric toothbrush or a take-home whitening kit. The template has a tax line that calculates automatically — leave it at zero if the service is not taxed, or set the rate for any taxable product you sell. This is general information, not tax advice; check your state's rules if you are unsure."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every patient and appointment and edit them however your practice needs."
+    }
+  ],
+  "related": [
+    "itemized-invoice",
+    "what-is-an-invoice-number",
+    "how-to-ask-for-payment"
+  ]
+}

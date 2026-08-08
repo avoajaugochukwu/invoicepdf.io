@@ -1,0 +1,60 @@
+{
+  "slug": "hvac-invoice-template",
+  "styleId": "word",
+  "keyword": "HVAC Invoice Template",
+  "platform": "HVAC",
+  "metaTitle": "Free HVAC Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free HVAC invoice template for heating and cooling techs — bill service calls, parts, and labor. Editable Word and PDF, no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-word.pdf",
+  "docxFile": "/templates/invoice-template-word.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free HVAC invoice template for heating and cooling techs, service companies, and one-person shops that bill for service calls, repairs, installs, and seasonal tune-ups. It lays out the diagnostic or service-call fee, parts, and labor on separate lines, with room for the equipment or unit you worked on, so a homeowner or property manager sees exactly what they are paying for.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files to fill in on your own computer, or use the generator below to build the invoice in your browser and download a print-ready PDF before you leave the job."
+  ],
+  "included": [
+    "Separate lines for the service-call or diagnostic fee, labor hours, and each part or refrigerant charge",
+    "A field for the equipment or unit serviced — make, model, and the work performed — so records stay clear for warranty and maintenance",
+    "A header for your company name, logo, address, contact info, and license number, with a section for the customer or property being billed",
+    "A unique invoice number with issue and due dates so every service call is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for due-on-receipt, deposits, or Net 30",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your company, customer, and unit details",
+      "body": "Enter your business name, logo, license number, and contact info, then add the customer and the service address. Note the equipment or unit you worked on, give the invoice a unique number, and set the issue and due dates."
+    },
+    {
+      "title": "List the service call, parts, and labor",
+      "body": "Add a line for the service-call or diagnostic fee, then labor by the hour and each part, filter, or refrigerant charge with quantity and price. The template adds up line totals, subtotal, tax, and the grand total for you."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and hand it to the homeowner on site or email the property manager. Include your payment terms — due on receipt, a deposit for an install, or Net 30 — and how you take payment."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I bill a service call, parts, and labor on one HVAC invoice?",
+      "a": "Use separate line items. Put the service-call or diagnostic fee on its own line, add labor by the hour, then list each part, filter, or refrigerant charge with its quantity and price. The template totals everything into one subtotal, adds tax, and shows a single grand total, so the customer sees both the full cost and the breakdown behind it."
+    },
+    {
+      "q": "Should I charge a diagnostic or service-call fee on the invoice?",
+      "a": "Many HVAC shops charge a flat diagnostic or trip fee to come out and assess the problem, and some credit it toward the repair if the customer approves the work. The template has a dedicated line for it — set your own amount, and note in the payment-terms area whether it is credited if they move ahead with the repair."
+    },
+    {
+      "q": "Should I charge sales tax on an HVAC invoice?",
+      "a": "It depends on your state and the type of work. U.S. sales tax rules for HVAC vary — some states tax parts but not labor, some tax repair and installation differently, and rules can change when you install new equipment versus fixing existing equipment. The template has a tax line that calculates automatically; set the rate that applies to you, and check your state's rules if you are unsure. This is general information, not tax advice."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every service call, repair, and install and edit them however you like."
+    }
+  ],
+  "related": [
+    "itemized-invoice",
+    "due-on-receipt",
+    "how-to-ask-for-payment"
+  ]
+}

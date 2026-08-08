@@ -1,0 +1,60 @@
+{
+  "slug": "sales-receipt-template",
+  "styleId": "receipt",
+  "keyword": "Sales Receipt Template",
+  "platform": "retail sales",
+  "metaTitle": "Free Sales Receipt Template — No Signup, No Watermark",
+  "metaDescription": "Free sales receipt template for retail stores and market sellers — no signup, no watermark. Record the items sold, tax, and payment, then download an editable Word or PDF.",
+  "downloadFile": "/templates/receipt-template.pdf",
+  "docxFile": "/templates/receipt-template.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free sales receipt template for retail stores, market stalls, boutiques, and anyone who takes payment at the point of sale. A sales receipt is proof that a purchase is paid in full, so it lists the items sold, the tax, the total, and how the customer paid — a record you hand over after the money changes hands, not a request to be paid later.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build a receipt in the browser and download a clean, print-ready copy in minutes."
+  ],
+  "included": [
+    "An itemized list of products sold, with quantity, unit price, and a spot for a SKU or short item description",
+    "A payment section for the method used — cash, card, or mobile — plus amount paid and change given back",
+    "A header for your store name, logo, address, and contact details, with an optional line for the customer",
+    "A unique receipt number with the sale date and time so every transaction is easy to look up later",
+    "Automatic subtotal, sales tax, and total paid, plus a short notes area for a return or exchange policy",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your store and sale details",
+      "body": "Enter your store name, logo, address, and contact info at the top, then set the sale date and give the receipt a unique number. Add the customer's name only if the sale needs it, such as a special order or a warranty."
+    },
+    {
+      "title": "List the items sold and the payment",
+      "body": "Add each product on its own line with quantity and unit price. The template totals the items, applies your sales-tax rate, and shows the amount due, then you record how the customer paid and any change given."
+    },
+    {
+      "title": "Download and hand over the receipt",
+      "body": "Download a print-ready PDF (or the editable Word file), then print it for the counter or email it to the customer. Add your return and exchange policy in the notes so the buyer knows the terms."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between a sales receipt and an invoice?",
+      "a": "A sales receipt is proof that a purchase is already paid in full — you give it to the customer at the moment of the sale. An invoice is a request for payment you send before the customer pays, usually with a due date. In a retail store you hand over a receipt because the money is collected on the spot; you would use an invoice only when you let a customer pay later."
+    },
+    {
+      "q": "Do I have to show sales tax on a retail receipt?",
+      "a": "In most U.S. states you charge sales tax on retail goods and should show it as its own line so the customer sees the tax separately from the price. Rates vary by state, county, and city, and a few states have no statewide sales tax at all, so set the tax line to the rate for your store's location and check your state's guidance if you are unsure."
+    },
+    {
+      "q": "Can I use this template for both cash and card sales?",
+      "a": "Yes. The payment section lets you mark the method — cash, card, or a mobile app like tap-to-pay — and record the amount paid. For cash you can also note the amount tendered and the change given back, which the customer often wants to see on the receipt."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. Reuse them for every sale and edit the items, prices, and your store details however you like."
+    }
+  ],
+  "related": [
+    "invoice-vs-receipt",
+    "free-ai-receipt-generator",
+    "gross-receipts-meaning"
+  ]
+}

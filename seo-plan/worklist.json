@@ -1,0 +1,1734 @@
+{
+ "count": 216,
+ "generated_order": "promise (sqrt(volume) * (1 - kd/60))",
+ "posts": [
+  {
+   "num": 1,
+   "keyword": "how to create invoice",
+   "volume": 301000,
+   "kd": 28,
+   "theme": "HOW-TO",
+   "promise": 292.6
+  },
+  {
+   "num": 2,
+   "keyword": "software for crm",
+   "volume": 165000,
+   "kd": 30,
+   "theme": "CRM/CLIENT",
+   "promise": 203.1
+  },
+  {
+   "num": 3,
+   "keyword": "crm-software",
+   "volume": 165000,
+   "kd": 30,
+   "theme": "CRM/CLIENT",
+   "promise": 203.1
+  },
+  {
+   "num": 4,
+   "keyword": "free invoice generators",
+   "volume": 27100,
+   "kd": null,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 109.7
+  },
+  {
+   "num": 5,
+   "keyword": "invoice meaning",
+   "volume": 12100,
+   "kd": 5,
+   "theme": "EXPLAINER",
+   "promise": 100.8
+  },
+  {
+   "num": 6,
+   "keyword": "free invoice generator by invoiced",
+   "volume": 27100,
+   "kd": 25,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 96.0
+  },
+  {
+   "num": 7,
+   "keyword": "cloud crm software",
+   "volume": 18100,
+   "kd": 18,
+   "theme": "CRM/CLIENT",
+   "promise": 94.2
+  },
+  {
+   "num": 8,
+   "keyword": "reconciliation billing",
+   "volume": 8100,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 90.0
+  },
+  {
+   "num": 9,
+   "keyword": "generate invoice for free",
+   "volume": 27100,
+   "kd": 28,
+   "theme": "HOW-TO",
+   "promise": 87.8
+  },
+  {
+   "num": 10,
+   "keyword": "cloud-based crm software",
+   "volume": 18100,
+   "kd": 24,
+   "theme": "CRM/CLIENT",
+   "promise": 80.7
+  },
+  {
+   "num": 11,
+   "keyword": "examples of billing invoices",
+   "volume": 9900,
+   "kd": 17,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 71.3
+  },
+  {
+   "num": 12,
+   "keyword": "proforma meaning",
+   "volume": 9900,
+   "kd": 18,
+   "theme": "EXPLAINER",
+   "promise": 69.6
+  },
+  {
+   "num": 13,
+   "keyword": "billing address meaning",
+   "volume": 4400,
+   "kd": 0,
+   "theme": "EXPLAINER",
+   "promise": 66.3
+  },
+  {
+   "num": 14,
+   "keyword": "bank of reconciliation",
+   "volume": 6600,
+   "kd": 13,
+   "theme": "RECONCILE/TRACK",
+   "promise": 63.6
+  },
+  {
+   "num": 15,
+   "keyword": "reconcile banking",
+   "volume": 6600,
+   "kd": 15,
+   "theme": "RECONCILE/TRACK",
+   "promise": 60.9
+  },
+  {
+   "num": 16,
+   "keyword": "how to undo a bank reconciliation in quickbooks online",
+   "volume": 2900,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 53.9
+  },
+  {
+   "num": 17,
+   "keyword": "invoice book",
+   "volume": 2900,
+   "kd": 2,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 52.1
+  },
+  {
+   "num": 18,
+   "keyword": "proforma invoice meaning",
+   "volume": 2400,
+   "kd": 0,
+   "theme": "EXPLAINER",
+   "promise": 49.0
+  },
+  {
+   "num": 19,
+   "keyword": "account reconciliation",
+   "volume": 2900,
+   "kd": 7,
+   "theme": "RECONCILE/TRACK",
+   "promise": 47.6
+  },
+  {
+   "num": 20,
+   "keyword": "accounting reconciliation",
+   "volume": 2900,
+   "kd": 7,
+   "theme": "RECONCILE/TRACK",
+   "promise": 47.6
+  },
+  {
+   "num": 21,
+   "keyword": "quickbooks how to invoice",
+   "volume": 4400,
+   "kd": 17,
+   "theme": "TOOL/BRAND",
+   "promise": 47.5
+  },
+  {
+   "num": 22,
+   "keyword": "invoice number",
+   "volume": 1900,
+   "kd": 0,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 43.6
+  },
+  {
+   "num": 23,
+   "keyword": "operational crm software",
+   "volume": 2400,
+   "kd": 8,
+   "theme": "CRM/CLIENT",
+   "promise": 42.5
+  },
+  {
+   "num": 24,
+   "keyword": "reconcile an account",
+   "volume": 2900,
+   "kd": 13,
+   "theme": "RECONCILE/TRACK",
+   "promise": 42.2
+  },
+  {
+   "num": 25,
+   "keyword": "invoice payment",
+   "volume": 2900,
+   "kd": 16,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 39.5
+  },
+  {
+   "num": 26,
+   "keyword": "account reconciliation accounting",
+   "volume": 2900,
+   "kd": 16,
+   "theme": "RECONCILE/TRACK",
+   "promise": 39.5
+  },
+  {
+   "num": 27,
+   "keyword": "how can i create an invoice",
+   "volume": 3600,
+   "kd": 21,
+   "theme": "HOW-TO",
+   "promise": 39.0
+  },
+  {
+   "num": 28,
+   "keyword": "accounting term reconcile",
+   "volume": 2400,
+   "kd": 14,
+   "theme": "RECONCILE/TRACK",
+   "promise": 37.6
+  },
+  {
+   "num": 29,
+   "keyword": "how.to create an invoice",
+   "volume": 3600,
+   "kd": 23,
+   "theme": "HOW-TO",
+   "promise": 37.0
+  },
+  {
+   "num": 30,
+   "keyword": "bank reconciliation from bank statement",
+   "volume": 1600,
+   "kd": 6,
+   "theme": "RECONCILE/TRACK",
+   "promise": 36.0
+  },
+  {
+   "num": 31,
+   "keyword": "reconciliation of accounts meaning",
+   "volume": 2400,
+   "kd": 16,
+   "theme": "RECONCILE/TRACK",
+   "promise": 35.9
+  },
+  {
+   "num": 32,
+   "keyword": "invoice factoring companies",
+   "volume": 1600,
+   "kd": 7,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 35.3
+  },
+  {
+   "num": 33,
+   "keyword": "gross receipt meaning",
+   "volume": 1600,
+   "kd": 9,
+   "theme": "EXPLAINER",
+   "promise": 34.0
+  },
+  {
+   "num": 34,
+   "keyword": "what does it mean to reconcile an account",
+   "volume": 1300,
+   "kd": 4,
+   "theme": "RECONCILE/TRACK",
+   "promise": 33.7
+  },
+  {
+   "num": 35,
+   "keyword": "best crm management software",
+   "volume": 3600,
+   "kd": 27,
+   "theme": "CRM/CLIENT",
+   "promise": 33.0
+  },
+  {
+   "num": 36,
+   "keyword": "invoice factoring",
+   "volume": 2900,
+   "kd": 24,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 32.3
+  },
+  {
+   "num": 37,
+   "keyword": "crm software for realtors",
+   "volume": 2900,
+   "kd": 25,
+   "theme": "CRM/CLIENT",
+   "promise": 31.4
+  },
+  {
+   "num": 38,
+   "keyword": "how to send invoice through paypal",
+   "volume": 1300,
+   "kd": 8,
+   "theme": "TOOL/BRAND",
+   "promise": 31.2
+  },
+  {
+   "num": 39,
+   "keyword": "what are reconciliation in accounting",
+   "volume": 1600,
+   "kd": 14,
+   "theme": "RECONCILE/TRACK",
+   "promise": 30.7
+  },
+  {
+   "num": 40,
+   "keyword": "what are reconciliation accounts",
+   "volume": 1600,
+   "kd": 14,
+   "theme": "RECONCILE/TRACK",
+   "promise": 30.7
+  },
+  {
+   "num": 41,
+   "keyword": "accounts receivable meaning",
+   "volume": 2900,
+   "kd": 26,
+   "theme": "AI/AUTOMATION",
+   "promise": 30.5
+  },
+  {
+   "num": 42,
+   "keyword": "best crm for a small business",
+   "volume": 2900,
+   "kd": 26,
+   "theme": "CRM/CLIENT",
+   "promise": 30.5
+  },
+  {
+   "num": 43,
+   "keyword": "reconciliation payments",
+   "volume": 880,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 29.7
+  },
+  {
+   "num": 44,
+   "keyword": "reconcile payments",
+   "volume": 880,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 29.7
+  },
+  {
+   "num": 45,
+   "keyword": "how to send paypal invoice",
+   "volume": 1300,
+   "kd": 11,
+   "theme": "TOOL/BRAND",
+   "promise": 29.4
+  },
+  {
+   "num": 46,
+   "keyword": "bank reconciliation statements",
+   "volume": 1600,
+   "kd": 16,
+   "theme": "RECONCILE/TRACK",
+   "promise": 29.3
+  },
+  {
+   "num": 47,
+   "keyword": "best crm software for a small business",
+   "volume": 2900,
+   "kd": 28,
+   "theme": "CRM/CLIENT",
+   "promise": 28.7
+  },
+  {
+   "num": 48,
+   "keyword": "what does account reconciliation mean",
+   "volume": 1300,
+   "kd": 14,
+   "theme": "RECONCILE/TRACK",
+   "promise": 27.6
+  },
+  {
+   "num": 49,
+   "keyword": "how to send invoice from paypal",
+   "volume": 1300,
+   "kd": 15,
+   "theme": "TOOL/BRAND",
+   "promise": 27.0
+  },
+  {
+   "num": 50,
+   "keyword": "cash reconciliation accounting",
+   "volume": 720,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.8
+  },
+  {
+   "num": 51,
+   "keyword": "prepare a bank reconciliation for candace co for may 31",
+   "volume": 720,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.8
+  },
+  {
+   "num": 52,
+   "keyword": "balance sheet account reconciliation",
+   "volume": 720,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.8
+  },
+  {
+   "num": 53,
+   "keyword": "crm software quickbooks",
+   "volume": 720,
+   "kd": 0,
+   "theme": "CRM/CLIENT",
+   "promise": 26.8
+  },
+  {
+   "num": 54,
+   "keyword": "how to generate an invoice on paypal",
+   "volume": 1300,
+   "kd": 16,
+   "theme": "TOOL/BRAND",
+   "promise": 26.4
+  },
+  {
+   "num": 55,
+   "keyword": "what are bank reconciliation",
+   "volume": 1300,
+   "kd": 16,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.4
+  },
+  {
+   "num": 56,
+   "keyword": "reconciliation accountant",
+   "volume": 880,
+   "kd": 7,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.2
+  },
+  {
+   "num": 57,
+   "keyword": "reconciling bank statement",
+   "volume": 1600,
+   "kd": 21,
+   "theme": "RECONCILE/TRACK",
+   "promise": 26.0
+  },
+  {
+   "num": 58,
+   "keyword": "how to get an invoice on paypal",
+   "volume": 1300,
+   "kd": 17,
+   "theme": "TOOL/BRAND",
+   "promise": 25.8
+  },
+  {
+   "num": 59,
+   "keyword": "bank reconciliation def",
+   "volume": 720,
+   "kd": 4,
+   "theme": "RECONCILE/TRACK",
+   "promise": 25.0
+  },
+  {
+   "num": 60,
+   "keyword": "bank reconciliation description",
+   "volume": 720,
+   "kd": 4,
+   "theme": "RECONCILE/TRACK",
+   "promise": 25.0
+  },
+  {
+   "num": 61,
+   "keyword": "chatgpt invoice",
+   "volume": 590,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 24.3
+  },
+  {
+   "num": 62,
+   "keyword": "excel template bank reconciliation",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 63,
+   "keyword": "bank reconciliation format xls",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 64,
+   "keyword": "invoice reconciliation",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 65,
+   "keyword": "bank reconciliation excel spreadsheet",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 66,
+   "keyword": "bank reconciliation excel sheet",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 67,
+   "keyword": "reconcile an invoice",
+   "volume": 590,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 24.3
+  },
+  {
+   "num": 68,
+   "keyword": "what does reconciliation mean in accounting",
+   "volume": 1300,
+   "kd": 21,
+   "theme": "RECONCILE/TRACK",
+   "promise": 23.4
+  },
+  {
+   "num": 69,
+   "keyword": "bank reconciliation meaning",
+   "volume": 720,
+   "kd": 8,
+   "theme": "RECONCILE/TRACK",
+   "promise": 23.3
+  },
+  {
+   "num": 70,
+   "keyword": "bank reconciliation explained",
+   "volume": 720,
+   "kd": 9,
+   "theme": "RECONCILE/TRACK",
+   "promise": 22.8
+  },
+  {
+   "num": 71,
+   "keyword": "reconcile bank statement",
+   "volume": 1600,
+   "kd": 26,
+   "theme": "RECONCILE/TRACK",
+   "promise": 22.7
+  },
+  {
+   "num": 72,
+   "keyword": "reconciled bank statement",
+   "volume": 1600,
+   "kd": 26,
+   "theme": "RECONCILE/TRACK",
+   "promise": 22.7
+  },
+  {
+   "num": 73,
+   "keyword": "how to generate invoice in excel",
+   "volume": 480,
+   "kd": 0,
+   "theme": "TOOL/BRAND",
+   "promise": 21.9
+  },
+  {
+   "num": 74,
+   "keyword": "how can i make invoice in excel",
+   "volume": 480,
+   "kd": 0,
+   "theme": "TOOL/BRAND",
+   "promise": 21.9
+  },
+  {
+   "num": 75,
+   "keyword": "invoice number meaning",
+   "volume": 480,
+   "kd": 0,
+   "theme": "EXPLAINER",
+   "promise": 21.9
+  },
+  {
+   "num": 76,
+   "keyword": "automated invoice template",
+   "volume": 480,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 21.9
+  },
+  {
+   "num": 77,
+   "keyword": "exercise 6 12 bank reconciliation lo p3",
+   "volume": 480,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 21.9
+  },
+  {
+   "num": 78,
+   "keyword": "oracle account reconciliation manager",
+   "volume": 480,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 21.9
+  },
+  {
+   "num": 79,
+   "keyword": "monday crm pricing",
+   "volume": 880,
+   "kd": 17,
+   "theme": "CRM/CLIENT",
+   "promise": 21.3
+  },
+  {
+   "num": 80,
+   "keyword": "monday crm price",
+   "volume": 880,
+   "kd": 17,
+   "theme": "CRM/CLIENT",
+   "promise": 21.3
+  },
+  {
+   "num": 81,
+   "keyword": "crm software siebel",
+   "volume": 480,
+   "kd": 2,
+   "theme": "CRM/CLIENT",
+   "promise": 21.2
+  },
+  {
+   "num": 82,
+   "keyword": "monday com crm",
+   "volume": 1000,
+   "kd": 20,
+   "theme": "CRM/CLIENT",
+   "promise": 21.1
+  },
+  {
+   "num": 83,
+   "keyword": "jobber crm",
+   "volume": 590,
+   "kd": 9,
+   "theme": "CRM/CLIENT",
+   "promise": 20.6
+  },
+  {
+   "num": 84,
+   "keyword": "tipalti accounts payable automation",
+   "volume": 480,
+   "kd": 4,
+   "theme": "AI/AUTOMATION",
+   "promise": 20.4
+  },
+  {
+   "num": 85,
+   "keyword": "crm software for car dealers",
+   "volume": 480,
+   "kd": 5,
+   "theme": "CRM/CLIENT",
+   "promise": 20.1
+  },
+  {
+   "num": 86,
+   "keyword": "sale invoice example",
+   "volume": 880,
+   "kd": null,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 19.8
+  },
+  {
+   "num": 87,
+   "keyword": "commercial invoice vs proforma invoice",
+   "volume": 880,
+   "kd": null,
+   "theme": "EXPLAINER",
+   "promise": 19.8
+  },
+  {
+   "num": 88,
+   "keyword": "commercial invoice vs pro forma invoice",
+   "volume": 880,
+   "kd": null,
+   "theme": "EXPLAINER",
+   "promise": 19.8
+  },
+  {
+   "num": 89,
+   "keyword": "invoice tracker",
+   "volume": 880,
+   "kd": null,
+   "theme": "RECONCILE/TRACK",
+   "promise": 19.8
+  },
+  {
+   "num": 90,
+   "keyword": "nimble crm software",
+   "volume": 590,
+   "kd": 11,
+   "theme": "CRM/CLIENT",
+   "promise": 19.8
+  },
+  {
+   "num": 91,
+   "keyword": "how to make invoice software in excel",
+   "volume": 480,
+   "kd": 6,
+   "theme": "TOOL/BRAND",
+   "promise": 19.7
+  },
+  {
+   "num": 92,
+   "keyword": "crm insurance software",
+   "volume": 480,
+   "kd": 6,
+   "theme": "CRM/CLIENT",
+   "promise": 19.7
+  },
+  {
+   "num": 93,
+   "keyword": "general ledger reconciliation",
+   "volume": 390,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 19.7
+  },
+  {
+   "num": 94,
+   "keyword": "nonprofit crm software",
+   "volume": 1000,
+   "kd": 23,
+   "theme": "CRM/CLIENT",
+   "promise": 19.5
+  },
+  {
+   "num": 95,
+   "keyword": "crm software for not for profits",
+   "volume": 1000,
+   "kd": 23,
+   "theme": "CRM/CLIENT",
+   "promise": 19.5
+  },
+  {
+   "num": 96,
+   "keyword": "act software crm",
+   "volume": 1300,
+   "kd": 28,
+   "theme": "CRM/CLIENT",
+   "promise": 19.2
+  },
+  {
+   "num": 97,
+   "keyword": "crm software wordpress",
+   "volume": 480,
+   "kd": 8,
+   "theme": "CRM/CLIENT",
+   "promise": 19.0
+  },
+  {
+   "num": 98,
+   "keyword": "account reconciliation software",
+   "volume": 720,
+   "kd": 18,
+   "theme": "RECONCILE/TRACK",
+   "promise": 18.8
+  },
+  {
+   "num": 99,
+   "keyword": "bank reconciliation explanation",
+   "volume": 720,
+   "kd": 18,
+   "theme": "RECONCILE/TRACK",
+   "promise": 18.8
+  },
+  {
+   "num": 100,
+   "keyword": "crm software recruitment",
+   "volume": 590,
+   "kd": 14,
+   "theme": "CRM/CLIENT",
+   "promise": 18.6
+  },
+  {
+   "num": 101,
+   "keyword": "crm recruiting software",
+   "volume": 590,
+   "kd": 14,
+   "theme": "CRM/CLIENT",
+   "promise": 18.6
+  },
+  {
+   "num": 102,
+   "keyword": "tipalti ap automation",
+   "volume": 480,
+   "kd": 9,
+   "theme": "AI/AUTOMATION",
+   "promise": 18.6
+  },
+  {
+   "num": 103,
+   "keyword": "a bank reconciliation should be prepared",
+   "volume": 480,
+   "kd": 9,
+   "theme": "RECONCILE/TRACK",
+   "promise": 18.6
+  },
+  {
+   "num": 104,
+   "keyword": "how to create an invoice using excel",
+   "volume": 480,
+   "kd": 10,
+   "theme": "TOOL/BRAND",
+   "promise": 18.3
+  },
+  {
+   "num": 105,
+   "keyword": "accounts receivable automation software",
+   "volume": 390,
+   "kd": 5,
+   "theme": "AI/AUTOMATION",
+   "promise": 18.1
+  },
+  {
+   "num": 106,
+   "keyword": "ai invoice generator",
+   "volume": 480,
+   "kd": 11,
+   "theme": "AI/AUTOMATION",
+   "promise": 17.9
+  },
+  {
+   "num": 107,
+   "keyword": "crm software sage",
+   "volume": 480,
+   "kd": 11,
+   "theme": "CRM/CLIENT",
+   "promise": 17.9
+  },
+  {
+   "num": 108,
+   "keyword": "crm software for builders",
+   "volume": 480,
+   "kd": 11,
+   "theme": "CRM/CLIENT",
+   "promise": 17.9
+  },
+  {
+   "num": 109,
+   "keyword": "how to change quickbooks invoice template",
+   "volume": 320,
+   "kd": 0,
+   "theme": "TOOL/BRAND",
+   "promise": 17.9
+  },
+  {
+   "num": 110,
+   "keyword": "how to edit invoice template in quickbooks",
+   "volume": 320,
+   "kd": 0,
+   "theme": "TOOL/BRAND",
+   "promise": 17.9
+  },
+  {
+   "num": 111,
+   "keyword": "billing automation software",
+   "volume": 320,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 17.9
+  },
+  {
+   "num": 112,
+   "keyword": "blackline account reconciliation",
+   "volume": 320,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 17.9
+  },
+  {
+   "num": 113,
+   "keyword": "blackline accounting reconciliation",
+   "volume": 320,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 17.9
+  },
+  {
+   "num": 114,
+   "keyword": "agile crm software",
+   "volume": 880,
+   "kd": 24,
+   "theme": "CRM/CLIENT",
+   "promise": 17.8
+  },
+  {
+   "num": 115,
+   "keyword": "how to perform a bank reconciliation",
+   "volume": 590,
+   "kd": 16,
+   "theme": "RECONCILE/TRACK",
+   "promise": 17.8
+  },
+  {
+   "num": 116,
+   "keyword": "invoice number generator",
+   "volume": 390,
+   "kd": 6,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 17.8
+  },
+  {
+   "num": 117,
+   "keyword": "invoice automation",
+   "volume": 390,
+   "kd": 6,
+   "theme": "AI/AUTOMATION",
+   "promise": 17.8
+  },
+  {
+   "num": 118,
+   "keyword": "dealership crm software",
+   "volume": 480,
+   "kd": 12,
+   "theme": "CRM/CLIENT",
+   "promise": 17.5
+  },
+  {
+   "num": 119,
+   "keyword": "crm software for construction",
+   "volume": 480,
+   "kd": 12,
+   "theme": "CRM/CLIENT",
+   "promise": 17.5
+  },
+  {
+   "num": 120,
+   "keyword": "construction industry crm software",
+   "volume": 480,
+   "kd": 12,
+   "theme": "CRM/CLIENT",
+   "promise": 17.5
+  },
+  {
+   "num": 121,
+   "keyword": "make receipt",
+   "volume": 1000,
+   "kd": 27,
+   "theme": "HOW-TO",
+   "promise": 17.4
+  },
+  {
+   "num": 122,
+   "keyword": "pay by plate ma no invoice number online",
+   "volume": 390,
+   "kd": 7,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 17.4
+  },
+  {
+   "num": 123,
+   "keyword": "invoice scanner",
+   "volume": 320,
+   "kd": 2,
+   "theme": "AI/AUTOMATION",
+   "promise": 17.3
+  },
+  {
+   "num": 124,
+   "keyword": "ap automation netsuite",
+   "volume": 320,
+   "kd": 2,
+   "theme": "AI/AUTOMATION",
+   "promise": 17.3
+  },
+  {
+   "num": 125,
+   "keyword": "bank reconciliation in quickbooks",
+   "volume": 320,
+   "kd": 2,
+   "theme": "RECONCILE/TRACK",
+   "promise": 17.3
+  },
+  {
+   "num": 126,
+   "keyword": "accounting reconciliation software",
+   "volume": 720,
+   "kd": 22,
+   "theme": "RECONCILE/TRACK",
+   "promise": 17.0
+  },
+  {
+   "num": 127,
+   "keyword": "how to modify invoice template in quickbooks",
+   "volume": 320,
+   "kd": 4,
+   "theme": "TOOL/BRAND",
+   "promise": 16.7
+  },
+  {
+   "num": 128,
+   "keyword": "netsuite accounts payable automation",
+   "volume": 320,
+   "kd": 4,
+   "theme": "AI/AUTOMATION",
+   "promise": 16.7
+  },
+  {
+   "num": 129,
+   "keyword": "how to customize quickbooks invoice template",
+   "volume": 320,
+   "kd": 5,
+   "theme": "TOOL/BRAND",
+   "promise": 16.4
+  },
+  {
+   "num": 130,
+   "keyword": "software for bank reconciliation",
+   "volume": 320,
+   "kd": 5,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.4
+  },
+  {
+   "num": 131,
+   "keyword": "difference between invoice and receipt",
+   "volume": 590,
+   "kd": null,
+   "theme": "EXPLAINER",
+   "promise": 16.2
+  },
+  {
+   "num": 132,
+   "keyword": "crm software car dealerships",
+   "volume": 480,
+   "kd": 16,
+   "theme": "CRM/CLIENT",
+   "promise": 16.1
+  },
+  {
+   "num": 133,
+   "keyword": "auto dealership crm software",
+   "volume": 480,
+   "kd": 16,
+   "theme": "CRM/CLIENT",
+   "promise": 16.1
+  },
+  {
+   "num": 134,
+   "keyword": "auto dealer crm software",
+   "volume": 480,
+   "kd": 16,
+   "theme": "CRM/CLIENT",
+   "promise": 16.1
+  },
+  {
+   "num": 135,
+   "keyword": "dealer crm software",
+   "volume": 480,
+   "kd": 16,
+   "theme": "CRM/CLIENT",
+   "promise": 16.1
+  },
+  {
+   "num": 136,
+   "keyword": "automotive dealer crm software",
+   "volume": 480,
+   "kd": 16,
+   "theme": "CRM/CLIENT",
+   "promise": 16.1
+  },
+  {
+   "num": 137,
+   "keyword": "difference between invoice and bill",
+   "volume": 260,
+   "kd": 0,
+   "theme": "EXPLAINER",
+   "promise": 16.1
+  },
+  {
+   "num": 138,
+   "keyword": "best ap automation software",
+   "volume": 260,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 16.1
+  },
+  {
+   "num": 139,
+   "keyword": "invoice approval software",
+   "volume": 260,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 16.1
+  },
+  {
+   "num": 140,
+   "keyword": "which statement is true regarding the reconciliation discrepancy report",
+   "volume": 260,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.1
+  },
+  {
+   "num": 141,
+   "keyword": "reconciliation in accounts receivable",
+   "volume": 260,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.1
+  },
+  {
+   "num": 142,
+   "keyword": "payroll account reconciliation",
+   "volume": 260,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.1
+  },
+  {
+   "num": 143,
+   "keyword": "ar account reconciliation",
+   "volume": 260,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.1
+  },
+  {
+   "num": 144,
+   "keyword": "reconcile accounts receivable",
+   "volume": 260,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 16.1
+  },
+  {
+   "num": 145,
+   "keyword": "sap crm software",
+   "volume": 1000,
+   "kd": 30,
+   "theme": "CRM/CLIENT",
+   "promise": 15.8
+  },
+  {
+   "num": 146,
+   "keyword": "ai receipt generator free",
+   "volume": 480,
+   "kd": 17,
+   "theme": "AI/AUTOMATION",
+   "promise": 15.7
+  },
+  {
+   "num": 147,
+   "keyword": "bank reconciliation in accounting",
+   "volume": 390,
+   "kd": 13,
+   "theme": "RECONCILE/TRACK",
+   "promise": 15.5
+  },
+  {
+   "num": 148,
+   "keyword": "reconciliation of bank accounts",
+   "volume": 390,
+   "kd": 13,
+   "theme": "RECONCILE/TRACK",
+   "promise": 15.5
+  },
+  {
+   "num": 149,
+   "keyword": "bank reconciliation accountant",
+   "volume": 390,
+   "kd": 13,
+   "theme": "RECONCILE/TRACK",
+   "promise": 15.5
+  },
+  {
+   "num": 150,
+   "keyword": "quick book bank reconciliation",
+   "volume": 320,
+   "kd": 8,
+   "theme": "RECONCILE/TRACK",
+   "promise": 15.5
+  },
+  {
+   "num": 151,
+   "keyword": "reconcile accounts meaning",
+   "volume": 480,
+   "kd": 18,
+   "theme": "RECONCILE/TRACK",
+   "promise": 15.3
+  },
+  {
+   "num": 152,
+   "keyword": "car sales crm software",
+   "volume": 480,
+   "kd": 18,
+   "theme": "CRM/CLIENT",
+   "promise": 15.3
+  },
+  {
+   "num": 153,
+   "keyword": "netsuite crm software",
+   "volume": 720,
+   "kd": 26,
+   "theme": "CRM/CLIENT",
+   "promise": 15.2
+  },
+  {
+   "num": 154,
+   "keyword": "recurring billing software",
+   "volume": 390,
+   "kd": 15,
+   "theme": "AI/AUTOMATION",
+   "promise": 14.8
+  },
+  {
+   "num": 155,
+   "keyword": "www sunpass com toll invoice payment online",
+   "volume": 390,
+   "kd": 16,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 14.5
+  },
+  {
+   "num": 156,
+   "keyword": "ramp ap automation",
+   "volume": 210,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 14.5
+  },
+  {
+   "num": 157,
+   "keyword": "quickbooks recurring invoice",
+   "volume": 210,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 14.5
+  },
+  {
+   "num": 158,
+   "keyword": "payment reconciliation software",
+   "volume": 210,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 14.5
+  },
+  {
+   "num": 159,
+   "keyword": "reconciliation statement form",
+   "volume": 210,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 14.5
+  },
+  {
+   "num": 160,
+   "keyword": "how to set up invoice in excel",
+   "volume": 210,
+   "kd": 1,
+   "theme": "TOOL/BRAND",
+   "promise": 14.2
+  },
+  {
+   "num": 161,
+   "keyword": "how to create an invoice using word",
+   "volume": 210,
+   "kd": 1,
+   "theme": "TOOL/BRAND",
+   "promise": 14.2
+  },
+  {
+   "num": 162,
+   "keyword": "how do paypal invoice work",
+   "volume": 320,
+   "kd": 13,
+   "theme": "TOOL/BRAND",
+   "promise": 14.0
+  },
+  {
+   "num": 163,
+   "keyword": "automatic invoice",
+   "volume": 480,
+   "kd": 22,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.9
+  },
+  {
+   "num": 164,
+   "keyword": "invoice automation process",
+   "volume": 320,
+   "kd": 14,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.7
+  },
+  {
+   "num": 165,
+   "keyword": "crm software customer service",
+   "volume": 480,
+   "kd": 23,
+   "theme": "CRM/CLIENT",
+   "promise": 13.5
+  },
+  {
+   "num": 166,
+   "keyword": "excel invoice tracker template",
+   "volume": 260,
+   "kd": 10,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.4
+  },
+  {
+   "num": 167,
+   "keyword": "toll enforcement invoice payment online",
+   "volume": 390,
+   "kd": 20,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 13.2
+  },
+  {
+   "num": 168,
+   "keyword": "how to send invoice on square",
+   "volume": 390,
+   "kd": 20,
+   "theme": "TOOL/BRAND",
+   "promise": 13.2
+  },
+  {
+   "num": 169,
+   "keyword": "invoice automation software",
+   "volume": 390,
+   "kd": 20,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.2
+  },
+  {
+   "num": 170,
+   "keyword": "qb online bank reconciliation",
+   "volume": 260,
+   "kd": 11,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.2
+  },
+  {
+   "num": 171,
+   "keyword": "reconcile bank in quickbooks online",
+   "volume": 260,
+   "kd": 11,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.2
+  },
+  {
+   "num": 172,
+   "keyword": "invoice processing automation",
+   "volume": 320,
+   "kd": 16,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.1
+  },
+  {
+   "num": 173,
+   "keyword": "claude ai billing",
+   "volume": 210,
+   "kd": 6,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.0
+  },
+  {
+   "num": 174,
+   "keyword": "invoice ocr software",
+   "volume": 170,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.0
+  },
+  {
+   "num": 175,
+   "keyword": "invoice approval",
+   "volume": 170,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.0
+  },
+  {
+   "num": 176,
+   "keyword": "accounts payable workflow",
+   "volume": 170,
+   "kd": 0,
+   "theme": "AI/AUTOMATION",
+   "promise": 13.0
+  },
+  {
+   "num": 177,
+   "keyword": "bank reconciliation checks outstanding",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 178,
+   "keyword": "how to delete a bank reconciliation in quickbooks online",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 179,
+   "keyword": "general ledger account reconciliation",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 180,
+   "keyword": "netsuite account reconciliation",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 181,
+   "keyword": "g l account reconciliation",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 182,
+   "keyword": "account payable reconciliation",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 183,
+   "keyword": "invoice reconciliation software",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 184,
+   "keyword": "reconcile general ledger",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 185,
+   "keyword": "reconcile accounts payable",
+   "volume": 170,
+   "kd": 0,
+   "theme": "RECONCILE/TRACK",
+   "promise": 13.0
+  },
+  {
+   "num": 186,
+   "keyword": "crm software most popular",
+   "volume": 480,
+   "kd": 25,
+   "theme": "CRM/CLIENT",
+   "promise": 12.8
+  },
+  {
+   "num": 187,
+   "keyword": "invoice reminder",
+   "volume": 320,
+   "kd": 17,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.8
+  },
+  {
+   "num": 188,
+   "keyword": "how to reconcile bank accounts in quickbooks online",
+   "volume": 210,
+   "kd": 7,
+   "theme": "RECONCILE/TRACK",
+   "promise": 12.8
+  },
+  {
+   "num": 189,
+   "keyword": "account reconciliation procedures",
+   "volume": 170,
+   "kd": 2,
+   "theme": "RECONCILE/TRACK",
+   "promise": 12.6
+  },
+  {
+   "num": 190,
+   "keyword": "recurring invoice",
+   "volume": 170,
+   "kd": 3,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.4
+  },
+  {
+   "num": 191,
+   "keyword": "openai invoice",
+   "volume": 170,
+   "kd": 3,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.4
+  },
+  {
+   "num": 192,
+   "keyword": "how does paypal invoice work",
+   "volume": 320,
+   "kd": 19,
+   "theme": "TOOL/BRAND",
+   "promise": 12.2
+  },
+  {
+   "num": 193,
+   "keyword": "invoice scanner software",
+   "volume": 170,
+   "kd": 4,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.2
+  },
+  {
+   "num": 194,
+   "keyword": "invoice processing automation software",
+   "volume": 260,
+   "kd": 15,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.1
+  },
+  {
+   "num": 195,
+   "keyword": "how to produce an invoice in excel",
+   "volume": 210,
+   "kd": 10,
+   "theme": "TOOL/BRAND",
+   "promise": 12.1
+  },
+  {
+   "num": 196,
+   "keyword": "invoice ocr",
+   "volume": 210,
+   "kd": 10,
+   "theme": "AI/AUTOMATION",
+   "promise": 12.1
+  },
+  {
+   "num": 197,
+   "keyword": "monthly bank reconciliation",
+   "volume": 210,
+   "kd": 10,
+   "theme": "RECONCILE/TRACK",
+   "promise": 12.1
+  },
+  {
+   "num": 198,
+   "keyword": "recurring invoice software",
+   "volume": 390,
+   "kd": 24,
+   "theme": "AI/AUTOMATION",
+   "promise": 11.8
+  },
+  {
+   "num": 199,
+   "keyword": "shoeboxed receipt scanner app",
+   "volume": 210,
+   "kd": 11,
+   "theme": "AI/AUTOMATION",
+   "promise": 11.8
+  },
+  {
+   "num": 200,
+   "keyword": "account reconciliation process",
+   "volume": 170,
+   "kd": 6,
+   "theme": "RECONCILE/TRACK",
+   "promise": 11.7
+  },
+  {
+   "num": 201,
+   "keyword": "what does it mean to reconcile a bank statement",
+   "volume": 170,
+   "kd": 6,
+   "theme": "RECONCILE/TRACK",
+   "promise": 11.7
+  },
+  {
+   "num": 202,
+   "keyword": "automated invoice processing software",
+   "volume": 260,
+   "kd": 17,
+   "theme": "AI/AUTOMATION",
+   "promise": 11.6
+  },
+  {
+   "num": 203,
+   "keyword": "formula for bank reconciliation",
+   "volume": 170,
+   "kd": 9,
+   "theme": "RECONCILE/TRACK",
+   "promise": 11.1
+  },
+  {
+   "num": 204,
+   "keyword": "automated invoice processing",
+   "volume": 320,
+   "kd": 23,
+   "theme": "AI/AUTOMATION",
+   "promise": 11.0
+  },
+  {
+   "num": 205,
+   "keyword": "ai invoice",
+   "volume": 170,
+   "kd": 10,
+   "theme": "AI/AUTOMATION",
+   "promise": 10.9
+  },
+  {
+   "num": 206,
+   "keyword": "invoice simple invoice maker",
+   "volume": 320,
+   "kd": 24,
+   "theme": "HOW-TO",
+   "promise": 10.7
+  },
+  {
+   "num": 207,
+   "keyword": "what is reconcile in accounting",
+   "volume": 170,
+   "kd": 11,
+   "theme": "RECONCILE/TRACK",
+   "promise": 10.6
+  },
+  {
+   "num": 208,
+   "keyword": "reconcile a bank account",
+   "volume": 260,
+   "kd": 21,
+   "theme": "RECONCILE/TRACK",
+   "promise": 10.5
+  },
+  {
+   "num": 209,
+   "keyword": "google ai studio billing",
+   "volume": 260,
+   "kd": 22,
+   "theme": "AI/AUTOMATION",
+   "promise": 10.2
+  },
+  {
+   "num": 210,
+   "keyword": "toll invoice payment",
+   "volume": 260,
+   "kd": 23,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 9.9
+  },
+  {
+   "num": 211,
+   "keyword": "invoice maker pdf",
+   "volume": 320,
+   "kd": 27,
+   "theme": "HOW-TO",
+   "promise": 9.8
+  },
+  {
+   "num": 212,
+   "keyword": "outstanding cheques bank reconciliation",
+   "volume": 170,
+   "kd": 15,
+   "theme": "RECONCILE/TRACK",
+   "promise": 9.8
+  },
+  {
+   "num": 213,
+   "keyword": "what is accounts payable automation",
+   "volume": 260,
+   "kd": 24,
+   "theme": "AI/AUTOMATION",
+   "promise": 9.7
+  },
+  {
+   "num": 214,
+   "keyword": "invoice spreadsheet example",
+   "volume": 170,
+   "kd": 18,
+   "theme": "TEMPLATE/GENERAL",
+   "promise": 9.1
+  },
+  {
+   "num": 215,
+   "keyword": "accounts payable process automation",
+   "volume": 210,
+   "kd": 24,
+   "theme": "AI/AUTOMATION",
+   "promise": 8.7
+  },
+  {
+   "num": 216,
+   "keyword": "automated account reconciliation software",
+   "volume": 170,
+   "kd": 22,
+   "theme": "RECONCILE/TRACK",
+   "promise": 8.3
+  }
+ ]
+}

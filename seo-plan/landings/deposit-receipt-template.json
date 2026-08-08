@@ -1,0 +1,60 @@
+{
+  "slug": "deposit-receipt-template",
+  "styleId": "receipt",
+  "keyword": "Deposit Receipt Template",
+  "platform": "deposits",
+  "metaTitle": "Free Deposit Receipt Template — No Signup, No Watermark",
+  "metaDescription": "A free deposit receipt template to confirm a deposit or down payment you received. Download editable Word and PDF, or make one online — no signup, no watermark.",
+  "downloadFile": "/templates/receipt-template.pdf",
+  "docxFile": "/templates/receipt-template.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a simple deposit receipt template for anyone who takes a deposit or down payment before the work or sale is finished — contractors, landlords, event and rental businesses, and any small business that asks for money up front. It records how much the customer paid, what the deposit is for, the date it was received, and the balance still owed, so both sides have a clear paper trail.",
+    "It is free, with no signup and no watermark. Download the editable Word (.docx) and PDF files to fill in on your own computer, or use the generator below to enter the details in your browser and export a finished, print-ready receipt in about a minute."
+  ],
+  "included": [
+    "A clear \"deposit received\" line that shows the amount paid and what it applies to — a booking, a job, an order, or a security deposit",
+    "A running balance field so the customer can see the deposit, the total price, and how much is still due",
+    "Your business and contact details, the customer's details, a unique receipt number, and the date the deposit was paid",
+    "An itemized table to describe the service, product, or booking the deposit is being held against",
+    "A notes section for the payment method, refund or cancellation terms, and when the balance is due",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the deposit receipt",
+      "body": "Use the free generator below and pick the Receipt style, or download the editable Word file to work offline. No account or signup needed."
+    },
+    {
+      "title": "Enter the deposit details",
+      "body": "Add your details and the customer's, then record the deposit amount, what it is for, and the date it was paid. Note the total price and the balance remaining so the record is complete."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF to email or hand to the customer as proof of their deposit, or save the Word file to reuse when you take the next one."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a deposit receipt?",
+      "a": "A deposit receipt is a document that confirms a customer paid a deposit or down payment toward a larger total. It records the amount received, the date, what the deposit is for, and usually the balance still owed. It is not the same as an invoice — an invoice requests payment, while a deposit receipt proves a partial payment was already received."
+    },
+    {
+      "q": "How do I write a receipt for a deposit?",
+      "a": "State the amount you received, the date it was paid, and the customer's name, then describe what the deposit is being held against — a job, an order, a booking, or a rental. Add your business details, a unique receipt number, and the balance remaining. This template fills all of that in and keeps it to a clean single page."
+    },
+    {
+      "q": "Should a deposit receipt show the remaining balance?",
+      "a": "Yes, it is good practice. Showing the total price, the deposit paid, and the balance due removes any confusion about what is still owed and when. The customer keeps a clear record, and you have proof of what was agreed if a question comes up later."
+    },
+    {
+      "q": "Is a deposit refundable, and should the receipt say so?",
+      "a": "That depends on what you and the customer agreed — some deposits are refundable, some are not, and rules vary by state and by the type of deposit. Put your refund or cancellation terms in the notes so the customer knows the conditions before you keep it. This is general information, not legal advice; check the rules that apply to your situation."
+    }
+  ],
+  "related": [
+    "invoice-vs-receipt",
+    "what-is-an-invoice-payment",
+    "how-to-ask-for-payment"
+  ]
+}

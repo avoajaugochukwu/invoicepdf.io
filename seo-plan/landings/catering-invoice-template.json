@@ -1,0 +1,60 @@
+{
+  "slug": "catering-invoice-template",
+  "styleId": "canva",
+  "keyword": "Catering Invoice Template",
+  "platform": "catering",
+  "metaTitle": "Free Catering Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free catering invoice template for caterers and event chefs — no signup, no watermark. Bill per head, add a deposit, and download an editable Word or PDF.",
+  "downloadFile": "/templates/invoice-template-canva.pdf",
+  "docxFile": "/templates/invoice-template-canva.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free catering invoice template made for caterers, personal chefs, and event food businesses billing for weddings, corporate lunches, and private parties. It gives you clean lines for a per-guest headcount, food and menu packages, staffing and rentals, plus a spot for the event date and venue, so a client sees exactly what the quoted price covers.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your catering invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "A per-guest headcount line with price per head, plus lines for food packages, buffet or plated menus, drinks, and dessert",
+    "Separate lines for staffing, delivery, rentals, and service or gratuity charges so nothing on the event gets missed",
+    "A header for your catering business name, logo, address, and contact details, and a section for the client, event date, and venue",
+    "A unique invoice number with issue and due dates so each event is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for the deposit and final balance",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your business, client, and event details",
+      "body": "Enter your catering business name, logo, and contact info at the top, then add the client along with the event date, guest count, and venue address. Give the invoice a unique number and set the issue and due dates."
+    },
+    {
+      "title": "List the headcount, menu, and services",
+      "body": "Add a line for the price per guest, then each food package, drinks, staffing, delivery, and rental as its own line with quantity and price. The template totals the line items, adds tax and any service charge, and shows the grand total for you."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and email it to the client or event planner. Spell out your payment terms — the deposit taken to book the date and when the final balance is due — and how you want to be paid."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I invoice for catering by headcount and by menu items?",
+      "a": "Put the per-guest charge on its own line with the guest count as the quantity and your price per head as the rate. Add any extras — a premium menu upgrade, a bar package, staffing, or rentals — as separate lines below it. The template adds every line into one subtotal, applies tax, and shows a single grand total, so the client sees both the final price and the breakdown behind it."
+    },
+    {
+      "q": "How do I show a deposit and the remaining balance on a catering invoice?",
+      "a": "List the full amount from your line items, then use the notes and payment-terms area to record the deposit the client already paid to book the date and subtract it, leaving the balance due. Many caterers send one invoice at booking for the deposit and a final invoice after the event for the rest — the template works for either approach."
+    },
+    {
+      "q": "Do I charge sales tax on a catering invoice?",
+      "a": "Usually yes. Most U.S. states treat prepared food and catering services as taxable, and some also tax service charges or gratuities you add automatically. Rules and rates vary by state and even by county, so set the tax line to the rate for the event's location and check your state's guidance if you are unsure."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every event and edit the menu, headcount, and pricing however you like."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "itemized-invoice",
+    "how-to-ask-for-payment"
+  ]
+}

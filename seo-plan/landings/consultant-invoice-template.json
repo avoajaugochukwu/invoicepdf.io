@@ -1,0 +1,60 @@
+{
+  "slug": "consultant-invoice-template",
+  "styleId": "google-docs",
+  "keyword": "Consultant Invoice Template",
+  "platform": "consulting",
+  "metaTitle": "Free Consultant Invoice Template — No Signup",
+  "metaDescription": "A free consultant invoice template for billing clients by the hour or project. Download editable Word and PDF, or build one online — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a clean consultant invoice template for independent consultants, advisors, and boutique firms who bill clients for their time and expertise. It handles the way consulting work is usually charged — hourly rates, day rates, or a fixed project fee — with an itemized table, a clear engagement reference, and payment terms so a client's accounts team knows exactly what to pay and when.",
+    "It is free, with no signup and no watermark. Download the editable Word (.docx) and PDF files to fill in on your own computer, or use the generator below to enter your details in the browser and export a finished, print-ready invoice in a minute."
+  ],
+  "included": [
+    "An itemized table built for consulting — describe each service or phase with hours or days, your rate, and the line total",
+    "A field to reference the engagement, statement of work, or PO number so the invoice ties back to the agreement",
+    "Your business and contact details, the client's billing details, a unique invoice number, and issue and due dates",
+    "Automatic subtotal, tax, and grand total so the math is done for you",
+    "A notes section for payment terms, accepted methods, and expenses or retainer drawdowns",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Use the free generator below and pick this Google Docs-style layout, or download the editable Word file to work offline. No account or signup needed."
+    },
+    {
+      "title": "Enter your engagement details",
+      "body": "Add your details and the client's, then list each service, phase, or block of hours with its rate. Reference the SOW or PO, set your payment terms, and the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF to email the client, or export the Word file to reuse next month. Save a copy for your own records and follow-ups."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I invoice a client for consulting hours?",
+      "a": "List each block of work as its own line with a short description, the number of hours, and your hourly rate — the line total is hours times rate. If you bill by the day or a fixed project fee, use days or a single line instead. The template adds the subtotal, any tax, and the grand total for you, so the client sees exactly how the amount was reached."
+    },
+    {
+      "q": "Should I invoice hourly, by the day, or a flat project fee?",
+      "a": "All three are common in consulting — use whatever your engagement letter or statement of work agreed. Hourly and day rates suit open-ended advisory work; a flat fee suits a defined deliverable. This template supports any of them: just describe the line and set the quantity and rate to match how you agreed to bill."
+    },
+    {
+      "q": "What payment terms should a consultant put on an invoice?",
+      "a": "Net 30 is common for corporate clients, but Net 15 or Net 14 gets you paid faster and is fine for smaller clients. Net 30 means payment is due 30 days after the invoice date, not by the 30th of the month. Put the terms and your accepted payment methods in the notes so there is no ambiguity."
+    },
+    {
+      "q": "Do I need a registered company or LLC to invoice as a consultant?",
+      "a": "No. A sole proprietor can invoice under their own legal name — you do not need an LLC or a registered business to bill a client. This is general information, not legal or tax advice; check your own situation if you are unsure. Give each invoice a unique number and never reuse one, even for a voided invoice."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-does-net-30-mean-on-an-invoice",
+    "how-to-ask-for-payment"
+  ]
+}

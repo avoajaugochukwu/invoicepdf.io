@@ -11,6 +11,10 @@ const BLOG_REDIRECTS: [string, string][] = [
   ["/blog/what-is-an-invoice-guide-for-beginners", "/blog/what-is-an-invoice-beginner-guide"],
   // Cluster C — duplicate proforma invoice -> keeper
   ["/blog/understanding-pro-forma-invoices-what-they-are-and-how-to-use-them", "/blog/what-is-a-proforma-invoice"],
+  // Cluster D — automation/reconciliation near-synonym cannibalization -> keeper
+  ["/blog/billing-automation-software", "/blog/invoice-automation-software"],
+  ["/blog/recurring-invoice-software", "/blog/recurring-billing-software"],
+  ["/blog/billing-reconciliation", "/blog/payment-reconciliation"],
 ];
 
 const nextConfig: NextConfig = {

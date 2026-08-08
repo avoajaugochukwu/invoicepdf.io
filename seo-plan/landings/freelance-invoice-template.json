@@ -1,0 +1,60 @@
+{
+  "slug": "freelance-invoice-template",
+  "styleId": "google-docs",
+  "keyword": "Freelance Invoice Template",
+  "platform": "freelance",
+  "metaTitle": "Free Freelance Invoice Template — No Signup, No Watermark",
+  "metaDescription": "A free freelance invoice template for billing clients by the hour or project. Add your rates, get automatic totals, and download a clean PDF — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A simple freelance invoice template for anyone billing clients on their own — writers, designers, developers, consultants, and anyone doing project or hourly work. It holds everything a client expects to see: your details, their details, an itemized list of the work you did, and clear totals, all in a clean layout that prints to one page.",
+    "It's free with no signup and no watermark. Download the editable Word (.docx) and PDF files to fill in by hand, or use the generator below to type in your rates and hours and export a finished invoice — the math is done for you."
+  ],
+  "included": [
+    "Space for your name or freelance business, contact details, and a logo",
+    "Your client's business and contact details, a unique invoice number, and issue and due dates",
+    "An itemized table built for freelance work — describe each task or project, set the hours or quantity, and add your rate",
+    "Automatic subtotal, tax, and grand total so the numbers always add up",
+    "A notes section for payment terms, accepted methods, and a late-fee reminder",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Start the free generator below and pick this simple style, or download the editable Word file to work offline. No account or signup needed."
+    },
+    {
+      "title": "Add your work and rates",
+      "body": "Fill in your details and your client's, then list each task or project with the hours or quantity and your rate. Set a tax rate if you charge one — the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Click Download PDF for a clean, client-ready invoice, or save the Word file to reuse for the next job. Email it, note the invoice number, and follow up if it isn't paid by the due date."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I invoice as a freelancer?",
+      "a": "Put your name or business and contact details at the top, add your client's details, and give the invoice a unique number. List each task or project with the hours or quantity and your rate, then show the subtotal, any tax, and the total due. Add an issue date, a due date (for example Net 15 or Net 30), and how you want to be paid. Fill in the template above and download it as a PDF to send."
+    },
+    {
+      "q": "Should I charge by the hour or by the project?",
+      "a": "Both work, and this template handles either. For hourly work, put your hours in the quantity column and your hourly rate in the rate column. For a fixed project fee, use one line with a quantity of 1 and the agreed amount as the rate. Many freelancers mix the two — a flat project fee plus hourly lines for extra revisions or scope changes."
+    },
+    {
+      "q": "Do I need to add tax to a freelance invoice?",
+      "a": "It depends on where you and your client are and what you sell. In the US, most freelance services aren't subject to sales tax, but some states tax specific services, so check your state's rules. Income you earn is still taxable even when no sales tax applies — the IRS covers self-employment reporting on Schedule C. Set the tax rate to 0 in the generator if none applies."
+    },
+    {
+      "q": "How do I get clients to pay on time?",
+      "a": "Send the invoice as soon as the work is done, state a clear due date, and add your accepted payment methods in the notes. Spelling out short terms like Net 15 and a late fee up front helps. If a payment slips past the due date, a short, polite follow-up email that references the invoice number usually does the job."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-is-an-invoice-number",
+    "how-to-ask-for-payment"
+  ]
+}

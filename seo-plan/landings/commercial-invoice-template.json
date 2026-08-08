@@ -1,0 +1,60 @@
+{
+  "slug": "commercial-invoice-template",
+  "styleId": "word",
+  "keyword": "Commercial Invoice Template",
+  "platform": "shipping & customs",
+  "metaTitle": "Free Commercial Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free commercial invoice template for international shipping and customs. Download an editable Word and PDF file, or make one online — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-word.pdf",
+  "docxFile": "/templates/invoice-template-word.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A commercial invoice is the document customs uses to clear goods that cross a border and to work out any duties owed. This free commercial invoice template is built for anyone shipping internationally — small exporters, online sellers, and freelancers mailing a paid order abroad — who needs a clear record of what is in the box, what it is worth, and who is sending it to whom.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "Shipper (exporter) and consignee (buyer) blocks for names, full addresses, and contact details — the parties customs needs to see",
+    "A goods table with description, quantity, unit value, and line total, plus room to note country of origin so each item is easy to declare",
+    "Your business and client details, a unique invoice number, and issue and due dates so every shipment is easy to track and reference",
+    "Automatic subtotal, tax, and grand total so the declared value math is always right",
+    "A notes and terms area for the reason for export, delivery terms (Incoterms), currency, and payment details",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add shipper, consignee, and shipment details",
+      "body": "Enter your business (the shipper) at the top and the buyer receiving the goods (the consignee) below it. Give the invoice a unique number, set the issue date, and note the reason for export and delivery terms."
+    },
+    {
+      "title": "List each item with its value",
+      "body": "Add every product with a clear description, quantity, unit value, and country of origin. The template adds up line totals, subtotal, tax, and the grand total, so your declared value is always correct."
+    },
+    {
+      "title": "Download and send with the shipment",
+      "body": "Download a print-ready PDF (or the editable Word file), sign it, and include copies with the parcel and any carrier or customs paperwork. Keep a copy for your own records."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a commercial invoice used for?",
+      "a": "It tells customs what is being shipped, who is sending and receiving it, and what it is worth. Customs uses it to clear the goods and to assess any duties or import taxes. It is not the same as a receipt — it travels with the shipment as a customs document."
+    },
+    {
+      "q": "How is a commercial invoice different from a proforma invoice?",
+      "a": "A proforma invoice is a quote you send before a sale is final, so the buyer knows the expected cost. A commercial invoice is the final document for goods that are actually shipping, showing the real values customs relies on. Do not use a proforma in place of a commercial invoice at the border."
+    },
+    {
+      "q": "What details do I need to put on it?",
+      "a": "At a minimum: shipper and consignee names and addresses, a description and quantity of each item, the unit and total value, the currency, the country of origin, the reason for export, and the delivery terms (Incoterms). Your carrier or the destination country may ask for more, such as an HS/tariff code, so check their requirements before you ship."
+    },
+    {
+      "q": "Is this template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every shipment and edit them however you like."
+    }
+  ],
+  "related": [
+    "what-is-a-commercial-invoice",
+    "commercial-invoice-vs-proforma-invoice",
+    "what-is-a-proforma-invoice"
+  ]
+}

@@ -1,0 +1,192 @@
+---
+title: "How to generate an invoice in Excel: a step-by-step guide with formulas"
+slug: "how-to-generate-invoice-in-excel"
+date: "2026-09-03T09:00:00.000Z"
+excerpt: "Two ways to make an invoice in Excel—start from a built-in template or build one from scratch—plus the exact formulas that total line items, add tax, and auto-fill client details."
+description: "How to generate an invoice in Excel step by step: use a template or build from scratch, with SUM, VLOOKUP, tax, and auto-numbering formulas and two worked examples."
+author: "Charles Ugo"
+featuredImage: "/blog/how-to-generate-invoice-in-excel/featured.webp"
+tags: ["invoice"]
+faqs:
+  - q: "Does Excel have a built-in invoice template?"
+    a: "Yes. Open Excel, click New, and type 'invoice' in the search box. Microsoft ships several free invoice templates you can open, drop your logo and details into, and reuse. You can also start from Microsoft's online invoice template gallery. A template is the fastest route if you don't want to build the layout and formulas yourself."
+  - q: "How do I make the invoice total calculate automatically in Excel?"
+    a: "Use formulas. For each line, multiply quantity by unit price (=B12*C12). Add a subtotal with =SUM() across the amount column, a tax line as subtotal times your rate (=F20*0.07), and a grand total that adds subtotal plus tax. Type the numbers into quantity and price and every total updates on its own."
+  - q: "How do I auto-generate an invoice number in Excel?"
+    a: "For simple numbering, type your last number in one cell and add 1 in the next each time you copy the file. True automatic numbering that increments every time you open the file needs a VBA macro, and the workbook has to be saved as .xlsm. Whatever method you use, never reuse an invoice number—even one you voided."
+  - q: "How do I convert an Excel invoice to PDF?"
+    a: "Go to File, then Export (or Save As), and choose PDF. Set the print area first so only the invoice sheet exports, not blank columns or a lookup tab. PDF is the format to send clients—it looks the same on every device and they can't accidentally change your figures."
+  - q: "Can Excel auto-fill client and product details on an invoice?"
+    a: "Yes, with a lookup formula. Keep a separate sheet of clients or products, then use VLOOKUP or XLOOKUP to pull a name, address, or price into the invoice when you enter an ID. Pair it with a drop-down list so you pick the client instead of typing, which cuts errors on repeat invoices."
+  - q: "Is Excel or Word better for making an invoice?"
+    a: "Excel is better when your invoice has line items, quantities, and math—it totals everything for you. Word is fine for a one-line flat fee with no calculation. Most people bill by quantity and rate, so Excel's formulas save time and prevent arithmetic mistakes."
+  - q: "Is it free to make an invoice in Excel?"
+    a: "Making the invoice is free if you already own Excel; the app itself is part of a paid Microsoft 365 subscription or a one-time Office license. If you don't have Excel, a free browser-based invoice generator or a free downloadable template gets you the same result at no cost."
+---
+
+![A freelancer building an itemized invoice in Microsoft Excel with formulas totaling the line items](/blog/how-to-generate-invoice-in-excel/featured.webp)
+
+The fastest way to generate an invoice in Excel: open Excel, click **New**, search **"invoice,"** and pick one of Microsoft's built-in templates—then type in your details and save it as a PDF. That covers most people in about five minutes. If you'd rather control every cell (and learn the formulas that do the math for you), you can build one from a blank sheet. This guide walks both routes, then shows the exact formulas that total your line items, add tax, and even auto-fill client details.
+
+An [invoice](https://www.investopedia.com/terms/i/invoice.asp) is an itemized request for payment: who owes what, for which work, and by when. Excel is a natural fit because an invoice is basically a small table with a few sums at the bottom—and sums are what spreadsheets do best.
+
+---
+
+## Two ways to make an invoice in Excel
+
+**Option 1 — Start from a template (fastest).** Open Excel, click **New**, and type `invoice` in the template search box. Microsoft ships free invoice templates, and there's a larger set in the [Microsoft invoice template gallery](https://create.microsoft.com/en-us/templates/invoices). Open one, replace the placeholder text with your business and client details, and you're done. The layout and formulas are already built.
+
+**Option 2 — Build from scratch (full control).** Start with a blank workbook and lay out the sections yourself. It takes longer the first time, but you get an invoice that looks exactly how you want, with formulas you understand. Save it as a template and every future invoice is a copy-and-fill job.
+
+Below we build from scratch, because once you can do that, editing any template is easy.
+
+## What every Excel invoice must include
+
+Before touching a cell, know what goes on the page. The US doesn't mandate a single invoice format, but these fields are what get an invoice understood and paid:
+
+- **The word "Invoice"** and a unique **invoice number**.
+- **Your business name and contact details**—name, address, email, phone. A sole proprietor can bill under their own legal name; you don't need an LLC to invoice, and you should not put your Social Security number on it.
+- **The client's name and address.**
+- **Invoice date** and **payment due date** (or terms like Net 30).
+- **Line items**: a description, quantity, unit price, and line total for each thing you're billing.
+- **Subtotal, tax (if it applies), and grand total.**
+- **Payment instructions**—how and where to pay.
+
+Whether sales tax belongs on the invoice depends on your state and what you're selling; many services aren't taxed, so don't assume it applies. Treat any tax point here as general information, not tax advice.
+
+## Build the invoice from scratch, step by step
+
+1. **Open a blank workbook** and turn off gridlines for a clean look: **View → Gridlines** (uncheck). This only changes the screen; it doesn't affect printing.
+2. **Set column widths.** Make column A narrow as a left margin, then widen the columns that will hold descriptions and numbers. Merge a few cells across the top for the header.
+3. **Build the header.** In a large, bold cell type **INVOICE**. Below it, put your business name and contact block. Leave room top-right for a logo (**Insert → Pictures**).
+4. **Add the "Bill to" and invoice meta blocks.** On the left, a **Bill To** box for the client's name and address. On the right, three labeled cells: **Invoice #**, **Date**, and **Due date**.
+5. **Create the line-item table.** Add headers across one row: **Description**, **Quantity**, **Unit price**, **Amount**. Leave 8–12 blank rows beneath for items. Bold the header row and add a border.
+6. **Add the totals block** under the table: **Subtotal**, **Tax**, and **Total** rows on the right.
+7. **Add a payment/notes area** at the bottom: how to pay, and a thank-you line.
+8. **Format the money cells.** Select the price, amount, and total cells and set them to **Currency** (Home → Number format → Currency) so everything shows as `$1,250.00`.
+
+You now have the shell. The next step—formulas—is what turns it from a static form into a calculator.
+
+## The formulas that do the math
+
+This is where Excel beats Word. Say your line-item table runs from row 12 to row 21, with **Quantity** in column B, **Unit price** in column C, and **Amount** in column D.
+
+**Line total (quantity × price).** Click the first Amount cell (D12) and enter:
+
+```text
+=B12*C12
+```
+
+Then drag the fill handle down through D21 so every row calculates itself. Now typing a quantity and a price fills in the amount automatically.
+
+**Subtotal.** In the subtotal cell, add up the Amount column with the [SUM function](https://support.microsoft.com/en-us/office/sum-function-043e1c7d-7726-4e80-8f32-07b23e057f89):
+
+```text
+=SUM(D12:D21)
+```
+
+Blank rows count as zero, so this works even when you only fill three lines. (The **AutoSum** button—the Σ on the Home tab—writes this same formula for you.)
+
+**Tax.** If tax applies, multiply the subtotal (say it's in D22) by your rate. For a 7% sales-tax rate:
+
+```text
+=D22*0.07
+```
+
+Better: put the rate in its own cell (say G2) and reference it—`=D22*G2`—so you change the rate in one place. If no tax applies, leave the tax line at `0` or delete the row.
+
+**Grand total.** Add subtotal and tax:
+
+```text
+=D22+D23
+```
+
+That's a fully self-totaling invoice. Type quantities and prices, and the subtotal, tax, and total all update instantly—no mental arithmetic, no transposed digits.
+
+**Optional: rounding.** To avoid a stray fraction of a cent, wrap a total in `ROUND`, e.g. `=ROUND(D22*G2,2)` rounds tax to two decimals.
+
+## Auto-fill client and product details with a lookup
+
+If you bill the same clients or sell the same products often, stop retyping their details. Keep a second sheet—call it `Data`—with a table of clients (ID, name, address) or products (ID, name, price). Then pull details into the invoice with a lookup formula.
+
+With the classic [VLOOKUP function](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1), if you type a product ID in cell A12 and your product table sits in `Data!A2:C50` (ID, name, price), pull the price with:
+
+```text
+=VLOOKUP(A12,Data!$A$2:$C$50,3,FALSE)
+```
+
+The `3` means "return the 3rd column" (price), and `FALSE` forces an exact match. The dollar signs lock the range so it doesn't shift when you copy the formula down.
+
+On Microsoft 365, the newer [XLOOKUP function](https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929) is cleaner because it doesn't care about column position:
+
+```text
+=XLOOKUP(A12,Data!$A$2:$A$50,Data!$C$2:$C$50)
+```
+
+Wrap either one in `IFERROR` so a blank row shows nothing instead of `#N/A`:
+
+```text
+=IFERROR(VLOOKUP(A12,Data!$A$2:$C$50,3,FALSE),"")
+```
+
+Finish it with a [drop-down list](https://support.microsoft.com/en-us/office/create-a-drop-down-list-7693307a-59ef-400a-b769-c5402dce407b) (**Data → Data Validation → List**) so you pick the client or product instead of typing an ID. Select the ID, and name, address, and price appear on their own. That's the "automated invoice" people mean when they talk about VLOOKUP invoices—no macros required.
+
+**A note on invoice numbers.** For true one-click auto-numbering that increments every time you open the file, you need a small VBA macro, and the workbook must be saved as `.xlsm`. Most people don't need that: just bump the number by one each time you save a new copy. Whichever way you do it, never reuse an invoice number—even a voided one—or your records and any audit trail get tangled.
+
+## Worked example 1: a freelance invoice with formulas
+
+You're a freelance writer billing Bright Coffee Co. for two blog posts and an edit.
+
+- **Header:** INVOICE, your name, `Invoice # 1042`, `Date: Sept 3, 2026`, `Due date: Oct 3, 2026` (Net 30—30 days after the invoice date).
+- **Line 1:** "Blog post — 1,200 words," Qty `2`, Unit price `$250`. Amount cell holds `=B12*C12` → **$500**.
+- **Line 2:** "Article edit," Qty `1`, Unit price `$120` → **$120**.
+- **Subtotal:** `=SUM(D12:D21)` → **$620**.
+- **Tax:** writing is a service not taxed in this client's state, so the tax line is `0`.
+- **Total:** `=D22+D23` → **$620**.
+
+You type only the two quantities and two prices. Every total fills itself in. Change a quantity and the total re-calculates before you look away.
+
+## Worked example 2: an automated invoice with a lookup
+
+Now you run a small print shop and bill from a product list. Your `Data` sheet has: `P01 – Business cards – $45`, `P02 – Flyers (100) – $80`, `P03 – Banner – $120`.
+
+1. In the invoice's first item row, cell A12 has a **drop-down** listing `P01, P02, P03`.
+2. The Description cell uses `=IFERROR(VLOOKUP(A12,Data!$A$2:$C$50,2,FALSE),"")` to pull the product name.
+3. The Unit-price cell uses `=IFERROR(VLOOKUP(A12,Data!$A$2:$C$50,3,FALSE),"")` to pull the price.
+4. You type only the **quantity** in column B; the Amount cell `=B12*C12` finishes the row.
+
+Pick `P02`, type quantity `3`, and the row fills in "Flyers (100), $80, $240" on its own. Add more rows the same way, and `=SUM()` totals the lot. Once this workbook is built, generating an invoice is: pick products, type quantities, save as PDF.
+
+## Save and send it as a PDF
+
+Don't email the `.xlsx`—a client can accidentally edit your figures, and it may look different on their screen. Export a PDF instead:
+
+1. Set the **print area** so only the invoice exports: select the invoice range, then **Page Layout → Print Area → Set Print Area**. This keeps your `Data` lookup sheet and empty columns out of the file.
+2. **File → Export → Create PDF/XPS** (or **Save As** and choose **PDF**).
+3. Name the file with the invoice number, e.g. `Invoice-1042-BrightCoffee.pdf`, and send it.
+
+Keep a copy of every invoice you send. The [IRS advises businesses to retain supporting records](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping) like sales invoices for their filings.
+
+## Common mistakes to avoid
+
+- **Typing totals by hand.** The whole point of Excel is the formula. A hand-typed total is a math error waiting to happen and won't update when you tweak a line.
+- **Sending the .xlsx file.** Always export a PDF. Spreadsheets can be edited and can reflow on a different device.
+- **Forgetting the print area.** Without one, your PDF may include blank columns or your lookup tab. Set it once.
+- **Reusing invoice numbers.** Each invoice needs its own number. Reusing one—even a voided one—creates duplicates that confuse you, your client, and any auditor.
+- **Assuming you must charge sales tax.** Tax depends on your state and what you sell; many services aren't taxed. This is general information, not tax advice—check your state's rules or your accountant.
+- **`#N/A` all over the invoice.** That's a lookup with no match. Wrap it in `IFERROR` so empty rows stay blank.
+- **Confusing Net terms with a calendar date.** Net 30 means 30 days after the invoice date, not the 30th of the month.
+
+## When Excel is more than you need
+
+Excel is great when you already own it and like controlling the sheet. But building the layout, wiring the formulas, and exporting a clean PDF every time is real work—and one wrong cell reference throws off a total.
+
+If your real need is "bill this client and get paid today," a purpose-built tool is faster. Our [free invoice generator](/invoice-generator) creates and downloads a clean PDF in a couple of minutes—no formulas, no print-area fiddling, no account. Prefer to stay in a spreadsheet? Grab our [Excel invoice template](/invoice-template-excel) with the totals already wired, or the [Google Sheets version](/invoice-template-google-sheets) if you work in the cloud. For the wider workflow, see [how to send an invoice](/blog/how-to-send-an-invoice), what [Net 30 really means](/blog/what-does-net-30-mean-on-an-invoice), and how to [set up invoice numbers](/blog/what-is-an-invoice-number).
+
+## The short version
+
+Generating an invoice in Excel is two choices: start from a **built-in template** (New → search "invoice") for speed, or **build from scratch** for control. Either way, let the formulas do the math—`=B12*C12` for each line, `=SUM()` for the subtotal, `subtotal × rate` for tax, and a lookup with `VLOOKUP`/`XLOOKUP` if you want client and product details to fill themselves in. Set a print area, export a PDF, and keep a copy. And if the spreadsheet is more fuss than the job deserves, a free generator or a ready-made template gets the same invoice out the door in minutes.
+
+## Frequently asked questions
+
+The FAQs above answer what most people ask about making invoices in Excel—whether Excel has a template, how to auto-total and auto-number, converting to PDF, auto-filling client details, Excel vs. Word, and whether it's free.

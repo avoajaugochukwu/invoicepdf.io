@@ -1,0 +1,60 @@
+{
+  "slug": "graphic-design-invoice-template",
+  "styleId": "canva",
+  "keyword": "Graphic Design Invoice Template",
+  "platform": "graphic design",
+  "metaTitle": "Free Graphic Design Invoice Template — No Signup",
+  "metaDescription": "A free graphic design invoice template. Bill for logos, branding, and revisions with automatic totals and a print-ready PDF — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-canva.pdf",
+  "docxFile": "/templates/invoice-template-canva.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A clean, design-forward invoice template made for graphic designers — logo and brand-identity work, illustration, packaging, social graphics, and print. It has a Canva-style layout with room for your own logo, so the invoice looks as considered as the work you deliver, and it lays out each service, round of revisions, and any usage or licensing fee in a table a client's accounts team can read at a glance.",
+    "It's free, with no signup and no watermark. Download the editable Word (.docx) and PDF files to work in Word, Google Docs, or Pages, or use the free generator below to enter your line items in the browser and export a finished invoice in a couple of minutes."
+  ],
+  "included": [
+    "Line items built for design work — bill per project, per deliverable, per hour, or add a fixed logo or brand-identity fee",
+    "A separate line for extra revision rounds or a usage/licensing fee, kept clear of the base project cost",
+    "Space for your logo and business details alongside the client's billing details, so the invoice looks like your own",
+    "A unique invoice number and issue and due dates, plus an itemized table with quantity, rate, and line totals that adds itself up",
+    "A notes section for payment terms, a deposit already paid, or how final files are released",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Use the free generator below and pick this Canva-style layout, or download the editable Word file and open it in Word, Google Docs, or Pages. No account or signup needed."
+    },
+    {
+      "title": "List your design work",
+      "body": "Add a line for each deliverable — logo suite, brand guidelines, an illustration set, or a block of hours — with its rate, plus any extra revision rounds or a usage fee. Set your invoice number, dates, and terms, and the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF to email the client, or grab the Word file to reuse for the next project. Note any deposit already paid so the balance due is clear, and keep a copy for your own records."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How should a graphic designer invoice — per project or per hour?",
+      "a": "Both are common. A fixed project fee suits defined work like a logo or a brand identity, where the client wants a known price; an hourly rate suits open-ended or ongoing design support. This template handles either — put a flat fee on one line, or set the hours and your hourly rate and the line total does the math. Many designers bill a deposit up front and the balance on delivery, which you can show as two lines or as a paid deposit deducted from the total."
+    },
+    {
+      "q": "Should I charge for extra revision rounds on the invoice?",
+      "a": "If your agreement included a set number of rounds and the client wanted more, yes — list the extra rounds as their own line so the base project fee stays clean and the client sees exactly what the extra cost is for. Spelling out the included rounds in your notes or original quote makes that line easy to justify."
+    },
+    {
+      "q": "Do I invoice a design deposit before or after the work?",
+      "a": "Many designers take a deposit before starting and invoice the balance on delivery. You can send one invoice for the deposit, then a final invoice that lists the full fee and subtracts the deposit already paid so only the balance is due. Note the deposit clearly so there's no confusion about what's outstanding."
+    },
+    {
+      "q": "Do I need a registered business or LLC to invoice for design work?",
+      "a": "No. In the US a sole proprietor can invoice under their own legal name — you don't need an LLC or a registered business to bill a client. Give every invoice a unique number and never reuse one, even for a voided invoice, so your records stay clean. This is general information, not tax or legal advice."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-is-an-invoice-number",
+    "how-to-ask-for-payment"
+  ]
+}

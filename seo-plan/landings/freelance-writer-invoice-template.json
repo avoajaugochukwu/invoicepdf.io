@@ -1,0 +1,60 @@
+{
+  "slug": "freelance-writer-invoice-template",
+  "styleId": "google-docs",
+  "keyword": "Freelance Writer Invoice Template",
+  "platform": "freelance writing",
+  "metaTitle": "Free Freelance Writer Invoice Template — No Signup",
+  "metaDescription": "A free freelance writer invoice template. Bill clients by article, word, or hour with automatic totals and a print-ready PDF — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A simple, clean invoice template built for freelance writers — copywriters, content writers, ghostwriters, and journalists who bill by the article, the word, the hour, or a flat project rate. It has a plain, Google Docs-style layout with everything a client's accounts team expects: your details, their details, an itemized list of the pieces you delivered, and a clear total due.",
+    "It's free, with no signup and no watermark. Download the editable Word (.docx) and PDF files to work in Google Docs, Word, or Pages, or use the free generator below to fill in your line items and export a finished invoice in a couple of minutes."
+  ],
+  "included": [
+    "Line items that fit writing work — describe each piece and bill per word, per article, per hour, or a flat project fee",
+    "A retainer or milestone line for ongoing content or ghostwriting engagements",
+    "Your business and client details, a unique invoice number, and issue and due dates",
+    "An itemized table with quantity, rate, and line totals that adds itself up",
+    "A notes section for payment terms, kill fees, or accepted payment methods",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Use the free generator below and pick this clean Google Docs-style layout, or download the editable Word file and open it in Google Docs, Word, or Pages. No account or signup needed."
+    },
+    {
+      "title": "Add your writing work",
+      "body": "List each piece you delivered — blog post, feature, landing page, or hours of research — with its rate. Set your invoice number, issue and due dates, and payment terms, and the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Click Download PDF for a print-ready invoice, or export the Word file to keep editing. Email it to your editor or client and keep a copy for your own records at tax time."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How should a freelance writer bill — per word, per hour, or per project?",
+      "a": "Bill however you agreed with the client. Per-word rates are common for articles and copy, per-hour suits research or editing, and flat project fees work for defined deliverables like a landing page. This template handles all three: put the rate in the rate column and the unit (words, hours, or a flat fee) in the description, and the line total does the math."
+    },
+    {
+      "q": "Do I need a registered business or LLC to invoice as a writer?",
+      "a": "No. In the US a sole proprietor can invoice under their own legal name — you don't need an LLC or a registered business to bill a client. Add a business name later if you form one. This is general information, not tax or legal advice."
+    },
+    {
+      "q": "What payment terms should I put on a writing invoice?",
+      "a": "Net 15 or Net 30 is standard, meaning payment is due 15 or 30 days after the invoice date. Put the terms and the exact due date in the notes so there's no confusion, and if you charge a late fee or a kill fee, state it there too."
+    },
+    {
+      "q": "How do I number my invoices if I write for several clients?",
+      "a": "Use one running sequence across all clients, or add a short client code as a prefix (for example ACME-001, ACME-002). Either way, never reuse an invoice number — every invoice needs its own, even one you void or cancel — so your records and any client's accounts stay clean."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "how-to-ask-for-payment",
+    "what-is-an-invoice-number"
+  ]
+}

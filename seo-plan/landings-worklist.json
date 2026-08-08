@@ -1,0 +1,221 @@
+{
+ "count": 27,
+ "posts": [
+  {
+   "slug": "canva-invoice-generator",
+   "keyword": "Canva Invoice Generator",
+   "styleId": "canva",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-canva.pdf",
+   "docxFile": "/templates/invoice-template-canva.docx"
+  },
+  {
+   "slug": "hubspot-invoice-generator",
+   "keyword": "HubSpot Invoice Generator",
+   "styleId": "google-docs",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "wave-invoice-generator",
+   "keyword": "Wave Invoice Generator",
+   "styleId": "google-docs",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "square-invoice-template",
+   "keyword": "Square Invoice Template",
+   "styleId": "google-docs",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "adobe-express-invoice-template",
+   "keyword": "Adobe Express Invoice Template",
+   "styleId": "canva",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-canva.pdf",
+   "docxFile": "/templates/invoice-template-canva.docx"
+  },
+  {
+   "slug": "stripe-invoice-template",
+   "keyword": "Stripe Invoice Template",
+   "styleId": "google-docs",
+   "platform": "professional",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "proforma-invoice-template",
+   "keyword": "Proforma Invoice Template",
+   "styleId": "word",
+   "platform": "international trade",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "commercial-invoice-template",
+   "keyword": "Commercial Invoice Template",
+   "styleId": "word",
+   "platform": "shipping & customs",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "pdf-invoice-template",
+   "keyword": "PDF Invoice Template",
+   "styleId": "blank",
+   "platform": "general",
+   "downloadFile": "/templates/invoice-template-blank.pdf",
+   "docxFile": "/templates/invoice-template-blank.docx"
+  },
+  {
+   "slug": "construction-invoice-template",
+   "keyword": "Construction Invoice Template",
+   "styleId": "word",
+   "platform": "construction",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "freelance-invoice-template",
+   "keyword": "Freelance Invoice Template",
+   "styleId": "google-docs",
+   "platform": "freelance",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "freelance-writer-invoice-template",
+   "keyword": "Freelance Writer Invoice Template",
+   "styleId": "google-docs",
+   "platform": "freelance writing",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "it-services-invoice-template",
+   "keyword": "IT Services Invoice Template",
+   "styleId": "google-docs",
+   "platform": "IT services",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "consultant-invoice-template",
+   "keyword": "Consultant Invoice Template",
+   "styleId": "google-docs",
+   "platform": "consulting",
+   "downloadFile": "/templates/invoice-template-google-docs.pdf",
+   "docxFile": "/templates/invoice-template-google-docs.docx"
+  },
+  {
+   "slug": "plumber-invoice-template",
+   "keyword": "Plumber Invoice Template",
+   "styleId": "word",
+   "platform": "plumbing",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "electrician-invoice-template",
+   "keyword": "Electrician Invoice Template",
+   "styleId": "word",
+   "platform": "electrical",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "landscaping-invoice-template",
+   "keyword": "Landscaping Invoice Template",
+   "styleId": "word",
+   "platform": "landscaping",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "hvac-invoice-template",
+   "keyword": "HVAC Invoice Template",
+   "styleId": "word",
+   "platform": "HVAC",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "roofing-invoice-template",
+   "keyword": "Roofing Invoice Template",
+   "styleId": "word",
+   "platform": "roofing",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "painting-invoice-template",
+   "keyword": "Painting Invoice Template",
+   "styleId": "word",
+   "platform": "painting",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "catering-invoice-template",
+   "keyword": "Catering Invoice Template",
+   "styleId": "canva",
+   "platform": "catering",
+   "downloadFile": "/templates/invoice-template-canva.pdf",
+   "docxFile": "/templates/invoice-template-canva.docx"
+  },
+  {
+   "slug": "trucking-invoice-template",
+   "keyword": "Trucking Invoice Template",
+   "styleId": "word",
+   "platform": "trucking & freight",
+   "downloadFile": "/templates/invoice-template-word.pdf",
+   "docxFile": "/templates/invoice-template-word.docx"
+  },
+  {
+   "slug": "salon-invoice-template",
+   "keyword": "Salon Invoice Template",
+   "styleId": "canva",
+   "platform": "salon & beauty",
+   "downloadFile": "/templates/invoice-template-canva.pdf",
+   "docxFile": "/templates/invoice-template-canva.docx"
+  },
+  {
+   "slug": "dental-invoice-template",
+   "keyword": "Dental Invoice Template",
+   "styleId": "microsoft",
+   "platform": "dental",
+   "downloadFile": "/templates/invoice-template-microsoft.pdf",
+   "docxFile": "/templates/invoice-template-microsoft.docx"
+  },
+  {
+   "slug": "graphic-design-invoice-template",
+   "keyword": "Graphic Design Invoice Template",
+   "styleId": "canva",
+   "platform": "graphic design",
+   "downloadFile": "/templates/invoice-template-canva.pdf",
+   "docxFile": "/templates/invoice-template-canva.docx"
+  },
+  {
+   "slug": "sales-receipt-template",
+   "keyword": "Sales Receipt Template",
+   "styleId": "receipt",
+   "platform": "retail sales",
+   "downloadFile": "/templates/receipt-template.pdf",
+   "docxFile": "/templates/receipt-template.docx"
+  },
+  {
+   "slug": "deposit-receipt-template",
+   "keyword": "Deposit Receipt Template",
+   "styleId": "receipt",
+   "platform": "deposits",
+   "downloadFile": "/templates/receipt-template.pdf",
+   "docxFile": "/templates/receipt-template.docx"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "landscaping-invoice-template",
+  "styleId": "word",
+  "keyword": "Landscaping Invoice Template",
+  "platform": "landscaping",
+  "metaTitle": "Free Landscaping Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free landscaping invoice template for lawn care and yard crews — no signup, no watermark. Download an editable Word and PDF invoice or make one online.",
+  "downloadFile": "/templates/invoice-template-word.pdf",
+  "docxFile": "/templates/invoice-template-word.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free landscaping invoice template for lawn care pros, landscapers, and yard-crew owners who bill for mowing, planting, cleanups, and seasonal work. It gives you clean line items for labor and materials plus a spot for the property address, so a homeowner or property manager sees exactly what the visit covered.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "Line items for services and materials — mowing, trimming, mulch, sod, or plants — each with quantity or hours and a rate",
+    "A service address and service date field so every invoice is tied to the right property and visit",
+    "A header for your business name, logo, address, and contact details, and a section for the client you are billing",
+    "A unique invoice number with issue and due dates so each invoice is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for per-visit, monthly, or Net 15 billing",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your business, client, and property details",
+      "body": "Enter your company name, logo, and contact info at the top, then add the client and the service address. Give the invoice a unique number and set the issue and due dates."
+    },
+    {
+      "title": "List your services and materials",
+      "body": "Add each line with a description, quantity or hours, and rate — for example a mowing visit, hedge trimming, or bags of mulch. The template adds up line totals, subtotal, tax, and the grand total for you."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and email it to the homeowner or property manager. Include your payment terms — per visit, monthly, or Net 15 — and how you want to be paid."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I invoice for a recurring lawn care or mowing service?",
+      "a": "Send a fresh invoice for each billing period — usually per visit or once a month — and give every one a new invoice number. On a monthly invoice, list each visit as its own line with the service date so the client can see how many mows or cleanups they are paying for, then let the template total it up."
+    },
+    {
+      "q": "Should I list materials like mulch and plants separately from labor?",
+      "a": "Yes. Put your labor or service visits on their own lines with hours or a flat rate, and list materials such as mulch, sod, plants, or fertilizer as separate lines with quantity and unit price. The client sees the full cost and the breakdown behind it, which cuts down on questions and disputes."
+    },
+    {
+      "q": "Do I charge sales tax on a landscaping invoice?",
+      "a": "It depends on your state. U.S. sales tax rules for landscaping vary — some states tax the materials you install, some tax the labor for lawn care or maintenance, and some treat design work differently. The template has a tax line that calculates automatically; set the rate that applies to you, and check your state's rules if you are unsure."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every property and client and edit them however you like."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "itemized-invoice",
+    "how-to-ask-for-payment"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "roofing-invoice-template",
+  "styleId": "word",
+  "keyword": "Roofing Invoice Template",
+  "platform": "roofing",
+  "metaTitle": "Free Roofing Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free roofing invoice template for contractors and crews — bill by the square for tear-off, materials, and labor. Editable Word and PDF, no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-word.pdf",
+  "docxFile": "/templates/invoice-template-word.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free roofing invoice template for roofing contractors, crews, and one-person shops that bill for tear-off, materials, and labor on a job. It gives you separate lines for the roof size in squares, shingles or membrane, underlayment, and any decking repairs, plus a spot for the job address, so a homeowner or property manager sees exactly what the reroof or repair cost.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files to fill in on your own computer, or use the generator below to build the invoice in your browser and download a print-ready PDF once the crew is off the roof."
+  ],
+  "included": [
+    "Lines that bill by the square — tear-off and disposal, new shingles or membrane, underlayment, and flashing — so a homeowner sees the full breakdown of the roof",
+    "A job or property address field plus your license number, so every roofing invoice stays tied to the right work and any warranty",
+    "A header for your company name, logo, address, and contact details, with a section for the customer or property being billed",
+    "A unique invoice number with issue and due dates so each job is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for a deposit, progress draws, or Net 30",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your business, customer, and roof details",
+      "body": "Enter your company name, logo, license number, and contact info, then add the customer and the property address. Note the roof size in squares and the work done — reroof, repair, or storm damage — give the invoice a unique number, and set the issue and due dates."
+    },
+    {
+      "title": "List tear-off, materials, and labor",
+      "body": "Add a line for tear-off and dumpster or disposal, then materials like shingles, underlayment, and flashing, and labor by the square or the hour. The template adds up line totals, subtotal, tax, and the grand total for you."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and hand it to the homeowner or email the property manager. Include your payment terms — a deposit up front, progress draws on a larger job, or Net 30 — and how you take payment."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I bill by the square on a roofing invoice?",
+      "a": "A roofing square is 100 square feet of roof area. Put your per-square price on its own line and multiply it by the number of squares, or break the job into separate lines — tear-off per square, new shingles or membrane per square, and labor — so the total is easy to follow. The template totals every line into one subtotal, adds tax, and shows a single grand total, so the customer sees both the full cost and the breakdown behind it."
+    },
+    {
+      "q": "Can I use this template for an insurance roof claim?",
+      "a": "Yes. You can itemize tear-off, materials, and labor so the amounts line up with the adjuster's scope, and use the notes area for the claim number and the deductible the homeowner still owes. Give each invoice a unique number and keep a copy, since insurers often ask for a detailed, paid invoice before they release the final payment."
+    },
+    {
+      "q": "Should I take a deposit before a reroof?",
+      "a": "Many roofing contractors collect a deposit or a materials payment up front on a full reroof, then bill the balance when the job is done. You can send one invoice for the deposit and a second for the balance — just give each a new invoice number and note in the payment-terms area what portion of the job it covers."
+    },
+    {
+      "q": "Should I charge sales tax on a roofing invoice?",
+      "a": "It depends on your state and the type of work. U.S. sales tax rules for roofing vary — some states tax materials, some tax the full labor-and-materials contract, and some treat the contractor as the end user of the materials. The template has a tax line that calculates automatically; set the rate that applies to you, and check your state's rules if you are unsure. This is general information, not tax advice."
+    }
+  ],
+  "related": [
+    "itemized-invoice",
+    "how-to-ask-for-payment",
+    "what-does-net-30-mean-on-an-invoice"
+  ]
+}

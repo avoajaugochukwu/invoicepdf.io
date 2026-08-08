@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "blog:image": "node scripts/generate-blog-images.mjs",
+    "blog:images": "node scripts/generate-blog-images.mjs"
   },
   "dependencies": {
     "@next/third-parties": "^15.5.19",

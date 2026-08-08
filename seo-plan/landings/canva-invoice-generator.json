@@ -1,0 +1,60 @@
+{
+  "slug": "canva-invoice-generator",
+  "styleId": "canva",
+  "keyword": "Canva Invoice Generator",
+  "platform": "professional",
+  "metaTitle": "Free Canva Invoice Generator — No Signup, No Watermark",
+  "metaDescription": "A free Canva-style invoice generator for professionals. Make a clean, print-ready invoice or download an editable Word and PDF. No signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-canva.pdf",
+  "docxFile": "/templates/invoice-template-canva.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a clean, professional invoice template in a Canva-style layout — plenty of white space, a clear header for your logo and business name, and a tidy itemized table. It suits designers, photographers, consultants, and any professional who wants an invoice that looks polished without opening a full design tool.",
+    "It is free, with no signup and no watermark. Download the editable Word and PDF files to fill in on your own computer, or use the generator below to build your invoice in the browser and download a print-ready PDF in a minute."
+  ],
+  "included": [
+    "Space for your logo, business name, and contact details, plus your client's billing details",
+    "A clean, design-forward layout that reads as professional for creative and client-facing work",
+    "Invoice number field and issue and due dates so every invoice is easy to track",
+    "An itemized table for descriptions, quantities, rates, and line totals",
+    "Automatic subtotal, tax, and grand total so the math is done for you",
+    "A notes and payment terms section, print-ready on one page, as a free editable Word and PDF — no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Add your details",
+      "body": "Drop in your business name, logo, and contact info, then your client's name and billing address. Set an invoice number and the issue and due dates."
+    },
+    {
+      "title": "List your work",
+      "body": "Add a line for each service or item with a description, quantity, and rate. The subtotal, tax, and total update on their own, so you don't do the math."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF, or grab the editable Word file to reuse for the next client. Email it or share the link, and you're paid faster."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a Canva account to use this?",
+      "a": "No. Canva's own invoice maker asks you to sign up for a free account before you can design or download. This template is a separate, free tool — you can build an invoice and download it here without any account, sign-in, or Canva Pro subscription."
+    },
+    {
+      "q": "Will there be a watermark on my invoice?",
+      "a": "No. Your finished PDF is clean, with no watermark and no branding from us. The header carries only your logo and business details, so it looks like your own invoice."
+    },
+    {
+      "q": "Can I edit the template in Canva or in Word?",
+      "a": "Both work. Download the editable Word (.docx) file to customize colors, fonts, and layout in Microsoft Word or Google Docs. You can also rebuild the same layout inside Canva if you prefer its drag-and-drop editor, but you do not need Canva to use this template."
+    },
+    {
+      "q": "How do I handle sales tax on the invoice?",
+      "a": "Add your tax rate in the tax field and the total updates automatically. Whether you charge sales tax depends on your state and the type of work — many services are not taxed. This is general information, not tax advice; check your state's rules if you are unsure."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-is-an-invoice-number",
+    "free-invoice-generators"
+  ]
+}

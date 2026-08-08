@@ -1,0 +1,60 @@
+{
+  "slug": "stripe-invoice-template",
+  "styleId": "google-docs",
+  "keyword": "Stripe Invoice Template",
+  "platform": "professional",
+  "metaTitle": "Free Stripe Invoice Template — No Signup, No Watermark",
+  "metaDescription": "A free Stripe invoice template you can edit and download as Word or PDF. No Stripe account, no signup, no watermark, and no per-invoice fees.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a clean, professional invoice template for anyone who bills clients through Stripe but wants a simple document to send, save, or attach to a payment link. It gives you the same fields a Stripe invoice shows — line items, tax, totals, and payment terms — in a layout you fully control.",
+    "It is completely free, with no signup and no watermark. Download it as an editable Word file or a print-ready PDF, or fill it out in the generator below and export in seconds. You do not need a Stripe account or any paid plan to use it."
+  ],
+  "included": [
+    "A spot to note your Stripe payment link or 'Pay online' instructions so clients know exactly how to pay",
+    "Your business and client details, plus a unique invoice number and issue and due dates",
+    "An itemized table for descriptions, quantities, rates, and line amounts",
+    "Automatic subtotal, tax, and grand total so the math is always right",
+    "A notes and payment terms area for Net 15, Net 30, or deposit terms",
+    "A print-ready one-page design, free to edit in Word or PDF with no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Add your details and line items",
+      "body": "Enter your business name, your client, an invoice number, and the dates. List each service or product with its quantity and rate."
+    },
+    {
+      "title": "Set tax and payment terms",
+      "body": "Add your tax rate if it applies and the totals update on their own. Note your terms and drop in your Stripe payment link or 'Pay by card' instructions."
+    },
+    {
+      "title": "Download and send",
+      "body": "Export the finished invoice as a PDF or Word file, then email it or attach it to your Stripe request. Nothing is saved on our servers."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a Stripe account to use this template?",
+      "a": "No. This is a standalone invoice document you can fill out and send to anyone. If you do collect payment through Stripe, just add your payment link or 'Pay online' note so clients can pay by card."
+    },
+    {
+      "q": "How is this different from creating an invoice inside Stripe?",
+      "a": "Stripe Invoicing is a paid feature that charges a percentage fee on each invoice you send and requires a Stripe account. This template is free, needs no account, and has no per-invoice fee — you just create the document and choose how to get paid."
+    },
+    {
+      "q": "Can I add my Stripe payment link to the invoice?",
+      "a": "Yes. Paste your Stripe payment link or checkout URL into the notes or payment terms area, and add a short line like 'Pay securely by card at the link above' so clients know what to do."
+    },
+    {
+      "q": "Is the downloaded file editable?",
+      "a": "Yes. You get an editable Word (.docx) version you can reopen and change any time, plus a print-ready PDF for sending. Both are free and have no watermark."
+    }
+  ],
+  "related": [
+    "how-to-send-an-invoice",
+    "what-is-an-invoice-number",
+    "how-to-ask-for-payment"
+  ]
+}

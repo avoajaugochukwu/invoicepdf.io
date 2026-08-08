@@ -1,0 +1,131 @@
+---
+title: "Payment Reconciliation: How to Match Payments to Invoices and Your Bank"
+slug: "payment-reconciliation"
+date: "2026-09-21T09:00:00.000Z"
+excerpt: "Payment reconciliation is how you prove every payment that landed in your account ties back to a real invoice — minus fees. Here's the process, two worked examples, and the mistakes that trip people up."
+description: "Payment reconciliation matches money you received to your invoices and bank. Learn the process, worked examples with processor fees, and mistakes to avoid."
+author: "Charles Ugo"
+featuredImage: "/blog/payment-reconciliation/featured.webp"
+tags: ["invoice"]
+faqs:
+  - q: "What is payment reconciliation?"
+    a: "Payment reconciliation is the process of matching every payment you received against the invoice it was meant to settle and against the deposit that shows up in your bank or payment-processor account. When the invoice, the payment, and the bank line all agree — after accounting for fees — the payment is reconciled. When they don't, you've found a short payment, an overpayment, an unrecorded fee, a refund, or a payment applied to the wrong invoice to investigate."
+  - q: "What is the difference between payment reconciliation and bank reconciliation?"
+    a: "Bank reconciliation checks your whole cash account against the bank statement to confirm the ending balance is right. Payment reconciliation zooms in on individual payments — it ties each amount that hit your account back to the specific invoice it paid, minus any processing fee. Bank reconciliation is about the account total; payment reconciliation is about matching money to invoices one payment at a time. Most small businesses do payment reconciliation first, then use it as the detail behind the monthly bank reconciliation."
+  - q: "Why don't my payments match my invoices?"
+    a: "The most common reasons are payment-processor fees deducted before the money lands, several invoices paid in one lump sum or one processor payout, partial payments, a customer overpaying or paying an old balance, refunds and chargebacks netted out of a payout, currency conversion, and simple timing gaps where the payment posts on a different day than the invoice. Each has a clear fix once you can see the payout broken into its parts."
+  - q: "How do you reconcile payments from Stripe or PayPal?"
+    a: "Download the payout (or settlement) report from the processor for the period. Match the payout total to the single deposit that reached your bank. Then break that payout into its parts — gross charges, processing fees, refunds, and chargebacks — and match each charge to the invoice it settled. Record the gross as revenue against each invoice, the fees as an expense, and the net as the bank deposit. One deposit almost never equals one invoice, so the payout report is what makes the match possible."
+  - q: "What are the steps in payment reconciliation?"
+    a: "Gather your records (open invoice list, payments received, and the bank or processor statement), match each payment to its invoice, break any batched payout into individual charges and fees, compare the totals against the bank deposit, flag every difference, investigate the cause, correct your records, and mark each invoice paid and reconciled. Do it as payments arrive and run a full pass at least once a month."
+  - q: "Can payment reconciliation be automated?"
+    a: "Yes. Accounting apps and dedicated tools can pull payments from your processor, match them to open invoices by amount and reference, split out fees automatically, and flag anything that doesn't match for a human to review. Automation is worth it once matching by hand eats real hours or your volume is too high to track in a spreadsheet. If you send a handful of invoices a month, a clear invoice numbering system and a simple tracker are usually enough."
+---
+
+**Payment reconciliation** is the process of matching every payment you received against the invoice it was supposed to settle and against the deposit that actually shows up in your bank or payment-processor account. You take a payment, find the invoice it belongs to, then confirm the money reached your account — accounting for any fee that came out along the way. When the invoice, the payment, and the bank line all agree, the payment is reconciled and you can trust that the sale is truly paid. When they don't, you've found something to fix: a short payment, an overpayment, an unrecorded fee, a refund, or a payment stuck against the wrong invoice.
+
+If you sell anything online, this is the part of getting paid that quietly goes wrong. A customer pays a $1,000 invoice and only $970 lands in your bank. Three clients pay on the same day and your account shows one deposit, not three. A refund from last week is netted out of this week's payout. None of that means anyone made a mistake — it's how card processors and banks move money. Payment reconciliation is how you keep the books straight anyway.
+
+## What payment reconciliation actually checks
+
+Reconciliation, in general, means comparing two records that should agree and explaining every difference between them — the standard [definition of reconciliation](https://www.investopedia.com/terms/r/reconciliation.asp) in accounting. Payment reconciliation applies that idea to the money-in side of your business, across three records:
+
+- **The invoice** — what you billed, and what's still open.
+- **The payment** — what the customer actually sent, and when.
+- **The bank or processor statement** — what landed in your account, net of fees.
+
+The job is to line those three up, one payment at a time. It's the narrow, money-focused cousin of a few related checks. [Bank reconciliation](/blog/bank-reconciliation) confirms your whole cash balance matches the bank statement. Billing reconciliation makes sure every invoice you issued has a matching payment. [Account reconciliation](/blog/account-reconciliation) is the umbrella term for tying any account to its supporting record. Payment reconciliation is the piece that answers one precise question: *did the money I received match what I was owed?*
+
+Getting this right protects your cash flow and your books. It's how you catch an invoice that was quietly underpaid, a fee you forgot to record, or a payment that never arrived at all — the kind of thing that turns into an [outstanding invoice](/blog/outstanding-invoice) you chase months later.
+
+## Why a payment rarely matches the invoice exactly
+
+The single biggest source of confusion is that the amount you billed almost never equals the amount that hits your bank. Here's why.
+
+**Processing fees.** Card processors take a cut before they pay you. Stripe's [standard US online rate](https://stripe.com/pricing) is 2.9% + $0.30 per successful card charge, and other processors are in the same ballpark. Bill $1,000 and the deposit is smaller, every time.
+
+**Batched payouts.** Processors don't wire each sale separately. They bundle a day's or two days' worth of charges into one payout, so your bank shows a single deposit that covers several invoices at once. Stripe's [payout reconciliation report](https://docs.stripe.com/reports/payout-reconciliation) exists specifically to break that one deposit back into the charges, fees, refunds, and disputes inside it.
+
+**Partial and lump payments.** A customer might pay half now and half later, or pay three of your invoices with one transfer. Either way the payment amount won't equal any single invoice.
+
+**Refunds and chargebacks.** A refund you issued, or a chargeback a customer filed, gets netted out of a later payout — so a deposit can be *smaller* than the sales it represents for reasons that have nothing to do with the current invoices.
+
+**Overpayments and old balances.** Someone pays the wrong amount, or clears an invoice you'd written off. The money is real; it just doesn't line up with what you expected.
+
+**Currency conversion.** An overseas customer pays and the converted amount, minus a conversion fee, differs from the figure on the invoice.
+
+**Timing gaps.** The payment posts on a different day than the invoice or the deposit, so for a day or two the records simply don't line up yet.
+
+Every one of these has a clean explanation and a clean fix. Reconciliation is just the discipline of finding it before it compounds.
+
+## The payment reconciliation process, step by step
+
+1. **Gather the three records.** Pull your list of open invoices, your record of payments received, and the statement from your bank and each payment processor for the same period.
+2. **Match each payment to an invoice.** Work payment by payment. Use the invoice number the customer referenced, the amount, and the customer name to find its match. A consistent [invoice numbering system](/blog/what-is-an-invoice-number) makes this fast — never reuse a number, even for a voided invoice, or two payments will fight over the same reference.
+3. **Break batched payouts apart.** When a processor deposit covers several charges, open the payout report and split it into individual charges, fees, refunds, and holds. Match each charge to its invoice.
+4. **Account for the fee.** Record the full invoice amount as revenue and the processing fee as a separate expense. The two together explain why the deposit is smaller than the bill.
+5. **Compare against the bank deposit.** Confirm the net of (gross charges − fees − refunds) equals the actual deposit line in your bank. This is the tie-out that proves the match.
+6. **Flag and investigate every difference.** Anything left over — a short payment, an extra payment, an unexplained deduction — gets researched now, while the trail is fresh.
+7. **Correct your records and mark it reconciled.** Fix the entry, note the cause, and mark each invoice paid. Then move to the next payment.
+
+Do a light version of this as payments arrive so nothing piles up, and a full pass at least once a month, right after your bank and processor statements close.
+
+## Worked example 1: one card payment, one fee
+
+You send a client an invoice for **$1,000**, and they pay by card through your processor.
+
+A few days later your bank shows a deposit of **$970.70** — not $1,000. Here's the reconciliation:
+
+| Item | Amount |
+|---|---|
+| Invoice total (revenue) | $1,000.00 |
+| Processing fee (2.9% + $0.30) | −$29.30 |
+| **Net deposited to bank** | **$970.70** |
+
+The match works like this: you record **$1,000 of revenue** against the invoice, record **$29.30 as a processing-fee expense**, and confirm the **$970.70 net** equals the bank deposit. All three records now agree. The invoice is marked paid, and the "missing" $30 is fully explained — it's a fee, not a short payment. Skip this and you'd either understate your revenue by $30 or chase a client for money they already paid.
+
+## Worked example 2: a batched payout covering several invoices
+
+Now the realistic case. On the same day, three clients pay by card:
+
+| Invoice | Amount | Fee (2.9% + $0.30) |
+|---|---|---|
+| INV-041 | $500.00 | $14.80 |
+| INV-042 | $250.00 | $7.55 |
+| INV-043 | $1,250.00 | $36.55 |
+| **Totals** | **$2,000.00** | **$58.90** |
+
+That same day, a $120 refund you issued last week on an earlier sale also settles inside this payout. Your bank shows **one deposit**, and it isn't $500, $250, $1,250, or $2,000. It's:
+
+```text
+Gross charges        $2,000.00
+Processing fees        −$58.90
+Refund (prior sale)   −$120.00
+-----------------------------
+Net payout to bank   $1,821.10
+```
+
+Looking at the bank alone, $1,821.10 matches nothing. The only way to reconcile it is the payout report: it breaks the single deposit into the three charges, their fees, and the refund. You then record $500, $250, and $1,250 of revenue against INV-041, INV-042, and INV-043, book $58.90 of fees, back out the $120 refund, and confirm the $1,821.10 net equals the deposit. Three invoices closed, one bank line explained to the cent.
+
+This is the scenario people get stuck on, because the deposit looks wrong until you split it. It never was — it just bundled five events into one number.
+
+## Common mistakes to avoid
+
+- **Treating the deposit as the sale.** Recording $970.70 of revenue instead of $1,000 hides your real income and quietly buries the fee. Record the gross, then the fee.
+- **Ignoring processing fees entirely.** Over a year those small percentages add up to real money and real deductible expenses. Booking them also makes every deposit reconcile.
+- **Matching by amount alone.** Two clients owe $500 and both pay — which invoice did each clear? Without the invoice number as a reference, you'll guess wrong. Ask customers to include it, and keep numbering clean.
+- **Letting it pile up.** A week of unmatched payments is an afternoon of detective work. Match as money arrives.
+- **Forgetting refunds and chargebacks.** A payout that's smaller than expected is often a refund netted out, not a customer who underpaid. Check the payout report before you assume a short payment.
+- **Never reconciling the processor to the bank.** Matching charges to invoices isn't enough — you also have to confirm the payout actually reached your bank. That last tie-out is what catches a payout that failed or got held.
+
+## Where a good invoice makes this easier
+
+Most payment-matching pain starts upstream, at the invoice. A clear invoice with a unique number, the amount due, and a payment reference gives every payment something exact to match against. You can build one free with our [invoice generator](/) — it numbers invoices consistently and produces a clean PDF you can send in seconds, which is the single cheapest way to make reconciliation faster later.
+
+When matching by hand starts eating real hours, that's the signal to look at [accounts receivable automation software](/blog/accounts-receivable-automation-software), which can pull payments from your processor and match them to open invoices for you. And if late payers are the real problem rather than the matching itself, the fix is chasing sooner — see [how to ask for payment](/blog/how-to-ask-for-payment). Whatever tool you use, keep the underlying records: the IRS expects you to [keep supporting documents](https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping) like invoices and bank statements that back up your income. This is general information, not tax advice — check your own situation with a professional.
+
+## Frequently Asked Questions
+
+The FAQ block above answers the common questions — what payment reconciliation is, how it differs from bank reconciliation, why payments don't match invoices, how to reconcile Stripe or PayPal payouts, the steps involved, and whether you can automate it.
+
+Payment reconciliation isn't glamorous, but it's the difference between *thinking* you got paid and *knowing* you did. Match every payment to its invoice and every payout to its bank deposit, account for the fees, and your books will always tell you the truth about your cash.

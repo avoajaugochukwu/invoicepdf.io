@@ -1,0 +1,60 @@
+{
+  "slug": "pdf-invoice-template",
+  "styleId": "blank",
+  "keyword": "PDF Invoice Template",
+  "platform": "general",
+  "metaTitle": "Free PDF Invoice Template — No Signup, No Watermark",
+  "metaDescription": "A free PDF invoice template you can fill in and download in seconds. Automatic totals, editable Word and PDF, print-ready on one page — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-blank.pdf",
+  "docxFile": "/templates/invoice-template-blank.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A simple, ready-to-use PDF invoice template for freelancers, side-hustlers, and small businesses that just need to bill a client and get paid. It keeps the plain, no-frills layout most people want from a PDF invoice — your details, the client's details, an itemized table, and totals that add themselves up — on a single page that prints and emails cleanly.",
+    "It's free with no signup and no watermark. Download the editable Word (.docx) file to fill in on your computer and save as a PDF, or use the generator below to type in your details and export a finished PDF invoice in a couple of minutes."
+  ],
+  "included": [
+    "A clean header with space for your business name, logo, and contact details",
+    "Client details, a unique invoice number, and the issue and due dates",
+    "An itemized table with description, quantity, rate, and line totals",
+    "Automatic subtotal, tax, and grand total so you never add wrong",
+    "A notes section for payment terms, accepted methods, or a thank-you",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Use the free generator below, or download the editable Word file to fill in offline. No account or signup needed."
+    },
+    {
+      "title": "Fill in your details",
+      "body": "Add your business and client info, an invoice number, the dates, and each line item. Set a tax rate if you charge one — the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Click Download PDF for a print-ready invoice, or keep the Word file to edit later. Email it to your client or file it for your records."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I make an invoice in PDF format?",
+      "a": "Fill in your business and client details, an invoice number, the dates, and your line items, then export to PDF. With the generator above you type in your details and click Download PDF. If you use the Word file instead, choose File then Save As (or Print) and pick PDF as the format."
+    },
+    {
+      "q": "Is this PDF invoice template really free?",
+      "a": "Yes. The template and the generator are free, with no signup, no account, and no watermark. You can download and send as many invoices as you need."
+    },
+    {
+      "q": "Can I edit the PDF invoice after I download it?",
+      "a": "A finished PDF is meant to be final, so it's best to make changes before you export. Download the editable Word (.docx) file if you want to keep editing, or just reopen the generator, change your details, and download a fresh PDF."
+    },
+    {
+      "q": "What should a PDF invoice include?",
+      "a": "Your business name and contact details, the client's details, a unique invoice number, the issue and due dates, an itemized list of what you're billing for, the subtotal, any sales tax, and the total due. Adding your payment terms and accepted methods helps you get paid on time. Never reuse an invoice number, even on a canceled or voided invoice."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-does-an-invoice-look-like",
+    "what-is-an-invoice-number"
+  ]
+}

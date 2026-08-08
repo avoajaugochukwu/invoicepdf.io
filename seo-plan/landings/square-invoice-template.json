@@ -1,0 +1,60 @@
+{
+  "slug": "square-invoice-template",
+  "styleId": "google-docs",
+  "keyword": "Square Invoice Template",
+  "platform": "professional",
+  "metaTitle": "Free Square Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free Square invoice template — no signup, no watermark, no fees. Download an editable Word and PDF invoice or make one online in minutes.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "Square Invoices is a paid processing tool from Square — great for card payments, but it wants you to open a Square account and takes a fee on every invoice your client pays online. If you just need a clean invoice to send a client, this free Square invoice template gives you the same professional layout without the account or the cut.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "A clean header for your business name, logo, address, and contact details — the same professional look Square gives, with no account required",
+    "Client billing details, a unique invoice number, and issue and due dates so every invoice is easy to track and reference",
+    "An itemized table for descriptions, quantity, rate, and line totals",
+    "Automatic subtotal, tax, and grand total so the math is always right",
+    "A notes and payment-terms area for due dates, bank or payment details, and a thank-you line",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your business and client details",
+      "body": "Enter your business name, logo, and contact info at the top, then add the client you are billing. Give the invoice a unique number and set the issue and due dates."
+    },
+    {
+      "title": "List your work and let the totals fill in",
+      "body": "Add each service or product with its quantity and rate. The template adds up line totals, subtotal, tax, and the grand total for you, so you never do the math by hand."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and email it to your client. Include your payment terms and how you want to be paid — no Square account or processing fee needed."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Do I need a Square account to use this template?",
+      "a": "No. This is a standalone template you fill in yourself. You do not need a Square account, and there are no processing fees, because you send the invoice and collect payment however you already do — bank transfer, check, PayPal, or card."
+    },
+    {
+      "q": "How is this different from Square Invoices?",
+      "a": "Square Invoices is a payment product: it lets clients pay by card online and charges a per-transaction fee. This template only creates the invoice document. If you want a professional invoice without opening an account or paying a fee, the template is the simpler choice. If you specifically need built-in online card payments, use Square's own tool."
+    },
+    {
+      "q": "Can I add sales tax to the invoice?",
+      "a": "Yes. There is a tax line that calculates automatically from your rate. Set the tax rate that applies to you — U.S. sales tax rules vary by state, so check your state's requirements if you are unsure whether to charge it."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every client and edit them however you like."
+    }
+  ],
+  "related": [
+    "how-to-send-an-invoice-on-square",
+    "how-to-write-an-invoice-for-beginners",
+    "how-to-ask-for-payment"
+  ]
+}

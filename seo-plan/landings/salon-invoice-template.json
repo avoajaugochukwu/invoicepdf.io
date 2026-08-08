@@ -1,0 +1,60 @@
+{
+  "slug": "salon-invoice-template",
+  "styleId": "canva",
+  "keyword": "Salon Invoice Template",
+  "platform": "salon & beauty",
+  "metaTitle": "Free Salon Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free salon invoice template for hair stylists, nail techs, and estheticians — no signup, no watermark. Download an editable Word and PDF or make one online.",
+  "downloadFile": "/templates/invoice-template-canva.pdf",
+  "docxFile": "/templates/invoice-template-canva.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "This is a free salon invoice template made for hair stylists, barbers, nail techs, estheticians, and booth renters who bill clients for services and retail products. It has clean lines for each service — a cut, color, set of nails, or facial — plus room for add-ons, retail items, and a gratuity line, so your client sees exactly what they are paying for.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "Service lines for each treatment — cut and style, color, manicure, pedicure, waxing, or facial — with a price for each",
+    "A separate section for retail products you sell at the chair, like shampoo, styling products, or nail care, with quantity and unit price",
+    "A header for your salon or personal brand name, logo, address, and contact details, plus a section for the client you are billing",
+    "A unique invoice number with issue and due dates so every appointment is easy to track and reference",
+    "Automatic subtotal, tax, and grand total, plus a notes and payment-terms area for deposits, gratuity, or a rebooking reminder",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your salon and client details",
+      "body": "Enter your salon or personal brand name, logo, and contact info at the top, then add the client you are billing. Give the invoice a unique number and set the issue and due dates."
+    },
+    {
+      "title": "List your services and retail",
+      "body": "Add a line for each service with its price, then any add-ons and retail products as their own lines with quantity and price. The template totals the line items, applies tax, and shows the grand total for you."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and hand it to the client at checkout or email it after the appointment. Include your payment terms and how you want to be paid — card, cash, or a deposit for the next booking."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "How do I put services and retail products on the same salon invoice?",
+      "a": "List each service — a cut, color, or set of nails — on its own line with its price, then add any retail products you sold, like shampoo or styling cream, as separate lines with quantity and unit price. The template adds every line into one subtotal, applies tax, and shows a single grand total, so the client sees both the total and the breakdown behind it."
+    },
+    {
+      "q": "Can I add a tip or gratuity line to the invoice?",
+      "a": "Yes. Use the notes and payment-terms area, or add a gratuity line item, to show a tip separately from your services. Many salon clients tip on card or cash at checkout, so keeping it on its own line makes the receipt clear for both of you."
+    },
+    {
+      "q": "Do I charge sales tax on salon services?",
+      "a": "It depends on your state. In the U.S., most states do not tax personal services like haircuts and manicures, but many do tax the retail products you sell, and a few states tax certain beauty services. The template has a tax line that calculates automatically; set the rate that applies to your retail sales or services, and check your state's rules if you are unsure. This is general information, not tax advice."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every client and appointment and edit them however you like."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "itemized-invoice",
+    "how-to-ask-for-payment"
+  ]
+}

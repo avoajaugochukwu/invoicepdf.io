@@ -1,0 +1,32 @@
+{
+ "fed": [
+  "canva-invoice-generator",
+  "hubspot-invoice-generator",
+  "wave-invoice-generator",
+  "square-invoice-template",
+  "adobe-express-invoice-template",
+  "stripe-invoice-template",
+  "proforma-invoice-template",
+  "commercial-invoice-template",
+  "pdf-invoice-template",
+  "construction-invoice-template",
+  "freelance-invoice-template",
+  "freelance-writer-invoice-template",
+  "it-services-invoice-template",
+  "consultant-invoice-template",
+  "plumber-invoice-template",
+  "electrician-invoice-template",
+  "landscaping-invoice-template",
+  "hvac-invoice-template",
+  "roofing-invoice-template",
+  "painting-invoice-template",
+  "catering-invoice-template",
+  "trucking-invoice-template",
+  "salon-invoice-template",
+  "dental-invoice-template",
+  "graphic-design-invoice-template",
+  "sales-receipt-template",
+  "deposit-receipt-template"
+ ],
+ "note": "landings fed"
+}

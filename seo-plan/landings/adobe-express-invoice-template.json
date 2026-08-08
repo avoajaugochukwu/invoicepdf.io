@@ -1,0 +1,60 @@
+{
+  "slug": "adobe-express-invoice-template",
+  "styleId": "canva",
+  "keyword": "Adobe Express Invoice Template",
+  "platform": "professional",
+  "metaTitle": "Free Adobe Express Invoice Template — No Signup",
+  "metaDescription": "A free Adobe Express invoice template alternative. Make a clean, professional invoice with automatic totals and export a PDF — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-canva.pdf",
+  "docxFile": "/templates/invoice-template-canva.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A polished, professional invoice template for anyone who likes the design-forward look of Adobe Express but just wants to bill a client and move on. It carries the essentials a paid invoice needs — your details, the client's details, an itemized table, and automatic totals — in a balanced layout that prints cleanly to one page.",
+    "Adobe Express is Adobe's free online design tool: you drag and drop blocks, and it does ask you to sign in with an Adobe account. This template is a faster, no-signup way to the same result. Download the editable Word (.docx) and PDF files, or use the free generator below to fill in your details and export a finished invoice — no account, no watermark."
+  ],
+  "included": [
+    "A clean, professionally styled header with room for your logo and brand color",
+    "Business and client details, a unique invoice number, and issue and due dates",
+    "An itemized table with quantity, rate, and line totals",
+    "Automatic subtotal, tax, and grand total",
+    "A notes section for payment terms, methods, or a thank-you",
+    "Free editable Word (.docx) and PDF downloads — print-ready on one page, no watermark"
+  ],
+  "steps": [
+    {
+      "title": "Open the template",
+      "body": "Launch the free generator below and pick this professional style, or download the editable Word file to work offline. No Adobe account or signup needed."
+    },
+    {
+      "title": "Fill in your details",
+      "body": "Add your business and client info, invoice number, dates, and line items. Set your tax rate and drop in payment terms — the subtotal, tax, and total update as you type."
+    },
+    {
+      "title": "Download and send",
+      "body": "Click Download PDF for a print-ready invoice, or export the Word file to keep editing. Email it to your client or save it for your records."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Is this the same as the Adobe Express invoice maker?",
+      "a": "No. Adobe Express is Adobe's online design tool with drag-and-drop invoice layouts, and it asks you to sign in with an Adobe account. This is a free, purpose-built invoice generator that does the math for you and exports a finished PDF or Word file with no signup and no watermark."
+    },
+    {
+      "q": "Do I need an Adobe account to use this template?",
+      "a": "No. You can download the Word and PDF files or fill in the online generator without any account. There's nothing to install and no login screen."
+    },
+    {
+      "q": "Can I add my logo and brand color to look professional?",
+      "a": "Yes. The generator has an Upload logo button, and the template leaves space in the header for it so your invoice looks on-brand. Your logo appears in the live preview and in the downloaded PDF and Word file."
+    },
+    {
+      "q": "What should a professional invoice include?",
+      "a": "Your business and contact details, the client's details, a unique invoice number, the issue and due dates, an itemized list of work with rates, the subtotal, any tax, and the total due. A short note with your payment terms and accepted methods helps you get paid on time. Reuse an invoice number for one job only — never repeat a number, even on a voided invoice."
+    }
+  ],
+  "related": [
+    "how-to-write-an-invoice-for-beginners",
+    "what-is-an-invoice-number",
+    "how-to-send-an-invoice"
+  ]
+}

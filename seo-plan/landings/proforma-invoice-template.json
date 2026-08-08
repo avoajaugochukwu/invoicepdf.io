@@ -1,0 +1,60 @@
+{
+  "slug": "proforma-invoice-template",
+  "styleId": "word",
+  "keyword": "Proforma Invoice Template",
+  "platform": "international trade",
+  "metaTitle": "Free Proforma Invoice Template — No Signup, No Watermark",
+  "metaDescription": "Free proforma invoice template for international trade. No signup, no watermark. Download an editable Word and PDF, or build one online in minutes.",
+  "downloadFile": "/templates/invoice-template-word.pdf",
+  "docxFile": "/templates/invoice-template-word.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A proforma invoice is a preliminary bill you send a buyer before the goods ship — it quotes the price, describes the goods, and lets the buyer arrange payment, an import license, or a letter of credit. This free proforma invoice template is built for exporters, importers, and small businesses that sell across borders and need a clear document customs and their buyer can both read.",
+    "It is completely free, with no signup and no watermark. Download the editable Word and PDF files and fill them in on your own computer, or use the generator below to build your proforma invoice in the browser and download a print-ready PDF in minutes."
+  ],
+  "included": [
+    "Fields for the country of origin, HS/tariff code, and the Incoterms delivery term (for example FOB or CIF) so customs and your buyer see how the deal is structured",
+    "A currency field and line for shipping and insurance, plus a clear 'Proforma Invoice' label so no one mistakes it for a final demand for payment",
+    "Your business and buyer details, a unique invoice number, and issue and validity dates so every quote is easy to track and reference",
+    "An itemized table for descriptions, quantity, unit price, and line totals",
+    "Automatic subtotal, tax, and grand total so the math is always right",
+    "Free editable Word and PDF files, print-ready on one page, with no watermark and no signup"
+  ],
+  "steps": [
+    {
+      "title": "Add your business, buyer, and shipment details",
+      "body": "Enter your company and the buyer's details, then set the country of origin, currency, and the Incoterms term you agreed on. Give the proforma a unique number and an issue and validity date."
+    },
+    {
+      "title": "List the goods and let the totals fill in",
+      "body": "Add each item with its description, HS code, quantity, and unit price. The template adds up line totals, subtotal, shipping, tax, and the grand total for you, so the value you declare stays consistent."
+    },
+    {
+      "title": "Download and send",
+      "body": "Download a print-ready PDF (or the editable Word file) and email it to your buyer for their import paperwork, payment arrangement, or customs pre-clearance. Send a commercial invoice once the order is confirmed and shipping."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is a proforma invoice used for in international trade?",
+      "a": "It is a good-faith quote sent before the sale is final. The buyer uses it to arrange payment, apply for an import license or foreign exchange, or open a letter of credit, and customs may use it to estimate duties before the goods arrive. It is not a demand for payment and is not recorded as a sale in your books."
+    },
+    {
+      "q": "How is a proforma invoice different from a commercial invoice?",
+      "a": "A proforma invoice comes first and is an estimate — it states the expected price and terms before shipping. A commercial invoice is the final bill that travels with the shipment and is the document U.S. Customs and Border Protection uses to clear and value the goods. The final amounts on the commercial invoice should match the proforma unless the order changed."
+    },
+    {
+      "q": "Should I put Incoterms on a proforma invoice?",
+      "a": "Yes. Stating an Incoterms rule (such as FOB, CIF, or DAP) from the ICC tells the buyer exactly which costs and risks each side carries and where responsibility passes. The template has a field for it so the quote is unambiguous. Always name the version, for example 'Incoterms 2020'."
+    },
+    {
+      "q": "Is the template really free with no watermark?",
+      "a": "Yes. The Word and PDF files are free to download and use, with no signup and no watermark. You can reuse them for every buyer and edit them however you like."
+    }
+  ],
+  "related": [
+    "what-is-a-proforma-invoice",
+    "commercial-invoice-vs-proforma-invoice",
+    "what-is-a-commercial-invoice"
+  ]
+}

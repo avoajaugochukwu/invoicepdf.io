@@ -1,0 +1,35 @@
+{
+  "slug": "wave-invoice-generator",
+  "styleId": "google-docs",
+  "keyword": "Wave Invoice Generator",
+  "platform": "professional",
+  "metaTitle": "Free Wave Invoice Generator — No Signup, No Watermark",
+  "metaDescription": "A free Wave invoice generator alternative for freelancers and small firms. Make and download a professional PDF or Word invoice — no signup, no watermark.",
+  "downloadFile": "/templates/invoice-template-google-docs.pdf",
+  "docxFile": "/templates/invoice-template-google-docs.docx",
+  "downloadLabel": "Download PDF template",
+  "intro": [
+    "A free, professional invoice generator for freelancers, consultants, and small-business owners who want a clean invoice without opening a full accounting account. It covers every field a client expects — your details, their details, itemized work, and automatic totals — and exports a print-ready PDF or editable Word file.",
+    "Wave's own invoicing is free but asks you to create an account first. This is a no-signup way to just make the invoice: download the editable template to fill in yourself, or use the generator below — type your details, watch the live preview update, and export in seconds. No account, no watermark."
+  ],
+  "included": [
+    "Your business and client details, invoice number, and issue and due dates",
+    "An itemized table with quantity, rate, and line totals for each service",
+    "Automatic subtotal, tax, and grand total so the math is always right",
+    "A notes area for payment terms, late fees, or a short thank-you",
+    "Clean, professional formatting that prints to a single page",
+    "Free editable Word (.docx) and PDF downloads — no signup, no watermark"
+  ],
+  "steps": [
+    { "title": "Open the generator", "body": "Choose the Simple style and enter your business, client, and line items. The preview updates as you type — no account to set up first." },
+    { "title": "Add tax and terms", "body": "Set your tax rate and add payment terms or a thank-you note. Subtotal, tax, and total are calculated automatically." },
+    { "title": "Download and send", "body": "Export a print-ready PDF or editable Word file and email it to your client. Free, no signup, no watermark." }
+  ],
+  "faqs": [
+    { "q": "Is this Wave invoice generator free?", "a": "Yes — this template and online generator are completely free, with no account, signup, or watermark. Wave itself is free for core invoicing too, but it asks you to create an account first; this is a faster, no-signup way to make and download a single invoice." },
+    { "q": "Do I need a Wave account to use it?", "a": "No. You don't need a Wave account or any signup here — just open the generator, fill in your details, and download the invoice." },
+    { "q": "Can I download the invoice as a PDF or Word file?", "a": "Yes. Export a print-ready PDF or an editable Word (.docx) file that opens in Microsoft Word and Google Docs." },
+    { "q": "Is this a full accounting tool like Wave?", "a": "No — it focuses on creating and downloading professional invoices quickly. If you also need bookkeeping, expense tracking, and reporting in one place, Wave's free accounting platform may suit you better. You can even make the invoice here and record the payment in Wave." }
+  ],
+  "related": ["how-to-write-an-invoice-for-beginners", "how-to-send-an-invoice", "what-is-an-invoice-number"]
+}
