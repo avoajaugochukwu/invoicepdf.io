@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LANDINGS } from '@/lib/invoice/landings';
+import { groupLandings } from '@/lib/invoice/landings';
 
 const GUIDES: { href: string; label: string }[] = [
   { href: '/blog/what-is-an-invoice-beginner-guide', label: 'What is an invoice?' },
@@ -11,11 +11,12 @@ const GUIDES: { href: string; label: string }[] = [
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
+  const templateGroups = groupLandings();
 
   return (
     <footer className="border-t mt-auto">
       <div className="container mx-auto px-4 lg:px-6 py-12">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Brand */}
           <div>
             <Link href="/" className="font-bold">InvoicePDF</Link>
@@ -25,25 +26,6 @@ export function Footer() {
             <Link href="/invoice-generator" className="mt-3 inline-block text-sm font-medium text-primary hover:underline">
               Create an invoice &rarr;
             </Link>
-          </div>
-
-          {/* Templates */}
-          <div>
-            <h2 className="mb-3 text-sm font-semibold">Templates &amp; tools</h2>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/invoice-generator" className="text-muted-foreground hover:text-foreground hover:underline">
-                  Invoice generator
-                </Link>
-              </li>
-              {LANDINGS.map((l) => (
-                <li key={l.slug}>
-                  <Link href={`/${l.slug}`} className="text-muted-foreground hover:text-foreground hover:underline">
-                    {l.keyword}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Guides */}
@@ -79,6 +61,32 @@ export function Footer() {
                 <Link href="/terms-of-service" prefetch={false} className="text-muted-foreground hover:text-foreground hover:underline">Terms of Service</Link>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Templates & tools */}
+        <div className="mt-12 border-t pt-10">
+          <div className="mb-6 flex items-baseline justify-between gap-4">
+            <h2 className="text-sm font-semibold">Templates &amp; tools</h2>
+            <Link href="/invoice-generator" className="text-sm font-medium text-primary hover:underline">
+              Invoice generator &rarr;
+            </Link>
+          </div>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            {templateGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="mb-3 text-sm font-semibold text-muted-foreground">{group.title}</h3>
+                <ul className="space-y-2 text-sm">
+                  {group.items.map((l) => (
+                    <li key={l.slug}>
+                      <Link href={`/${l.slug}`} className="text-muted-foreground hover:text-foreground hover:underline">
+                        {l.keyword}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { BlogPostCard } from "@/components/BlogPostCard";
 import { InvoicePreview } from "@/components/invoice/InvoicePreview";
 import { sampleInvoice, getTemplateStyle } from "@/lib/invoice/types";
-import { LANDINGS } from "@/lib/invoice/landings";
+import { groupLandings } from "@/lib/invoice/landings";
 
 export const metadata: Metadata = {
   alternates: { canonical: '/' },
@@ -20,6 +20,7 @@ const FEATURES = [
 ];
 
 export default function Home() {
+  const templateGroups = groupLandings();
   const posts = getAllPosts();
   const sample = sampleInvoice('invoice');
   const heroStyle = getTemplateStyle('google-docs');
@@ -72,20 +73,29 @@ export default function Home() {
             Pick a format, customize it online, and download — or grab a blank template.
           </p>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {LANDINGS.map((t) => (
-            <Link
-              key={t.slug}
-              href={`/${t.slug}`}
-              className="group rounded-lg border border-border p-5 transition-colors hover:bg-accent"
-            >
-              <div className="mb-2 flex items-center gap-2 text-sm text-muted-foreground">
-                {t.xlsxFile ? <FileSpreadsheet className="h-4 w-4" /> : t.docxFile ? <FileText className="h-4 w-4" /> : <FileDown className="h-4 w-4" />}
-                <span>{[t.xlsxFile && 'Excel', t.docxFile && 'Word', 'PDF'].filter(Boolean).join(' · ')}</span>
+        <div className="space-y-12">
+          {templateGroups.map((g) => {
+            return (
+              <div key={g.title}>
+                <h3 className="mb-4 text-xl font-bold">{g.title}</h3>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {g.items.map((t) => (
+                    <Link
+                      key={t.slug}
+                      href={`/${t.slug}`}
+                      className="group rounded-lg border border-border p-5 transition-colors hover:bg-accent"
+                    >
+                      <div className="mb-2 flex items-center gap-2 text-sm text-muted-foreground">
+                        {t.xlsxFile ? <FileSpreadsheet className="h-4 w-4" /> : t.docxFile ? <FileText className="h-4 w-4" /> : <FileDown className="h-4 w-4" />}
+                        <span>{[t.xlsxFile && 'Excel', t.docxFile && 'Word', 'PDF'].filter(Boolean).join(' · ')}</span>
+                      </div>
+                      <h4 className="font-semibold group-hover:underline">{t.keyword}</h4>
+                    </Link>
+                  ))}
+                </div>
               </div>
-              <h3 className="font-semibold group-hover:underline">{t.keyword}</h3>
-            </Link>
-          ))}
+            );
+          })}
         </div>
         <div className="mt-8 text-center">
           <Button asChild>

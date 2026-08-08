@@ -1203,3 +1203,34 @@ export const LANDINGS: Landing[] = [
 export function getLanding(slug: string): Landing | undefined {
   return LANDINGS.find((l) => l.slug === slug);
 }
+
+const FORMAT_SLUGS = new Set([
+  'invoice-template-google-docs',
+  'invoice-template-word',
+  'invoice-template-canva',
+  'microsoft-invoice-template',
+  'invoice-template-excel',
+  'invoice-template-google-sheets',
+  'pdf-invoice-template',
+]);
+const GENERAL_SLUGS = new Set([
+  'blank-invoice-template',
+  'commercial-invoice-template',
+  'proforma-invoice-template',
+]);
+
+// Ordered: each template lands in the first group it matches; last is the catch-all.
+const TEMPLATE_GROUPS: { title: string; match: (t: Landing) => boolean }[] = [
+  { title: 'Popular formats', match: (t) => FORMAT_SLUGS.has(t.slug) },
+  { title: 'Accounting & payment software', match: (t) => t.platform === 'professional' },
+  { title: 'Receipts', match: (t) => t.slug.includes('receipt') },
+  { title: 'General invoices', match: (t) => GENERAL_SLUGS.has(t.slug) },
+  { title: 'By industry & trade', match: () => true },
+];
+
+export function groupLandings(): { title: string; items: Landing[] }[] {
+  return TEMPLATE_GROUPS.map((g) => ({
+    title: g.title,
+    items: LANDINGS.filter((t) => TEMPLATE_GROUPS.find((x) => x.match(t)) === g),
+  })).filter((g) => g.items.length > 0);
+}
